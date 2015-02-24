@@ -4,7 +4,7 @@ include $(CLEAR_VARS)
 
 LOCAL_SRC_FILES := \
         hypv_intercept.cpp
-LOCAL_C_INCLUDES = $(TOP)/hardware/qcom/media/mm-video-v4l2/vidc/common/inc
+LOCAL_C_INCLUDES := $(call project-path-for,qcom-media)/mm-video-v4l2/vidc/common/inc
 
 LOCAL_SHARED_LIBRARIES := liblog libdl
 
