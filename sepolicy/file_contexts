@@ -23,5 +23,8 @@
 # Mlipay
 /(vendor|system/vendor)/bin/mlipayd             u:object_r:hal_mlipay_default_exec:s0
 
+# Persist
+/persist/PRSensorData\.txt                      u:object_r:sensors_persist_file:s0
+
 # Shell Script
 /(vendor|system/vendor)/bin/init\.goodix\.sh    u:object_r:init_fingerprint_exec:s0
