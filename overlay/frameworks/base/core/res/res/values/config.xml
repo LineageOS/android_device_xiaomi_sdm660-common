@@ -110,6 +110,9 @@
     <!-- Boolean indicating whether the wifi chipset has dual frequency band support -->
     <bool translatable="false" name="config_wifi_dual_band_support">true</bool>
 
+    <!-- Boolean indicating whether 802.11r Fast BSS Transition is enabled on this platform -->
+    <bool translatable="false" name="config_wifi_fast_bss_transition_enabled">true</bool>
+
     <!-- Boolean indicating whether the wifi chipset has background scan support -->
     <bool translatable="false" name="config_wifi_background_scan_support">true</bool>
 
