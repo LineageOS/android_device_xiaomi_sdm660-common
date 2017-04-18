@@ -21,9 +21,6 @@
 # definition file).
 #
 
-# Inherit proprietary files
-$(call inherit-product, vendor/xiaomi/sdm660-common/sdm660-common-vendor.mk)
-
 # Inherit properties
 $(call inherit-product, $(LOCAL_PATH)/properties.mk)
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
@@ -466,3 +463,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+# Inherit the proprietary files
+$(call inherit-product, vendor/xiaomi/sdm660-common/sdm660-common-vendor.mk)
