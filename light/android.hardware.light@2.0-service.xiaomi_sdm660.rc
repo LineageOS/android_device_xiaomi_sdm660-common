@@ -18,6 +18,7 @@ on boot
     start vendor.light-hal-2-0
 
 service vendor.light-hal-2-0 /vendor/bin/hw/android.hardware.light@2.0-service.xiaomi_sdm660
+    interface android.hardware.light@2.0::ILight default
     class hal
     user system
     group system
