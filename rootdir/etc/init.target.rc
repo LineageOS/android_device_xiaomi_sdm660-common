@@ -50,7 +50,7 @@ on fs
 
 on post-fs
     start vendor.qseecomd
-    exec - system system -- /vendor/bin/init.qti.qseecomd.sh
+    wait_for_prop vendor.sys.listeners.registered true
     write /dev/ipa 1
 
 on init
