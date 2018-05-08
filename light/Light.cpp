@@ -88,6 +88,7 @@ static std::string getScaledRamp(uint32_t brightness) {
 
 static void handleWayneBacklight(Type /*type*/, const LightState& state) {
     uint32_t brightness = state.color & 0xFF;
+    brightness *= 16; // HACK
     set(LCD_LED BRIGHTNESS, brightness);
 }
 
