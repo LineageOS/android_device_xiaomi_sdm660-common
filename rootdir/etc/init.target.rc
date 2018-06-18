@@ -191,12 +191,6 @@ service vendor.cdsprpcd /vendor/bin/cdsprpcd
 #    chown system drmrpc /sys/devices/f9966000.i2c/i2c-1/1-0020/secure_touch_enable
 #    chown system drmrpc /sys/devices/f9966000.i2c/i2c-1/1-0020/secure_touch
 
-service energy-awareness /system/vendor/bin/energy-awareness
-    class main
-    user system
-    group system
-    oneshot
-
 service vendor.pd_mapper /system/vendor/bin/pd-mapper
      class core
 
