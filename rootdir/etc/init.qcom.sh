@@ -216,25 +216,6 @@ case "$target" in
         else
              hw_platform=`cat /sys/devices/system/soc/soc0/hw_platform`
         fi
-
-        case "$soc_id" in
-             "317" | "324" | "325" | "326" | "318" | "327" )
-                  case "$hw_platform" in
-                       "Surf")
-                                    setprop qemu.hw.mainkeys 0
-                                    ;;
-                       "MTP")
-                                    setprop qemu.hw.mainkeys 0
-                                    ;;
-                       "RCM")
-                                    setprop qemu.hw.mainkeys 0
-                                    ;;
-                       "QRD")
-                                    setprop qemu.hw.mainkeys 0
-                                    ;;
-                  esac
-                  ;;
-       esac
         start_msm_irqbalance660
         ;;
     "apq8084")
