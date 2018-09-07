@@ -145,10 +145,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     org.ifaa.android.manager
 
-# Bluetooth
-PRODUCT_PACKAGES += \
-    libbt-vendor
-
 PRODUCT_PACKAGES += \
     Snap
 
