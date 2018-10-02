@@ -42,6 +42,9 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(COMMON_PATH)/overlay \
     $(COMMON_PATH)/overlay-lineage
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += device/xiaomi/sdm660-common
+
 # Permissions
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/privapp-permissions-qti.xml:system/etc/permissions/privapp-permissions-qti.xml
