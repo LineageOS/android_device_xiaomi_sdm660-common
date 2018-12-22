@@ -1,6 +1,5 @@
-#! /vendor/bin/sh
-
-# Copyright (c) 2012, The Linux Foundation. All rights reserved.
+#!/vendor/bin/sh
+# Copyright (c) 2015, The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are met:
@@ -27,9 +26,19 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-country=`getprop wlan.crda.country`
-# crda takes input in COUNTRY environment variable
-if [ $country != "" ]
-then
-COUNTRY="$country" /system/bin/crda
-fi
+#
+# Function to start sensors for SSC enabled platforms
+#
+start_sensors()
+{
+    chmod -h 664 /persist/sensors/sensors_settings
+    chown -h -R system.system /persist/sensors
+    start vendor.sensors.qti
+
+    # Only for SLPI
+    if [ -c /dev/msm_dsps -o -c /dev/sensors ]; then
+        start vendor.sensors
+    fi
+}
+
+start_sensors
