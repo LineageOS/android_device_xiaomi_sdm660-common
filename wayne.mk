@@ -134,6 +134,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.xiaomi_wayne
 
+PRODUCT_PACKAGES += \
+    org.ifaa.android.manager
+
+PRODUCT_BOOT_JARS += \
+    org.ifaa.android.manager
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     libbt-vendor
