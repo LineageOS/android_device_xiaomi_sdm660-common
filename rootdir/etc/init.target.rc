@@ -184,10 +184,11 @@ service thermal-engine /system/vendor/bin/thermal-engine
 #    class core
 #    oneshot
 #
-service time_daemon /system/vendor/bin/time_daemon
-   class late_start
-   user root
-   group root
+service time_daemon /vendor/bin/time_daemon
+   class main
+   user system
+   group system
+   capabilities SYS_TIME
 
 service adsprpcd_root /vendor/bin/adsprpcd
    class main
