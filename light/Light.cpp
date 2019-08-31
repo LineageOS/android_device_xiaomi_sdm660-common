@@ -16,7 +16,7 @@
 
 //Author := dev_harsh1998, Isaac Chen
 
-#define LOG_TAG "android.hardware.light@2.0-service.xiaomi_wayne"
+#define LOG_TAG "android.hardware.light@2.0-service.xiaomi_sdm660"
 
 #include <log/log.h>
 #include <fstream>
@@ -86,7 +86,7 @@ static std::string getScaledRamp(uint32_t brightness) {
     return ramp;
 }
 
-static void handleWayneBacklight(Type /*type*/, const LightState& state) {
+static void handleXiaomiBacklight(Type /*type*/, const LightState& state) {
     uint32_t brightness = state.color & 0xFF;
     brightness *= 16; // HACK
     set(LCD_LED BRIGHTNESS, brightness);
@@ -152,7 +152,7 @@ static std::vector<std::pair<Type, LightState>> notificationStates = {
     { Type::BATTERY, offState },
 };
 
-static void handleWayneNotification(Type type, const LightState& state) {
+static void handleXiaomiNotification(Type type, const LightState& state) {
     for(auto it : notificationStates) {
         if (it.first == type) {
             it.second = state;
@@ -168,10 +168,10 @@ static void handleWayneNotification(Type type, const LightState& state) {
 }
 
 static std::map<Type, std::function<void(Type type, const LightState&)>> lights = {
-    {Type::BACKLIGHT, handleWayneBacklight},
-    {Type::NOTIFICATIONS, handleWayneNotification},
-    {Type::BATTERY, handleWayneNotification},
-    {Type::ATTENTION, handleWayneNotification},
+    {Type::BACKLIGHT, handleXiaomiBacklight},
+    {Type::NOTIFICATIONS, handleXiaomiNotification},
+    {Type::BATTERY, handleXiaomiNotification},
+    {Type::ATTENTION, handleXiaomiNotification},
 };
 
 Light::Light() {}

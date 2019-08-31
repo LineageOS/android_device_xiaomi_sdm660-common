@@ -21,9 +21,9 @@ include $(CLEAR_VARS)
 LOCAL_C_INCLUDES := \
     system/core/base/include \
     system/core/init
-LOCAL_MODULE := libinit_wayne
+LOCAL_MODULE := libinit_sdm660
 LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := init_wayne.cpp
+LOCAL_SRC_FILES := init_sdm660.cpp
 LOCAL_STATIC_LIBRARIES := \
     libbase \
     libselinux

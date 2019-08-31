@@ -17,7 +17,7 @@
 
 set -e
 
-DEVICE_COMMON=wayne-common
+DEVICE_COMMON=sdm660-common
 VENDOR=xiaomi
 
 INITIAL_COPYRIGHT_YEAR=2018

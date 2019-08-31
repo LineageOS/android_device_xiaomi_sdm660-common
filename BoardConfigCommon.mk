@@ -22,7 +22,7 @@
 # definition file).
 #
 
-COMMON_PATH := device/xiaomi/wayne-common
+COMMON_PATH := device/xiaomi/sdm660-common
 
 BOARD_VENDOR := xiaomi
 
@@ -64,7 +64,6 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm660
-TARGET_KERNEL_CONFIG := wayne-perf_defconfig
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 
 # QCOM hardware
@@ -197,9 +196,9 @@ DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_wayne
+TARGET_INIT_VENDOR_LIB := libinit_sdm660
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
-TARGET_RECOVERY_DEVICE_MODULES := libinit_wayne
+TARGET_RECOVERY_DEVICE_MODULES := libinit_sdm660
 
 # Keystore
 TARGET_PROVIDES_KEYMASTER := true
@@ -282,4 +281,4 @@ WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit the proprietary files
--include vendor/xiaomi/wayne-common/BoardConfigVendor.mk
+-include vendor/xiaomi/sdm660-common/BoardConfigVendor.mk
