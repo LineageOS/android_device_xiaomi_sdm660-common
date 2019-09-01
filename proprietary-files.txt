@@ -978,15 +978,6 @@ vendor/lib64/libStDrvInt.so
 vendor/lib64/libtzdrmgenprov.so
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
-# Fingerprint - from jasmine
-vendor/lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.goodix.so
-vendor/lib64/hw/fingerprint.fpc.default.so:vendor/lib64/hw/fingerprint.fpc.so
-vendor/lib64/com.fingerprints.extension@1.0.so
-vendor/lib64/libgf_ca.so
-vendor/lib64/libgf_hal.so
-vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so
-vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so
-
 # Fingerprint firmware - from jasmine
 etc/firmware/goodixfp.b00
 etc/firmware/goodixfp.b01
