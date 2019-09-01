@@ -731,6 +731,9 @@ vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e157937
 vendor/lib/vendor.qti.hardware.tui_comm@1.0.so|410b1fba3ac9c33b775706bd15a1a1505fc5e3e2
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|7c38141a0fa39bd6755a247917d7d854854bf1b1
 
+# VNDK
+vendor/lib/vndk/libbinder.so|094d702305c39f3988b9f586d47d4e8b10595ceb
+
 # Widevine - from jasmine
 vendor/bin/hw/android.hardware.drm@1.1-service.widevine|320749f5ce293176b9de747d13db7f026748b955
 vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc|458dd241f5f8536eccb57f012b3eba0061736e8e
