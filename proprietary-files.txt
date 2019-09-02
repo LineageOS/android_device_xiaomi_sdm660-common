@@ -290,7 +290,9 @@ vendor/lib64/vendor.qti.hardware.fm@1.0.so
 # Gatekeeper - from jasmine
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
+vendor/lib/hw/gatekeeper.sdm660.so
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
+vendor/lib64/hw/gatekeeper.sdm660.so
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 
 # GPS - from jasmine
