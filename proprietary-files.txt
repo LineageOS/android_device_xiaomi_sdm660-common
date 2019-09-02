@@ -179,10 +179,6 @@ vendor/lib64/vendor.qti.latency@2.0.so
 vendor/lib/hw/consumerir.default.so
 vendor/lib64/hw/consumerir.default.so
 
-# Display Calibration - from jasmine
-vendor/etc/qdcm_calib_data_tianma_nt36672_fhd_video_mode_dsi_panel.xml
-vendor/etc/qdcm_calib_data_jdi_nt36672_fhd_video_mode_dsi_panel.xml
-
 # DPM - from jasmine
 bin/dpmd
 etc/dpm/dpm.conf
