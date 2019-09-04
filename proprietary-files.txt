@@ -529,41 +529,23 @@ vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so|d0bb854210433066945f9d6e7943d0
 vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so|785984e3c3b30671b78624484899dd418979cb56
 
 # Perf - from jasmine
-lib/libqti_performance.so|dc0995fa3217b6c44029b55b5151adaae515392a
-lib/vendor.qti.hardware.perf@1.0.so|f992941847fd9043f0569e6dc71f89cedccb586f
-lib/libqti-perfd-client_system.so|74f4d9657cf492cf1de2e9b93983f4e7b5431c45
-lib64/libqti_performance.so|9c88af412e0276c578f06e1069b6c3aeae7e3f8d
-lib64/vendor.qti.hardware.perf@1.0.so|935d13179f58bdc09d31e6be87bdd9fac8afcdbe
-lib64/libqti-perfd-client_system.so|de5b61f07d7981bb208167b357f46a9ad083c9e7
-lib/vendor.qti.hardware.iop@1.0.so|ba81cff0f438060909c3da6992a86b0e94439072
-lib/vendor.qti.hardware.iop@2.0.so|c5e14aa191331d32a17fd75f3e7ea6ecacce86d9
-lib64/vendor.qti.hardware.iop@1.0.so|cec08b8610dc998a079b4cb61feeb6d0c99388ca
-lib64/vendor.qti.hardware.iop@2.0.so|cd5ce2c19b10161cc9e08824e33a15487146d642
 vendor/bin/energy-awareness|c1ad0ec1e4171b59f166e580ef8ce7395ccb41a5
 vendor/bin/msm_irqbalance|117d7c8a8f6f12b3615ec8ab676231df93d277f1
 vendor/bin/hw/vendor.qti.hardware.perf@1.0-service|ecd8296c848b6470a75a6ae7b235d079cacee3a5
 vendor/etc/init/vendor.qti.hardware.perf@1.0-service.rc|b50182aadab2e31409df61c523d0fb914a394e43
+vendor/etc/perf/commonresourceconfigs.xml|20280e40ca43784316e96be09fe2d2296d79e972
 vendor/etc/perf/perfboostsconfig.xml|f4b70245319440d90381a95f298152f4b1797cb4
-vendor/lib/libperfgluelayer.so|9e14c8e4bddf1f5c9c03c3b85fd2a44bfad1a977
+vendor/etc/perf/targetconfig.xml|376ae331df9d6c30b6208f25d04ae4ea11c0e2ea
+vendor/etc/perf/targetresourceconfigs.xml|2084cab83603da8fb1817902836ffb890dfc8a16
 vendor/lib/libqti-perfd-client.so|85ebe15611a5153a70fb48cce5ddd28ebdd5701c
 vendor/lib/libqti-perfd.so|c49b92951d6adabcda2c89e5f432eb6ab31234a3
 vendor/lib/libqti-util.so|d7f4c7588d562a17a379eda7403d487e088769ee
-vendor/lib/libqti-utils.so|d1e1b7b1abb1a631e3f8b65dcdcc2a5329a94ea8
-vendor/lib/libqti-iopd-client.so|0d54d3b4568ddee118507a734ce7cf70da336807
-vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so|c703642ce5b3a2368564b4b8e8b3ec7a73f6869c
 vendor/lib/vendor.qti.hardware.perf@1.0.so|471b0b886fdbb69d204dc13c7f0ba653087f6c6d
-vendor/lib/vendor.qti.hardware.iop@1.0.so|c437bf68569d9225a98dceb2f0999d06d4e6c309
-vendor/lib/vendor.qti.hardware.iop@2.0.so|bd7436b57c4d4f99c3076f80ee403a741d3dfed7
 vendor/lib64/libperfgluelayer.so|afd773f4eb5aaa215706763c2376eaa9d1382143
 vendor/lib64/libqti-perfd-client.so|974abf576e3cbb13774671f8a80be5705063e5c2
 vendor/lib64/libqti-perfd.so|e0ddd0f14062d4d7c033a3f1fe0c810e14eedd55
 vendor/lib64/libqti-util.so|bdf3e4bd3ff525c76948230e26829a3999664a02
-vendor/lib64/libqti-utils.so|0411b2b1033fbb699c75c5a7772b8651910f2b97
-vendor/lib64/libqti-iopd-client.so|363be4012d8add25f80c6986894c6d3e2bf2ebab
-vendor/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so|4aa645e7441c7f146ea287985f98755ddee096db
 vendor/lib64/vendor.qti.hardware.perf@1.0.so|133620816ff53fce37a99f5d10e170d58afb02c6
-vendor/lib64/vendor.qti.hardware.iop@1.0.so|0bd7728c4852a0bb7258c4f59784b42acbcaab3f
-vendor/lib64/vendor.qti.hardware.iop@2.0.so|278247c6713527bcb40c08b3a2358a3529c806b8
 
 # Peripheral manager - from jasmine
 vendor/bin/pm-proxy|e5f8c69e8d231dd2665dc411b4e9d9e696c90187
