@@ -16,6 +16,10 @@
 /data/vendor/gf_data(/.*)?                      u:object_r:fingerprint_vendor_data_file:s0
 /data/vendor/goodix(/.*)?                       u:object_r:fingerprint_vendor_data_file:s0
 
+# Firmware
+/firmware                                                     u:object_r:firmware_file:s0
+/bt_firmware                                                  u:object_r:bt_firmware_file:s0
+
 # Fpc Fingerprint data
 /persist/fpc(/.*)?                              u:object_r:fingerprintd_data_file:s0
 
