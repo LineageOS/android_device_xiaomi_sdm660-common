@@ -157,8 +157,7 @@ vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so|90f1106f7462a9e01721e1159ed3301
 vendor/lib64/vendor.qti.latency@2.0.so|91a8b05b20485057ee9f42c55ce70207ef6af761
 
 # Consumerir - from jasmine
-vendor/lib/hw/consumerir.default.so|f927b0ca8f81b78daa098872b27f599dd5a54141
-vendor/lib64/hw/consumerir.default.so|ad5c1c43bd7af8828efa20b7435f756d85a813b5
+vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.sdm660.so|ad5c1c43bd7af8828efa20b7435f756d85a813b5
 
 # DPM - from jasmine V11.0.8.0.QDIMIXM
 product/bin/dpmd|49caa8e7d8af8055efdd7ebc0d7f7d67bc600041
