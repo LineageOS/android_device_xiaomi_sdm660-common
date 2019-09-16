@@ -1,6 +1,6 @@
 /*
    Copyright (c) 2016, The CyanogenMod Project
-   Copyright (c) 2017, The LineageOS Project
+   Copyright (c) 2019, The LineageOS Project
 
    Redistribution and use in source and binary forms, with or without
    modification, are permitted provided that the following conditions are
@@ -40,7 +40,6 @@
 
 #include "vendor_init.h"
 #include "property_service.h"
-#include "init_sdm660.h"
 
 using android::base::GetProperty;
 using android::init::property_set;
@@ -50,11 +49,6 @@ char const *heapgrowthlimit;
 char const *heapsize;
 char const *heapminfree;
 char const *heapmaxfree;
-
-#ifdef TARGET_HAVE_LIBINIT
-__attribute__ ((weak))
-void init_target_properties() {}
-#endif
 
 void check_device()
 {
@@ -82,9 +76,6 @@ void check_device()
 void vendor_load_properties()
 {
     check_device();
-#ifdef TARGET_HAVE_LIBINIT
-    init_target_properties();
-#endif
 
     property_set("dalvik.vm.heapstartsize", heapstartsize);
     property_set("dalvik.vm.heapgrowthlimit", heapgrowthlimit);
