@@ -18,9 +18,7 @@ LOCAL_PATH := $(call my-dir)
 
 ifneq ($(filter jasmine_sprout twolip wayne,$(TARGET_DEVICE)),)
 
-$(shell mkdir -p $(TARGET_OUT_VENDOR)/firmware; \
-    ln -sf /dev/block/bootdevice/by-name/msadp \
-        $(TARGET_OUT_VENDOR)/firmware/msadp)
+$(shell mkdir -p $(TARGET_OUT_VENDOR)/firmware)
 
 include $(CLEAR_VARS)
 
