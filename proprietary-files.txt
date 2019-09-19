@@ -79,17 +79,6 @@ vendor/lib64/soundfx/libasphere.so|8b34e5df3f9070cdfead48f064a3135a719503c7
 vendor/lib64/soundfx/libqcbassboost.so|16f6b74db3b24ee82674c40498bcc1b319770b50
 vendor/lib64/soundfx/libqcvirt.so|6c21052f294765efb9188454a78791911da919dd
 
-# Audio ACDB - from jasmine
-vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb|57837ee3c6d7072ee1a919e592fab0d0e016eaed
-vendor/etc/acdbdata/MTP/MTP_General_cal.acdb|ec2636696cb39ef5eeba2d1b5196d017cd949dba
-vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb|0b3b101c8c48e1c5d463fba629dc597624859f93
-vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb|bdb58c3a10e018f7fd439b111825e56300f5e9cc
-vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb|e2072f38c4a1860d74cb788dd52874c9473fc717
-vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb|cf7dbd5ccb31fa8ff87741f832e6f1c58c84b2ed
-vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb|d4c98a463c0a7b147d08876b8347c514e881be29
-vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp|47d93e857c275f9cfa0fc463fbce952016444e17
-vendor/etc/acdbdata/adsp_avs_config.acdb|d9507f31b8970320233128fed24c39742ee53c67
-
 # Audio Power Amplifier - from jasmine
 vendor/firmware/dbmd4_va_fw.bin|ee640f9f4e367d513f5fb7d95c85e226c9f75750
 vendor/firmware/tas2557_uCDSP.bin|d16fc1db241670307f5071e256c886ecd18d30f7
