@@ -16,15 +16,13 @@
  */
 #define LOG_TAG "android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sdm660"
 
-#include <cutils/properties.h>
-
 #include <hardware/hw_auth_token.h>
 
 #include <hardware/hardware.h>
 #include <hardware/fingerprint.h>
 #include "BiometricsFingerprint.h"
-#include "Hardware.h"
 
+#include <cutils/properties.h>
 #include <inttypes.h>
 #include <unistd.h>
 
@@ -216,6 +214,7 @@ IBiometricsFingerprint* BiometricsFingerprint::getInstance() {
 
 void setFpVendorProp(const char *fp_vendor) {
     property_set("persist.vendor.sys.fp.vendor", fp_vendor);
+    property_set("ro.boot.fpsensor", fp_vendor);
 }
 
 fingerprint_device_t* getDeviceForVendor(const char *class_name)
@@ -223,18 +222,7 @@ fingerprint_device_t* getDeviceForVendor(const char *class_name)
     const hw_module_t *hw_module = nullptr;
     int err;
 
-    if (!strcmp(class_name, "fpc")) {
-        setFpVendorProp("fpc");
-        err = load("/system/vendor/lib64/hw/fingerprint.fpc.so", &hw_module);
-    } else if (!strcmp(class_name, "gdx")) {
-        setFpVendorProp("goodix");
-        err = load("/system/vendor/lib64/hw/fingerprint.goodix.so", &hw_module);
-    } else {
-        setFpVendorProp("none");
-        ALOGE("No fingerprint module class specified.");
-        err = 1;
-    }
-
+    err = hw_get_module_by_class(FINGERPRINT_HARDWARE_MODULE_ID, class_name, &hw_module);
     if (err) {
         ALOGE("Failed to get fingerprint module: class %s, error %d", class_name, err);
         return nullptr;
@@ -276,17 +264,25 @@ fingerprint_device_t* getDeviceForVendor(const char *class_name)
 fingerprint_device_t* getFingerprintDevice()
 {
     fingerprint_device_t *fp_device;
-    char class_name[PROPERTY_VALUE_MAX];
 
-    property_get("ro.boot.fpsensor",
-        class_name, NULL);
-
-    fp_device = getDeviceForVendor(class_name);
+    fp_device = getDeviceForVendor("fpc");
     if (fp_device == nullptr) {
-        ALOGE("Failed to load %s fingerprint module", class_name);
+        ALOGE("Failed to load fpc fingerprint module");
     } else {
+        setFpVendorProp("fpc");
         return fp_device;
     }
+
+    fp_device = getDeviceForVendor("goodix");
+    if (fp_device == nullptr) {
+        ALOGE("Failed to load goodix fingerprint module");
+    } else {
+        setFpVendorProp("goodix");
+        return fp_device;
+    }
+
+    setFpVendorProp("none");
+
     return nullptr;
 }
 
