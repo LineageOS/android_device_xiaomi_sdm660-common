@@ -8,7 +8,6 @@ init_daemon_domain(hal_fingerprint_sdm660)
 
 allow hal_fingerprint_sdm660 fingerprint_device:chr_file { read write open ioctl };
 allow hal_fingerprint_sdm660 { tee_device uhid_device }:chr_file { read write open ioctl };
-allow hal_fingerprint_sdm660 fingerprint_data_file:file rw_file_perms;
 allow hal_fingerprint_sdm660 fingerprintd_data_file:dir rw_dir_perms;
 allow hal_fingerprint_sdm660 fingerprintd_data_file:file create_file_perms;
 allow hal_fingerprint_sdm660 { fuse mnt_user_file storage_file }:dir search;
