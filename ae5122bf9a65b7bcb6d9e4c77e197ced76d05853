@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5f15b80e_aa555f17",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 553,
+      "author": {
+        "id": 10191
+      },
+      "writtenOn": "2019-09-27T18:35:58Z",
+      "side": 1,
+      "message": "Better move to device tree and not add two files only 0 used",
+      "revId": "ae5122bf9a65b7bcb6d9e4c77e197ced76d05853",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
