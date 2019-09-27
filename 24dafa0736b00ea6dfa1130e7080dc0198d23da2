@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0832feb5_610f057a",
+        "filename": "rootdir/etc/ueventd.qcom.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 417,
+      "author": {
+        "id": 10191
+      },
+      "writtenOn": "2019-09-27T18:45:40Z",
+      "side": 1,
+      "message": "We only have one led in red path rest is unused",
+      "revId": "24dafa0736b00ea6dfa1130e7080dc0198d23da2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
