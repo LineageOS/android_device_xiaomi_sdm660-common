@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9ddb5187_cbf391aa",
+        "filename": "biometrics/android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sdm660.rc",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 10191
+      },
+      "writtenOn": "2019-09-27T18:41:48Z",
+      "side": 1,
+      "message": "Should be mnt/vendor/persist because future mount bind remove of persist",
+      "revId": "6da390f7c357f2a033fd7f2d8b3af03d11c3b314",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
