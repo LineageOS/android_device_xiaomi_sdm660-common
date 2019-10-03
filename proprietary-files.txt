@@ -276,12 +276,6 @@ vendor/lib/vendor.qti.hardware.fm@1.0.so|ff103851777cad17b665e1ea2df37deebdcbee4
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|665bdb1a9d0368a0ed45c384c191e5a84c985c8e
 vendor/lib64/vendor.qti.hardware.fm@1.0.so|b1572c12b2e5701c488d65aa4651b8ff9437f6ee
 
-# Gatekeeper - from jasmine
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|119385ebd0a25b9bf20ce70375a62d806f11d2f1
-vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so|0f3b3809977a7048873b8b47f7533aa0e81491ea
-vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|b9afb923665e7714309c2b912e0663cdd781f818
-vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|1b8d5f58fe0a57906acf72b862c16a2521daa97b
-
 # GPS - from jasmine
 etc/permissions/com.qti.location.sdk.xml|cb68a566bd77dcc75bb7547199d528289fac01cb
 etc/permissions/izat.xt.srv.xml|a0f460056f27b5495a4d6e959eecf0e429c42a57
@@ -412,12 +406,6 @@ vendor/lib64/libtinyxml2_1.so|a2d9661cf2bb426e72ba15fd1a6a4eec940418a5
 # Graphics (Vulkan) - from LA.UM.7.2.r1-06900-sdm660.0
 vendor/lib/hw/vulkan.sdm660.so|1426694ac179ddd26d0dadf9cc54305cad0386a4
 vendor/lib64/hw/vulkan.sdm660.so|82b72990a737799894c291f8a3515d7d668a5423
-
-# Keymaster QTI - from jasmine
-vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so|c894b0847289c15ec2d201c69a66987fab1f8453
-vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so|6ca9ff030680738d0259b5b4f82fe57608d0d515
-vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc|573b7392c8997008204081165cfe81a11080745d
-vendor/bin/hw/android.hardware.keymaster@3.0-service-qti|85f2221137d88d2aeefa67d5d92c24defe0ff18d
 
 # Keymaster - from jasmine
 vendor/lib/libkeymasterutils.so|d83fbb2aed8f1eb8faefe5f99c71f0f4dd262aa6
