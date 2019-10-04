@@ -418,7 +418,6 @@ on property:init.svc.zygote=restarting
     stop ppd
 
 on charger
-    load_system_props
     start qcom-post-boot
     start vendor.hvdcp_opti
     setprop sys.usb.configfs 1
