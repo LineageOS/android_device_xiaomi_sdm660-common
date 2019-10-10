@@ -535,7 +535,6 @@ vendor/lib/libidl.so|e99e1bcbc5b2d659b340ae10859321ce79f1283b
 vendor/lib/libqcci_legacy.so|ba1f2f6729e77b5beefe1a6915f3791bbd97f9d7
 vendor/lib/libqdi.so|38d406cb08d201c933ac64076fb8b0916c57547f
 vendor/lib/libqdp.so|55af928a3e3b73e2406d4b43a6bb37e23f216ceb
-vendor/lib/libqmi_cci.so|0c6c6384a079e9a282c28721cdcee83515f13994
 vendor/lib/libqmi_client_helper.so|79210b37c9cca055e9e4bedc4749f9614a96c77e
 vendor/lib/libqmi_client_qmux.so|04eb90ab2da641df151f5846ddebff7a22620eac
 vendor/lib/libqmi_common_so.so|81861195c68aa8661069fbeff15237950e3730c4
@@ -550,7 +549,6 @@ vendor/lib64/libidl.so|236eff0c7ac2fd9dfaad9f09638d4648331cba3e
 vendor/lib64/libqcci_legacy.so|b08bc542978e18b9ffd42dac0ea73e1ce098af2d
 vendor/lib64/libqdi.so|89e38090d376c8751f538f8d913bb56b359b9301
 vendor/lib64/libqdp.so|432dfefa76ca67c4d68ee638460e4aeefc055957
-vendor/lib64/libqmi_cci.so|41e088628935371fdd6295b17d5cffe013b9674b
 vendor/lib64/libqmi_client_helper.so|44ad2c4ada38ad348254fc445d36c0f5b2c697ce
 vendor/lib64/libqmi_client_qmux.so|c9b9656a3a9b8507c9e41c2a4a52bac89d69eb83
 vendor/lib64/libqmi_common_so.so|e2cd492da985d44db4041797c868e431b0ff3581
@@ -559,6 +557,10 @@ vendor/lib64/libqmi_encdec.so|bfcab8d3b76b009e344dd943b6596f2b4db05631
 vendor/lib64/libqmi.so|46d8b9d23a2234dae212267984178ace1f5287f9
 vendor/lib64/libqmiservices.so|bda2de0d07d204d43e2f9f1b5b2ae2bb7409b99c
 vendor/lib64/vendor.qti.hardware.radio.deviceinfo@1.0.so|958291ed092ea6d08676d53c8be32b3560af9728
+
+# QMI - from LA.UM.8.2.r1-04000-sdm660.0
+vendor/lib/libqmi_cci.so|4dd4404fb26716ebdc9951074efc7102453511a6
+vendor/lib64/libqmi_cci.so|e6981c6c01d377979340366ba3259133bced350b
 
 # Radio - from LA.UM.7.2.r1-07600-sdm660.0
 -app/datastatusnotification/datastatusnotification.apk|51b0e41e9ef22c3838433dbc6c6cb82bb79b0756
