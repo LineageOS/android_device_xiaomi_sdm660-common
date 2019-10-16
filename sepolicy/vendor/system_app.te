@@ -1,3 +1,2 @@
 allow system_app vendor_default_prop:file { getattr open read };
 allow system_app wificond:binder call;
-add_service(system_app, goodixhw_service)
