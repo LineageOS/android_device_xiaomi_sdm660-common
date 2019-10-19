@@ -12,7 +12,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio.fluence.voicerec=false \
     persist.vendor.audio.hifi.int_codec=true \
     persist.vendor.audio.hw.binder.size_kbyte=1024 \
-    persist.vendor.audio.ras.enabled=false \
+    persist.vendor.audio.ras.enabled=true \
     persist.vendor.bt.a2dp_offload_cap=sbc-aac \
     ro.af.client_heap_size_kbyte=7168 \
     ro.audio.soundfx.dirac=true \
@@ -40,7 +40,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.use.sw.ape.decoder=true \
     vendor.audio_hal.period_size=192 \
     vendor.fm.a2dp.conc.disabled=true \
-    vendor.voice.path.for.pcm.voip=true
+    vendor.voice.path.for.pcm.voip=true \
+    vendor.audio.feature.compr_voip.enable=true \
+    vendor.audio.feature.kpi_optimize.enable=true \
+    vendor.audio.feature.fluence.enable=true \
+    vendor.audio.feature.custom_stereo.enable=true \
+    vendor.audio.feature.anc_headset.enable=true \
+    vendor.audio.feature.vbat.enabl=true \
+    vendor.audio.feature.fm.enable=true
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
