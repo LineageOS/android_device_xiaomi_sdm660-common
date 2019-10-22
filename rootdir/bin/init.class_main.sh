@@ -93,6 +93,7 @@ case "$baseband" in
             qcrild_status=false
         fi
     fi
+    qcrild_status=false
 
     if [ "$qcrild_status" = "true" ]; then
         # Make sure both rild, qcrild are not running at same time.

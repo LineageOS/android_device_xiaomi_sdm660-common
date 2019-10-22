@@ -583,10 +583,8 @@ vendor/bin/netmgrd|8af41218f025fdebf8fbe940a7b45a589a8153fc
 vendor/bin/port-bridge|e10ab85fc14e2f72817945d481a971894baebbad
 vendor/bin/rmt_storage|7153b4a7b268f8facd7fcb90b2dfb03a4bdd178e
 vendor/bin/tftp_server|55034bc977f8803c5a50132be8e39c9e72548727
-vendor/bin/hw/qcrild|28e546f7e3f1d267e6290117a4b81dd4aa781369
 vendor/etc/data/dsi_config.xml|f4861831fcb21d43e2a9ca12519155ebb8ac1407
 vendor/etc/data/netmgr_config.xml|97066d76dbfd358895c9d2c02723230cae6cfb1e
-vendor/etc/init/qcrild.rc|17cf4934bf443cf6469d8b3ff622eeb0e4a0aac6
 etc/permissions/embms.xml|5e1b492874c221a7e1188fc3a5369d32b3e67969
 etc/permissions/qcrilhook.xml|9fc58a3d54d20ac1d53bab14608815121aefbce5
 etc/permissions/telephonyservice.xml|b297c8a27443570377d78586b00198839ce326bb
@@ -614,7 +612,6 @@ vendor/lib64/libqcmaputils.so|4fb6b9c0d7ea5b7b21128b477929c92b3421a70d
 vendor/lib64/libqrtr.so|2523b0066f041c4d0efc19313df82fce510a2295
 vendor/lib64/libqsocket.so|d6989e3178dfefac2e40c1dbf22c1dd0809bb352
 vendor/lib64/libqcrilFramework.so|052e8cf1be3da733d08cdaf1d814bdfa723e6b1f
-vendor/lib64/libril-qc-hal-qmi.so|e7fa545d406236bc80ea656ea6c45c887e3dd1f6
 vendor/lib64/libril-qc-ltedirectdisc.so|82b1e442bfdfadfa9deea599b54c13635c825870
 vendor/lib64/libril-qc-qmi-1.so|de6df374988f73154f74fe93af776bfaf978825f
 vendor/lib64/libril-qc-radioconfig.so|11c6b5c14a893f70a6e46081604edd7df99f500f
@@ -622,7 +619,6 @@ vendor/lib64/libril-qcril-hook-oem.so|e8301d73d1269be7b8eb75f8696a35a2cb5ca637
 vendor/lib64/librilqmiservices.so|6aa5c516a7c800056c0a4d086c1a402448aeebca
 vendor/lib64/libsettings.so|34e620ba50430779eae04deba9511228072e2153
 vendor/lib64/libsystem_health_mon.so|1384ae7b77caa3434f3a2c21239d22201977f2cb
-vendor/lib64/qcrild_librilutils.so|2cf592c51133fde1b0a518a4c9ceb3413ff19b60
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so|57d718c5d3830d9758ee0ed46c7f1ed2ba834468
 vendor/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so|a6df03b820f183ff541e2da68d566602ce4691b4
 vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.0.so|129192c3d04f6924679fa161eed86e36b3bba777
