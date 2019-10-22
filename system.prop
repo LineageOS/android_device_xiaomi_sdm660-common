@@ -16,6 +16,7 @@ persist.rild.nitz_short_ons_2=
 persist.rild.nitz_short_ons_3=
 ril.subscription.types=NV,RUIM
 DEVICE_PROVISIONED=1
+persist.sys.fflag.override.settings_network_and_internet_v2=true
 
 #
 # Set network mode to (T/L/G/W/1X/EVDO, T/G/W/L) for 7+7 mode device on DSDS mode
