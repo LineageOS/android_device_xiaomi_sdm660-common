@@ -92,6 +92,8 @@ case "$baseband" in
         elif [ "$modem" = "TH" ]; then
             qcrild_status=false
         fi
+    else
+        qcrild_status=false
     fi
 
     if [ "$qcrild_status" = "true" ]; then
