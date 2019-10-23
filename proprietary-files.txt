@@ -627,6 +627,9 @@ vendor/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so|45056e8c960a1ee4780e32ad
 vendor/lib64/vendor.qti.hardware.radio.am@1.0.so|6cee0af6d760a4d6a6f439e0914e2f150f9c9bf6
 vendor/radio/qcril_database/qcril.db|52017df09c46cc8e72b83298162fc667aeec6879
 
+# Radio - from LA.UM.8.2.r1-04000-sdm660.0
+vendor/bin/adpl|d5724cd8b615ccb18c08ceb250f287ff8ea2809f
+
 # Radio - IMS - from LA.UM.7.2.r1-07600-sdm660.0
 -app/imssettings/imssettings.apk|4160315ea72de783650381278179309d6320343b
 -priv-app/ims/ims.apk|fea1403a111d67f28e989b8026adb4ed8dc87a5e
