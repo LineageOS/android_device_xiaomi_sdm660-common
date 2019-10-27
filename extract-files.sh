@@ -75,6 +75,9 @@ function blob_fixup() {
         patchelf --replace-needed libMiWatermark.so libMiWatermark_shim.so "${2}"
         patchelf --add-needed libcamera_sdm660_shim.so "${2}"
         ;;
+
+    etc/permissions/qti_libpermissions.xml)
+        sed -i 's|name="android.hidl.manager-V1.0-java"|name="android.hidl.manager@1.0-java"|g' "${2}"
     esac
 }
 
