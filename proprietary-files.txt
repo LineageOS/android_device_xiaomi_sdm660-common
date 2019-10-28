@@ -116,7 +116,7 @@ framework/com.quicinc.cne.server-V2.3-java.jar|76e36b94624139b1b845b8200e5bcb998
 framework/vendor.qti.data.factory-V1.0-java.jar|23a060c1197f21f4f3b0f77485d8ee387d740e5d
 framework/vendor.qti.data.factory-V1.1-java.jar|6e27d77fe3bb64eeadb301ff58b596c7b55adcb5
 framework/vendor.qti.hardware.data.qmi-V1.0-java.jar|94c3e0efe3bc51358fe9145ed1ff0708c262380d
--priv-app/CNEService/CNEService.apk|129bdeac308149092ac33a15ac1562facd10b731
+-priv-app/CNEService/CNEService.apk|d8579ab4633111f5473b3be8c9da487504908167
 vendor/bin/cnd|e517f12f396f78564c5cbce3fd4b344165422d7f
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml|578f3f8f56059bfdbef926bcc68d01c15e06951f
 vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml|1fb42c672a12b6660bdce3ea94e0c43719dd9de8
@@ -543,7 +543,7 @@ vendor/lib64/vendor.display.postproc@1.0.so|a0b727dba5baa7f057392176fff0d1944b62
 
 # QMI - from LA.UM.7.2.r1-07600-sdm660.0
 etc/permissions/qti_permissions.xml|e6ff4572352b1a4f91b6b9d7cbb1cad9924410a0
-etc/permissions/qti_libpermissions.xml|593bcb72cce68ceb0a70f50bcae7d460114e7c62
+etc/permissions/qti_libpermissions.xml|ef3c88495f2f61a2d16e1445113a9d80f8db0e0a
 vendor/bin/irsc_util|0cf3b4b0b1d9517f25a57f59e008152da76a96e4
 vendor/bin/pd-mapper|78e1f749605c48fd1e87e512d790438c47d10d1f
 vendor/lib/libdiag.so|f0479229cec2d924d71dea108df924d773c027c6
@@ -595,7 +595,7 @@ etc/permissions/qcrilhook.xml|9fc58a3d54d20ac1d53bab14608815121aefbce5
 etc/permissions/telephonyservice.xml|b297c8a27443570377d78586b00198839ce326bb
 framework/embmslibrary.jar|980832af89ed59120b7362ddb56d3120bb6b2239
 framework/qcrilhook.jar|8d6909220fce89c6b31478d368eb604100d37ac9
-framework/qti-telephony-common.jar|186ddea2243c45713df0738ec93d2f90158c6563
+framework/qti-telephony-common.jar|34c3e4d394d6127b4b7d6913c1a5e7d66919f5a0
 framework/QtiTelephonyServicelibrary.jar|1d60dcc9f087c431e570a8b58808a255c0ed6e05
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|28134bc382c32e9a5574e971ca8c4d011ddd85f6
 vendor/bin/qti|571c2982862f3669be2327a9041a99f14b9ec7ef
