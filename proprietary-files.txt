@@ -513,11 +513,11 @@ vendor/lib64/libqti-util.so|c78b855b3909b01071ced5fc898add769de4a5b6
 vendor/lib64/vendor.qti.hardware.perf@1.0.so|20ca4d33306f92791679071303021c1c752213f5
 vendor/lib64/vendor.qti.hardware.perf@2.0.so|3717b35807fd7b33dced6e311c3b609d57399363
 
-# Peripheral manager - from jasmine
-vendor/bin/pm-proxy|e5f8c69e8d231dd2665dc411b4e9d9e696c90187
-vendor/bin/pm-service|d9fefe2b7fec574ac4eb70a29303eeec819e449d
-vendor/lib/libperipheral_client.so|27b655cf18a1282594e5c91376b705fe31db6dab
-vendor/lib64/libperipheral_client.so|c4b0cb11e908b234a54a9f212c42ff4c37e37391
+# Peripheral manager - from jasmine V11.0.8.0.QDIMIXM
+vendor/bin/pm-proxy|bc4e972e3fe595b973197efe5114da8ff4339a59
+vendor/bin/pm-service|b0f77edfe04a3cc6284738196c0044e676d5eeb3
+vendor/lib/libperipheral_client.so|836411f7b88afe296b3f3090aab70fc5700ba434
+vendor/lib64/libperipheral_client.so|a0dd574c8af3135adae10ef49065fa765906db7a
 
 # Postprocessing - from jasmine V11.0.8.0.QDIMIXM
 vendor/bin/hw/vendor.display.color@1.0-service|b091c0d0f898959afedf8a3f83b5e97205fdfbc8
