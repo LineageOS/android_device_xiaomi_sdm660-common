@@ -490,24 +490,28 @@ vendor/lib64/libmlipay.so|6cacf75f4a7eb50cbb7de384a3cfc1702a3a5f4a
 vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so|d0bb854210433066945f9d6e7943d08a8435e746
 vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so|785984e3c3b30671b78624484899dd418979cb56
 
-# Perf - from jasmine
-vendor/bin/energy-awareness|c1ad0ec1e4171b59f166e580ef8ce7395ccb41a5
-vendor/bin/msm_irqbalance|117d7c8a8f6f12b3615ec8ab676231df93d277f1
-vendor/bin/hw/vendor.qti.hardware.perf@1.0-service|ecd8296c848b6470a75a6ae7b235d079cacee3a5
-vendor/etc/init/vendor.qti.hardware.perf@1.0-service.rc|b50182aadab2e31409df61c523d0fb914a394e43
-vendor/etc/perf/commonresourceconfigs.xml|20280e40ca43784316e96be09fe2d2296d79e972
-vendor/etc/perf/perfboostsconfig.xml|f4b70245319440d90381a95f298152f4b1797cb4
+# Perf - from LA.UM.8.2.r1-04000-sdm660.0
+vendor/bin/energy-awareness|6515fada09432a437d2ed591ce141bb70fb10a9e
+vendor/bin/msm_irqbalance|e917104fbd26c844d27ffb2b7ec4f665fdfb8b78
+vendor/bin/hw/vendor.qti.hardware.perf@2.0-service|57b1e050c9300a72baff8a19872b5a32ae9122e9
+vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc|cc8658db5e19f8e5e575fb986e7d38147e675f8d
+vendor/etc/perf/commonresourceconfigs.xml|1db765e3a8fb902bdb648091178a709c34f3fb16
+vendor/etc/perf/perfboostsconfig.xml|0fd6a9951f22cfe9f0942629f9d20da433604f14
 vendor/etc/perf/targetconfig.xml|376ae331df9d6c30b6208f25d04ae4ea11c0e2ea
-vendor/etc/perf/targetresourceconfigs.xml|2084cab83603da8fb1817902836ffb890dfc8a16
-vendor/lib/libqti-perfd-client.so|85ebe15611a5153a70fb48cce5ddd28ebdd5701c
-vendor/lib/libqti-perfd.so|c49b92951d6adabcda2c89e5f432eb6ab31234a3
-vendor/lib/libqti-util.so|d7f4c7588d562a17a379eda7403d487e088769ee
-vendor/lib/vendor.qti.hardware.perf@1.0.so|471b0b886fdbb69d204dc13c7f0ba653087f6c6d
-vendor/lib64/libperfgluelayer.so|afd773f4eb5aaa215706763c2376eaa9d1382143
-vendor/lib64/libqti-perfd-client.so|974abf576e3cbb13774671f8a80be5705063e5c2
-vendor/lib64/libqti-perfd.so|e0ddd0f14062d4d7c033a3f1fe0c810e14eedd55
-vendor/lib64/libqti-util.so|bdf3e4bd3ff525c76948230e26829a3999664a02
-vendor/lib64/vendor.qti.hardware.perf@1.0.so|133620816ff53fce37a99f5d10e170d58afb02c6
+vendor/etc/perf/targetresourceconfigs.xml|7132f1e9ce3bb21b4854b81d6e5d24409251f177
+vendor/lib/libperfconfig.so|b67b45def855f25663f093b1db76ebc0b88bb1fa
+vendor/lib/libqti-perfd-client.so|3fa11449bc068278b7a87aa55e161b015cd780f3
+vendor/lib/libqti-perfd.so|f09adaadc93019827274d4eb7725d09412911d82
+vendor/lib/libqti-util.so|e7882172095bb0df546d4c358744761aba932b5a
+vendor/lib/vendor.qti.hardware.perf@1.0.so|a528c00bbdea1c2a3c0754bef1cff0f94023a6ed
+vendor/lib/vendor.qti.hardware.perf@2.0.so|135bffe1f7cc29bffcf31382a8b39e6debfb28b4
+vendor/lib64/libperfconfig.so|0f3ab4aba588a1de0dfee7731f9e569c96b2cbcf
+vendor/lib64/libperfgluelayer.so|bfb9706a184fca4163e5a7cb5fcad11674958761
+vendor/lib64/libqti-perfd-client.so|ac1ca3a6ba93feee4c977cb6e54ca91ab3ce3b23
+vendor/lib64/libqti-perfd.so|184e4a124ef4f509ce377ce3941353948917e605
+vendor/lib64/libqti-util.so|c78b855b3909b01071ced5fc898add769de4a5b6
+vendor/lib64/vendor.qti.hardware.perf@1.0.so|dce6b3c8b7046f910b96de3d7d2e5967271c65fe
+vendor/lib64/vendor.qti.hardware.perf@2.0.so|f796f5a8c1713b3c36a6d890d1a89568359c4ddd
 
 # Peripheral manager - from jasmine
 vendor/bin/pm-proxy|e5f8c69e8d231dd2665dc411b4e9d9e696c90187
@@ -696,16 +700,12 @@ vendor/lib64/libsensor_reg.so|65bd2a012bb4518d3907036b737a9b2532cb6653
 vendor/lib64/libsensor1.so|847336e80f73f91a155ee7851f0d4f51f3b1031c
 vendor/lib64/sensors.ssc.so|93cd0cdf345367c5bb5185894d2b0c146f63bb09
 
-# Thermal - from jasmine
+# Thermal - from LA.UM.8.2.r1-04000-sdm660.0
 vendor/etc/thermal-engine.conf|c6c9312b7c7b52926cf7d0fc9bff933d90967100
-vendor/etc/thermal-engine-map.conf|474264ed357e02b7bb8b757024275a4cb8ff2929
-vendor/etc/thermal-engine-normal.conf|c7622e7d466b86266eab95d04eff3150f6946980
-vendor/etc/thermal-engine-video.conf|00960d517f33e34bfc9fb21c1a6f9120e4623e50
-vendor/bin/thermal-engine|d43e3868d87d43709ccba7a0aa0a7ec04ee6a285
--vendor/lib/libthermalclient.so|4579096edb376b06827f8e90a49480cf121030f0
--vendor/lib64/libthermalclient.so|54121e31e4a5170f8c50e36ddb57685b6c538a21
-vendor/lib64/libthermalioctl.so|0edca2e89fbd872d8595517254669ea7feb1e0b0
-vendor/lib64/libthermalfeature.so|829b2fc0aa8c863d4b4b331e0a2c00663e01efe6
+vendor/bin/thermal-engine|5b0deee2f319843c32b41be26ec6648cb6fc8560
+-vendor/lib/libthermalclient.so|c3aecc7610e8f5775a6f6af2ff7790bef74380a1
+-vendor/lib64/libthermalclient.so|84072e150722cc668320f07a75cb8695ce1a79b0
+vendor/lib64/libthermalioctl.so|883cb0b55fc2a0354a8c7f21139767e6a413b4ac
 
 # Time services - from LA.UM.8.2.r1-04000-sdm660.0
 -vendor/app/TimeService/TimeService.apk|4a37afd1395758d946580af184a738e3c657b1e2
