@@ -629,6 +629,7 @@ framework/com.qualcomm.qti.imscmservice-V2.1-java.jar|383b4ebc02790cc7c412291c3c
 framework/com.qualcomm.qti.uceservice-V2.0-java.jar|e5d4775844665027262b51be0953957a6467ed82
 framework/vendor.qti.ims.callinfo-V1.0-java.jar|4de04ec1a05305a1c7887c18dc69c3390227940e
 framework/vendor.qti.ims.rcsconfig-V1.0-java.jar|ec4d4225b08fbf4bfe22ac4aa9b04f16da00b54b
+lib64/libdiag_system.so|ed605155bb3013af94c88b585e7c365bcab5fd05
 lib64/lib-imscamera.so|0532b1ab97d05c2fbeafa684dd2a6dca3767cba6
 lib64/lib-imsvideocodec.so|cb3e35a4a60ec04082ae12717f1b1a934c82e36a
 lib64/lib-imsvt.so|20b2a65d2f051e13ca6fe76048da78c61459e037
