@@ -1,4 +1,3 @@
-type debugfs_wlan, debugfs_type, fs_type;
 type ir_dev_file, file_type;
 type sysfs_touchpanel, fs_type, sysfs_type;
 type sysfs_fingerprint, fs_type, sysfs_type;
