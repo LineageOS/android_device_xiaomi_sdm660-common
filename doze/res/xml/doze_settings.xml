@@ -21,10 +21,10 @@
         android:title="@string/tilt_sensor_title">
 
         <SwitchPreference
-            android:key="gesture_pick_up"
             android:defaultValue="false"
-            android:title="@string/pick_up_gesture_title"
+            android:key="gesture_pick_up"
             android:summary="@string/pick_up_gesture_summary"
+            android:title="@string/pick_up_gesture_title"
             android:icon="@drawable/ic_pickup" />
 
     </PreferenceCategory>
@@ -34,17 +34,17 @@
         android:title="@string/proximity_sensor_title">
 
         <SwitchPreference
-            android:key="gesture_hand_wave"
             android:defaultValue="false"
-            android:title="@string/hand_wave_gesture_title"
+            android:key="gesture_hand_wave"
             android:summary="@string/hand_wave_gesture_summary"
+            android:title="@string/hand_wave_gesture_title"
             android:icon="@drawable/ic_hand" />
 
         <SwitchPreference
-            android:key="gesture_pocket"
             android:defaultValue="false"
-            android:title="@string/pocket_gesture_title"
+            android:key="gesture_pocket"
             android:summary="@string/pocket_gesture_summary"
+            android:title="@string/pocket_gesture_title"
             android:icon="@drawable/ic_pocket" />
 
     </PreferenceCategory>

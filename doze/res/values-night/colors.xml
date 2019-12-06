@@ -15,6 +15,6 @@
 -->
 
 <resources>
-    <color name="switchbar_switch_track_tint">#82000000</color>
     <color name="switchbar_switch_thumb_tint">@android:color/black</color>
+    <color name="switchbar_switch_track_tint">#82000000</color>
 </resources>
