@@ -8,3 +8,5 @@ set_prop(thermal-engine, thermal_engine_prop);
 r_dir_file(thermal-engine sysfs_devfreq)
 r_dir_file(thermal-engine sysfs_graphics)
 r_dir_file(thermal-engine sysfs_thermal)
+
+dontaudit thermal-engine sysfs:dir read;
