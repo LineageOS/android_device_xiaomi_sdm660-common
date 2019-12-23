@@ -215,6 +215,9 @@ PRODUCT_PACKAGES += \
     qcom.fmradio \
     qcom.fmradio.xml
 
+PRODUCT_BOOT_JARS += \
+    qcom.fmradio
+
 PRODUCT_PACKAGES += \
     android.hardware.broadcastradio@1.0-impl
 
