@@ -23,6 +23,9 @@
 
 # Inherit proprietary files
 $(call inherit-product, vendor/xiaomi/sdm660-common/sdm660-common-vendor.mk)
+ifdef WITH_GAPPS
+$(call inherit-product-if-exists, vendor/gapps/common/common-vendor.mk)
+endif
 
 COMMON_PATH := device/xiaomi/sdm660-common
 

@@ -282,3 +282,6 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit the proprietary files
 -include vendor/xiaomi/sdm660-common/BoardConfigVendor.mk
+ifdef WITH_GAPPS
+-include vendor/gapps/common/BoardConfigVendor.mk
+endif
