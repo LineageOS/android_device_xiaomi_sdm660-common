@@ -47,7 +47,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.feature.custom_stereo.enable=true \
     vendor.audio.feature.anc_headset.enable=true \
     vendor.audio.feature.vbat.enabl=true \
-    vendor.audio.feature.fm.enable=true
+    vendor.audio.feature.fm.enable=true \
+    vendor.hw.fm.init=0
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
