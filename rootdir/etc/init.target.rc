@@ -71,7 +71,6 @@ on post-fs-data
 #D2SP has no hbtp feature
 #    mkdir /data/vendor/hbtp 0750 system system
 #end
-    mkdir /data/misc/seemp 0700 system system
     mkdir /data/vendor/tloc 0700 system drmrpc
 
 on boot
