@@ -31,7 +31,7 @@ namespace implementation {
 #define LEDS                       "/sys/class/leds/"
 #define LCD_LED                    LEDS "lcd-backlight/"
 #define BRIGHTNESS                 "brightness"
-#define RED                        LEDS "red/"
+#define WHITE                      LEDS "red/"
 #define BLINK                      "blink"
 #define DUTY_PCTS                  "duty_pcts"
 #define PAUSE_HI                   "pause_hi"
@@ -93,24 +93,24 @@ static void handleXiaomiBacklight(Type /*type*/, const LightState& state) {
 }
 
 static void setNotification(const LightState& state) {
-    uint32_t redBrightness, brightness;
+    uint32_t whiteBrightness, brightness;
 
     /*
      * Extract brightness from RGB.
      */
-    redBrightness   = (state.color >> 16) & 0xFF;
+    whiteBrightness = (state.color >> 16) & 0xFF;
     brightness      = (state.color >> 24) & 0xFF;
 
     /*
      * Scale RGB brightness if the Alpha brightness is not 0xFF.
      */
     if (brightness != 0xFF) {
-        redBrightness   = (redBrightness * brightness) / 0xFF;
+        whiteBrightness   = (whiteBrightness * brightness) / 0xFF;
     }
 
     /* Turn off the leds (initially) */
-    set(RED BRIGHTNESS, 0);
-    set(RED BLINK, 0);
+    set(WHITE BRIGHTNESS, 0);
+    set(WHITE BLINK, 0);
 
     if (state.flashMode == Flash::TIMED) {
         /*
@@ -126,15 +126,15 @@ static void setNotification(const LightState& state) {
             pauseHi = 0;
         }
 
-        /* Red(Actually White) */
-        set(RED BLINK, 1);
-        set(RED START_IDX, 0 * RAMP_STEPS);
-        set(RED DUTY_PCTS, getScaledRamp(redBrightness));
-        set(RED PAUSE_LO, pauseLo);
-        set(RED PAUSE_HI, pauseHi);
-        set(RED RAMP_STEP_MS, stepDuration);
+        /* White */
+        set(WHITE BLINK, 1);
+        set(WHITE START_IDX, 0 * RAMP_STEPS);
+        set(WHITE DUTY_PCTS, getScaledRamp(whiteBrightness));
+        set(WHITE PAUSE_LO, pauseLo);
+        set(WHITE PAUSE_HI, pauseHi);
+        set(WHITE RAMP_STEP_MS, stepDuration);
     } else {
-        set(RED BRIGHTNESS, redBrightness);
+        set(WHITE BRIGHTNESS, whiteBrightness);
     }
 }
 
