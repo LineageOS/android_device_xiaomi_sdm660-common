@@ -39,6 +39,9 @@ namespace implementation {
 #define RAMP_STEP_MS               "ramp_step_ms"
 #define START_IDX                  "start_idx"
 
+#define MAX_LED_BRIGHTNESS    255
+#define MAX_LCD_BRIGHTNESS    4095
+
 /*
  * 8 duty percent steps.
  */
@@ -71,6 +74,29 @@ static void set(std::string path, int value) {
     set(path, std::to_string(value));
 }
 
+static uint32_t getBrightness(const LightState& state) {
+    uint32_t alpha, red, green, blue;
+
+    /*
+     * Extract brightness from AARRGGBB.
+     */
+    alpha = (state.color >> 24) & 0xFF;
+    red = (state.color >> 16) & 0xFF;
+    green = (state.color >> 8) & 0xFF;
+    blue = state.color & 0xFF;
+
+    /*
+     * Scale RGB brightness if Alpha brightness is not 0xFF.
+     */
+    if (alpha != 0xFF) {
+        red = red * alpha / 0xFF;
+        green = green * alpha / 0xFF;
+        blue = blue * alpha / 0xFF;
+    }
+
+    return (77 * red + 150 * green + 29 * blue) >> 8;
+}
+
 /*
  * Scale each value of the brightness ramp according to the
  * brightness of the color.
@@ -86,30 +112,23 @@ static std::string getScaledRamp(uint32_t brightness) {
     return ramp;
 }
 
+static inline uint32_t scaleBrightness(uint32_t brightness, uint32_t maxBrightness) {
+    return brightness * maxBrightness / 0xFF;
+}
+
+static inline uint32_t getScaledBrightness(const LightState& state, uint32_t maxBrightness) {
+    return scaleBrightness(getBrightness(state), maxBrightness);
+}
+
 static void handleXiaomiBacklight(Type /*type*/, const LightState& state) {
-    uint32_t brightness = state.color & 0xFF;
-    brightness *= 16; // HACK
+    uint32_t brightness = getScaledBrightness(state, MAX_LCD_BRIGHTNESS);
     set(LCD_LED BRIGHTNESS, brightness);
 }
 
 static void setNotification(const LightState& state) {
-    uint32_t whiteBrightness, brightness;
-
-    /*
-     * Extract brightness from RGB.
-     */
-    whiteBrightness = (state.color >> 16) & 0xFF;
-    brightness      = (state.color >> 24) & 0xFF;
-
-    /*
-     * Scale RGB brightness if the Alpha brightness is not 0xFF.
-     */
-    if (brightness != 0xFF) {
-        whiteBrightness   = (whiteBrightness * brightness) / 0xFF;
-    }
+    uint32_t whiteBrightness = getScaledBrightness(state, MAX_LED_BRIGHTNESS);
 
     /* Turn off the leds (initially) */
-    set(WHITE BRIGHTNESS, 0);
     set(WHITE BLINK, 0);
 
     if (state.flashMode == Flash::TIMED) {
