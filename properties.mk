@@ -51,12 +51,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.bluetooth.soc=cherokee \
     vendor.qcom.bluetooth.soc=cherokee
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
-    camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.qualcomm.qti.qmmi \
     persist.vendor.bokeh.switch.lux=290 \
     persist.vendor.camera.HAL3.enabled=1 \
     persist.vendor.camera.depth.focus.cb=0 \
@@ -72,99 +70,34 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.imx376_ofilm.low.lux=290 \
     persist.vendor.imx376_sunny.light.lux=275 \
     persist.vendor.imx376_sunny.low.lux=290 \
-    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.qualcomm.qti.qmmi
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sf.enable_hwc_vds=1 \
-    debug.sf.hw=1 \
-    debug.sf.latch_unsignaled=1 \
-    persist.debug.wfd.enable=1 \
-    persist.sys.wfd.virtual=0 \
-    debug.gralloc.enable_fb_ubwc=1 \
-    vendor.gralloc.enable_fb_ubwc=1 \
-    persist.hwc.enable_vds=1 \
     ro.opengles.version=196610 \
-    ro.qualcomm.cabl=0 \
     ro.sf.lcd_density=440 \
-    vendor.display.disable_skip_validate=1 \
-    vendor.gralloc.enable_fb_ubwc=1 \
     vendor.video.disable.ubwc=1
 
-# GPS
+# FRP
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.overlay.izat.optin=rro
+    ro.frp.pst=/dev/block/bootdevice/by-name/frp \
 
-# Media
+# Perf
 PRODUCT_PROPERTY_OVERRIDES += \
-    media.aac_51_output_enabled=true \
-    media.stagefright.enable-aac=true \
-    media.stagefright.enable-http=true \
-    media.stagefright.enable-player=true \
-    media.stagefright.enable-qcp=true \
-    media.stagefright.enable-scan=true \
-    mm.enable.qcom_parser=13631471 \
-    mm.enable.smoothstreaming=true \
-    mmp.enable.3g2=true \
-    persist.mm.enable.prefetch=true \
-    vendor.vidc.dec.enable.downscalar=1 \
-    vendor.vidc.enc.disable.pq=false \
-    vendor.vidc.enc.disable_bframes=1 \
-    vidc.enc.dcvs.extra-buff-count=2 \
-    vidc.enc.target_support_bframe=1
-
-# Netflix custom property
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.netflix.bsp_rev=Q660-13149-1
-
-# QCOM
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.timed.enable=true \
-    persist.vendor.cne.feature=1 \
-    persist.vendor.dpm.feature=1 \
-    persist.vendor.qcomsysd.enabled=1 \
-    ro.vendor.at_library=libqti-at.so \
     ro.vendor.extension_library=libqti-perfd-client.so
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
-    DEVICE_PROVISIONED=1 \
-    persist.data.df.agg.dl_pkt=10 \
-    persist.data.df.agg.dl_size=4096 \
-    persist.data.df.dev_name=rmnet_usb0 \
-    persist.data.df.dl_mode=5 \
-    persist.data.df.iwlan_mux=9 \
-    persist.data.df.mux_count=8 \
-    persist.data.df.ul_mode=5 \
-    persist.data.netmgrd.qos.enable=true \
-    persist.data.wda.enable=true \
-    persist.radio.VT_CAM_INTERFACE=2 \
-    persist.radio.data_con_rprt=1 \
     persist.radio.multisim.config=dsds \
-    persist.radio.schd.cache=3500 \
-    persist.rmnet.data.enable=true \
-    persist.vendor.data.mode=concurrent \
-    persist.vendor.qti.telephony.vt_cam_interface=1 \
     persist.vendor.radio.apm_sim_not_pwdn=1 \
-    persist.vendor.radio.atfwd.start=true \
     persist.vendor.radio.custom_ecc=1 \
     persist.vendor.radio.rat_on=combine \
-    persist.vendor.radio.sib16_support=1 \
-    ril.subscription.types=NV,RUIM \
-    vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
-    ro.telephony.default_network=22,20 \
-    ro.vendor.use_data_netmgrd=true \
-    telephony.lteOnCdmaDevice=1
+    persist.vendor.radio.sib16_support=1
 
 # Sensor
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.sdk.sensors.gestures=false \
     ro.vendor.sensors.cmc=false \
-    ro.vendor.sensors.dev_ori=false \
-    ro.vendor.sensors.facing=false \
-    ro.vendor.sensors.mot_detect=true \
-    ro.vendor.sensors.pmd=true \
-    ro.vendor.sensors.sta_detect=true
+    ro.vendor.sensors.facing=false
 
 # Time
 PRODUCT_PROPERTY_OVERRIDES += \
