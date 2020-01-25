@@ -191,6 +191,7 @@ TARGET_USES_INTERACTION_BOOST := true
 
 # Properties
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
+TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
 
 # Recovery
 ifeq ($(AB_OTA_UPDATER), true)
