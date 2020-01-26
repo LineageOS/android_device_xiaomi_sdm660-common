@@ -719,7 +719,7 @@ etc/init/wfdservice.rc|311bfdd1675e56499662f39455536b75b78477bb
 etc/wfdconfig.xml|d07f6b0441c0aa8913865100239490fa8687a020
 etc/wfdconfigsink.xml|5b4a96f251fd83c2eee520d06bea2b5b159fcd36
 -framework/WfdCommon.jar|3440607d29511e1a671e565a2acc4d262e38a9fb
-lib/com.qualcomm.qti.wifidisplayhal@1.0.so|47e7949bceaff2d4ef11c51073fa2a173b82eddd
+lib/com.qualcomm.qti.wifidisplayhal@1.0.so:vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0.so|47e7949bceaff2d4ef11c51073fa2a173b82eddd
 lib/libFileMux.so|79661e6dffc90234ad446641264fd0fa1a3fe6ab
 lib/libmmosal.so|9464733295e192301b2577f52fab720e72c0d152
 lib/libmmparser_lite.so|2074a533fa775657c5c951c7130e0c9c266fac1d
