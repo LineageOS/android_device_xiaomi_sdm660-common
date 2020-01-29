@@ -31,7 +31,7 @@ namespace implementation {
 #define LEDS                       "/sys/class/leds/"
 #define LCD_LED                    LEDS "lcd-backlight/"
 #define BRIGHTNESS                 "brightness"
-#define WHITE                      LEDS "red/"
+#define WHITE                      LEDS "white/"
 #define BLINK                      "blink"
 #define DUTY_PCTS                  "duty_pcts"
 #define PAUSE_HI                   "pause_hi"
