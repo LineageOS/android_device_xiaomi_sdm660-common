@@ -179,7 +179,7 @@
          Spline interpolation is used to determine the auto-brightness
          backlight values for LUX levels between these control points.
 
-         Must be overridden in platform specific overlays -->
+         Must be overridden in platform specific overlays
     <integer-array name="config_autoBrightnessLevels">
         <item>10</item>
         <item>30</item>
@@ -188,13 +188,13 @@
         <item>150</item>
         <item>210</item>
         <item>255</item>
-    </integer-array>
+    </integer-array> -->
 
     <!-- Array of output values for LCD backlight corresponding to the LUX values
          in the config_autoBrightnessLevels array.  This array should have size one greater
          than the size of the config_autoBrightnessLevels array.
          The brightness values must be between 0 and 255 and be non-decreasing.
-         This must be overridden in platform specific overlays -->
+         This must be overridden in platform specific overlays
     <integer-array name="config_autoBrightnessLcdBacklightValues">
         <item>10</item>
         <item>20</item>
@@ -204,7 +204,7 @@
         <item>160</item>
         <item>200</item>
         <item>255</item>
-    </integer-array>
+    </integer-array> -->
 
     <!-- MMS user agent string -->
     <string name="config_mms_user_agent" translatable="false">Android-Mms/2.0</string>
@@ -270,14 +270,14 @@
     <string name="config_persistentDataPackageName" translatable="false">com.google.android.gms</string>
 
     <!--  Define optional package verifier name -->
-    <string name="config_optionalPackageVerifierName" translatable="false">seemp.service</string>
+    <!-- <string name="config_optionalPackageVerifierName" translatable="false">seemp.service</string> -->
 
     <!-- Whether the Unprocessed audio source supports the required frequency range and level -->
     <bool name="config_supportAudioSourceUnprocessed">true</bool>
 
     <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
         autodetected from the Configuration. -->
-    <bool name="config_showNavigationBar">true</bool>
+    <!-- <bool name="config_showNavigationBar">true</bool> -->
 
     <!-- Boolean indicating if current platform supports HFP inband ringing -->
     <bool name="config_bluetooth_hfp_inband_ringing_support">true</bool>
@@ -301,7 +301,7 @@
     <bool name="config_dynamic_bind_ims">true</bool>
 
     <!-- The name of the package that will hold the dialer role by default. -->
-    <string name="config_defaultDialer" translatable="false">org.codeaurora.dialer</string>
+    <!-- <string name="config_defaultDialer" translatable="false">org.codeaurora.dialer</string> -->
 
    <!-- Operating volatage for bluetooth controller. 0 by default-->
    <integer translatable="false" name="config_bluetooth_operating_voltage_mv">3300</integer>
