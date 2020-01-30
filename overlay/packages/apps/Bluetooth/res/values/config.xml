@@ -31,9 +31,7 @@
 -->
 <resources>
     <bool name="profile_supported_avrcp_controller">true</bool>
-    <bool name="profile_supported_a2dp_sink">true</bool>
     <bool name="profile_supported_sap">true</bool>
     <bool name="profile_supported_hid_device">false</bool>
-    <bool name="profile_supported_avrcp_target">false</bool>
     <bool name="profile_supported_ba">true</bool>
 </resources>
