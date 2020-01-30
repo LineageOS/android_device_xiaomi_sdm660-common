@@ -33,5 +33,4 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
          that should be used instead. A value of RIL_RADIO_TECHNOLOGY_UNKNOWN:0 means
          there is no replacement value and VoLTE is assumed to be supported -->
     <integer name="config_volte_replacement_rat">6</integer>
-    <bool name="config_dual_bar">true</bool>
 </resources>
