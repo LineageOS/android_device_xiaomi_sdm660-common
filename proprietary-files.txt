@@ -567,9 +567,9 @@ etc/permissions/qcrilhook.xml|9fc58a3d54d20ac1d53bab14608815121aefbce5
 etc/permissions/telephonyservice.xml|b297c8a27443570377d78586b00198839ce326bb
 framework/embmslibrary.jar|980832af89ed59120b7362ddb56d3120bb6b2239
 framework/qcrilhook.jar|8d6909220fce89c6b31478d368eb604100d37ac9
-framework/qti-telephony-common.jar|34c3e4d394d6127b4b7d6913c1a5e7d66919f5a0
+framework/qti-telephony-common.jar|186ddea2243c45713df0738ec93d2f90158c6563
 framework/QtiTelephonyServicelibrary.jar|1d60dcc9f087c431e570a8b58808a255c0ed6e05
--priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|28134bc382c32e9a5574e971ca8c4d011ddd85f6
+-priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|956a4017d0ba7f68e6d225e57b40d3b2bcbb4837
 vendor/bin/qti|571c2982862f3669be2327a9041a99f14b9ec7ef
 vendor/lib/libmdmdetect.so|82788663363f9aae0a9ede3f3e83dddecab48d51
 vendor/lib64/libconfigdb.so|5e024ae30e36af548cb68aa5d46f68a75fc4e022
@@ -598,7 +598,7 @@ vendor/lib64/librilqmiservices.so|21003f927042790d362bb600cdb7570e3bac41e0
 vendor/lib64/libsettings.so|4fe5326cd28a4116fdbbb0665c91fa2a0cf766b8
 vendor/lib64/libsystem_health_mon.so|1384ae7b77caa3434f3a2c21239d22201977f2cb
 vendor/lib64/qcrild_librilutils.so|2cf592c51133fde1b0a518a4c9ceb3413ff19b60
-vendor/lib64/vendor.qti.hardware.data.connection@1.0.so|938343c90ef29c642a455b5b938e42ce7719eecc
+vendor/lib64/vendor.qti.hardware.data.connection@1.0.so|ffa0b03c38b18947115ff8bfd858dceea25cb01d
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so|21e394c757c0af55f87be87e71e33bc212409cb8
 vendor/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so|4f83672930849cc2c0807798765e011d8fcb7eaf
 vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.0.so|68b7079642702416bdaf281c2ea829be4de9d96d
