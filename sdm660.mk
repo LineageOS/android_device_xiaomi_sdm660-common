@@ -105,6 +105,12 @@ PRODUCT_PACKAGES += \
     libvolumelistener \
     tinymix
 
+PRODUCT_PACKAGES += \
+    libsndmonitor \
+    libhdmiedid \
+    liba2dpoffload \
+    libhfp
+
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
     $(COMMON_PATH)/audio/audio_output_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_output_policy.conf \
