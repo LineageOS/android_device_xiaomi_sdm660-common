@@ -272,8 +272,7 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.sh \
     init.qti.fm.sh \
     init.target.rc \
-    ueventd.qcom.rc \
-    fstab.qcom
+    ueventd.qcom.rc
 
 # IPv6
 PRODUCT_PACKAGES += \
