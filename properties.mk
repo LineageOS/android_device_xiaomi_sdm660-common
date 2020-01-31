@@ -74,7 +74,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196610 \
-    ro.sf.lcd_density=440 \
     vendor.video.disable.ubwc=1
 
 # FRP
