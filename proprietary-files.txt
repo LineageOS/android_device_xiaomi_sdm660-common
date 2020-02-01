@@ -79,22 +79,6 @@ vendor/lib64/soundfx/libasphere.so|8b34e5df3f9070cdfead48f064a3135a719503c7
 vendor/lib64/soundfx/libqcbassboost.so|16f6b74db3b24ee82674c40498bcc1b319770b50
 vendor/lib64/soundfx/libqcvirt.so|6c21052f294765efb9188454a78791911da919dd
 
-# Audio Power Amplifier - from jasmine
-vendor/firmware/dbmd4_va_fw.bin|ee640f9f4e367d513f5fb7d95c85e226c9f75750
-vendor/firmware/tas2557_uCDSP.bin|d16fc1db241670307f5071e256c886ecd18d30f7
-vendor/firmware/tfa98xx.cnt|f8b5291feaebe7e3d18fda5d8960c313656b4a3a
-
-# Bluetooth - from jasmine
-vendor/bin/hci_qcomm_init|9c5b2e1a278b5dd5bce92bc66037c751a239e141
-vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|2db80f84068e915ec91fb33a79d26956acae4c21
-vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|a979981c55f3dcaf6cf2212e71b901ca4d58b959
-vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so|7e07086d0678c5c9cca762d50fd870c0b9f7021d
-vendor/lib/libbt-hidlclient.so|9630dd8ba424e8c6cbff071d798326804396ece4
-vendor/lib/libbtnv.so|655bda3c8b28b7dd4a453b88bdf51e251ab0d2fa
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|48b2d010c4708e8a13f7e2d10398c017e390eab4
-vendor/lib64/libbt-hidlclient.so|cd3513edb12f5e9ef1825c13a290d42e05b7a69b
-vendor/lib64/libbtnv.so|d567d41d60b98703f93ab15b2f8a894f0ebdc1fc
-
 # Bluetooth (aptX) - from crosshatch-user 10 QP1A.190711.020 5800535 release-keys
 product/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 product/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
@@ -155,9 +139,6 @@ vendor/lib64/vendor.qti.hardware.data.iwlan@1.0.so|c471659fc3fb56dcdcda183e08039
 vendor/lib64/vendor.qti.hardware.data.latency@1.0.so|ff7a319e51ddd4de14af28a84f7bca5e82547f6e
 vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so|90f1106f7462a9e01721e1159ed3301579adee07
 vendor/lib64/vendor.qti.latency@2.0.so|91a8b05b20485057ee9f42c55ce70207ef6af761
-
-# Consumerir - from jasmine
-vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.sdm660.so|ad5c1c43bd7af8828efa20b7435f756d85a813b5
 
 # DPM - from jasmine V11.0.8.0.QDIMIXM
 product/bin/dpmd|49caa8e7d8af8055efdd7ebc0d7f7d67bc600041
@@ -233,26 +214,6 @@ vendor/lib64/libStDrvInt.so|ff4ef2707ca8d219fd52b2ff629ffc62a43e2480
 vendor/lib64/libtzdrmgenprov.so|3dc9eb29ca0ec753a6e8b62560d3f46abd75edf2
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so|24c32756141125aabf94beb9674594075100f03e
 
-# Fingerprint firmware - from jasmine
-etc/firmware/goodixfp.b00|c5c3594b47dffb3aadb81abced42518d24637893
-etc/firmware/goodixfp.b01|35e6cc6108ee5f111741ef5d9f0b8e2ae1dfd63f
-etc/firmware/goodixfp.b02|ae3a00bbd74309450344a86e94f28b12af0a7c09
-etc/firmware/goodixfp.b03|04945a4a182c6f0fd4c6b5460c6c0437602740cd
-etc/firmware/goodixfp.b04|70f44536261bca100c3d410300e290f1e426d66e
-etc/firmware/goodixfp.b05|c179174508af81ad78b62d4a890abdba84d8c6f5
-etc/firmware/goodixfp.b06|c179174508af81ad78b62d4a890abdba84d8c6f5
-etc/firmware/goodixfp.b07|4983a219580ebdb1e2d0f8e914c3e1f28a1471a0
-etc/firmware/goodixfp.mdt|e525ffa879859bc8707529d251438a017a67777f
-vendor/firmware/fpctzappfingerprint.b00|7ddcb716f2537eabfd7dc741db41f313e602b783
-vendor/firmware/fpctzappfingerprint.b01|49829cd98d8585726800417635ef93638963c1a7
-vendor/firmware/fpctzappfingerprint.b02|fe14d0c23fd5ce28552cc288d7d351cb454ddcad
-vendor/firmware/fpctzappfingerprint.b03|f6de743222e1d850798cc7eece48b74463bf5ff4
-vendor/firmware/fpctzappfingerprint.b04|4c4b8a49b6e73d754c1c18a4b8533e0251d8b34e
-vendor/firmware/fpctzappfingerprint.b05|8b2ba9380050139fcb54d45c1978e54c080e6e2c
-vendor/firmware/fpctzappfingerprint.b06|8b2ba9380050139fcb54d45c1978e54c080e6e2c
-vendor/firmware/fpctzappfingerprint.b07|cb22bc47816a9c456fda2fdbd24486ea925fda42
-vendor/firmware/fpctzappfingerprint.mdt|f709249da0d08cdcf43f561782ac3d6695a154ec
-
 # FM - from jasmine
 lib/libfm-hci.so|b066567e07279bf59e78f7d318302dd706bb80fe
 lib/fm_helium.so|fb2a591a61122bbdf818ba9e6c931aa7c3d8a953
@@ -326,16 +287,6 @@ vendor/lib64/vendor.qti.gnss@1.1.so|b1b435c5ccb43d83c4f3ca8e3ce433bfcc55120c
 vendor/lib64/vendor.qti.gnss@1.2.so|aca1b814d21d59d1e12a7695071291ea6d6d9e45
 vendor/lib64/vendor.qti.gnss@2.0.so|3f4bf5412f470d9f5bab2ea8298b7df39011cb3d
 
-# Graphics firmware - from jasmine
-vendor/firmware/a512_zap.b00|85a7fc0008f9a2071d8b3d0cc212b19141633267
-vendor/firmware/a512_zap.b01|e0b7818182fac232182bfb70a4f43ec3e36779b9
-vendor/firmware/a512_zap.b02|33cc074ca840ae59f310a0e217aa7409afb30ac2
-vendor/firmware/a512_zap.elf|5dd4278559e9276f641bb121d7577d1a3ca3fcbb
-vendor/firmware/a512_zap.mdt|cc149dda6e109dd3f1f92e74349665a8c521ff79
-vendor/firmware/a530_pfp.fw|d027c70fde64241ec13160d09ee1b6c272974a4b
-vendor/firmware/a530_pm4.fw|b1cf625b5552b99839687f479c124ac5daca2ca2
-vendor/firmware/a540_gpmu.fw2|3530f10b4825a3b08c79e0bcfaf6471ec8422f24
-
 # Graphics - from jasmine V11.0.8.0.QDIMIXM
 vendor/lib64/egl/eglSubDriverAndroid.so|cd76c111254eaf809defcd40d4a1d6aa0f140c0e
 vendor/lib64/egl/libEGL_adreno.so|35c319854e143d7bcfacea9c499897ca846f1b3a
@@ -404,10 +355,6 @@ vendor/lib/libkeymasterdeviceutils.so|0765fc204e741b0ee6d863e5512b2615f9a43d1c
 vendor/lib64/libkeymasterutils.so|81e2d0e422bc5d6f0dd3f9d4f86ef086f9460205
 vendor/lib64/libkeymasterprovision.so|01c113e2ddc4e2e5a2f62544d3f393bc31f15c8e
 vendor/lib64/libkeymasterdeviceutils.so|ffbf8d30cc4d41b24c2646529992da81cd794b7e
-
-# Keystore - from jasmine
-vendor/lib/hw/keystore.sdm660.so|990bc5ca05914f3df85320a31b26fae325e174e3
-vendor/lib64/hw/keystore.sdm660.so|ffd01591bd8a864cb2dbc6fd2c01fbd36ae54051
 
 # Listen - from jasmine
 vendor/lib/hw/sound_trigger.primary.sdm660.so|22b58f782f34308c42bdacde2ee1aad3e740301e
@@ -673,28 +620,6 @@ vendor/lib64/vendor.qti.imsrtpservice@1.0.so|c003cfe2417aae4165de6829e0677509d43
 vendor/lib64/vendor.qti.ims.callinfo@1.0.so|bd41dfe38f8102cde0fce1d680e3dca10fdc8643
 vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so|fa2f426e4d46aa0e16fe39918eeff9f02a889552
 
-# Sensors - from jasmine
-vendor/bin/sensors.qti|b9dd01bb948aaf66c4d87c6c96e2a28078d1f14a
-vendor/lib/hw/activity_recognition.sdm660.so|d19f489569bea666b52ec6372287eb839defba4d
-vendor/lib/libsensor_reg.so|fbde29ba3450372d68afc71eef985a0edef68053
-vendor/lib/libsensor1.so|7a704dd0e2495cfb9702edf95a23e23975437f2c
-vendor/lib/sensors.ssc.so|dd9acd5b753fef47e6d206f39c8272a1656777b3
-vendor/lib64/hw/activity_recognition.sdm660.so|d1b84a0878482a59fac9fb7a416b81f2b0ac46d3
-vendor/lib64/libsensor_reg.so|65bd2a012bb4518d3907036b737a9b2532cb6653
-vendor/lib64/libsensor1.so|847336e80f73f91a155ee7851f0d4f51f3b1031c
-vendor/lib64/sensors.ssc.so|93cd0cdf345367c5bb5185894d2b0c146f63bb09
-
-# Thermal - from jasmine V11.0.8.0.QDIMIXM
-vendor/etc/thermal-engine.conf|c6c9312b7c7b52926cf7d0fc9bff933d90967100
-vendor/etc/thermal-engine-map.conf|474264ed357e02b7bb8b757024275a4cb8ff2929
-vendor/etc/thermal-engine-normal.conf|c7622e7d466b86266eab95d04eff3150f6946980
-vendor/etc/thermal-engine-video.conf|00960d517f33e34bfc9fb21c1a6f9120e4623e50
-vendor/bin/thermal-engine|2660c01a488abef8f50ff6380996809102c8215f
--vendor/lib/libthermalclient.so|c3aecc7610e8f5775a6f6af2ff7790bef74380a1
--vendor/lib64/libthermalclient.so|84072e150722cc668320f07a75cb8695ce1a79b0
-vendor/lib64/libthermalfeature.so|829b2fc0aa8c863d4b4b331e0a2c00663e01efe6
-vendor/lib64/libthermalioctl.so|2f0ee866e9059b1df9ca7b63815591354e7c77d8
-
 # Time services - from jasmine V11.0.8.0.QDIMIXM
 -vendor/app/TimeService/TimeService.apk;:timeservice_app_cert-legacy-um|27f9b81621c446baa8c37581d9bfbca2fd67b496
 vendor/bin/time_daemon|d647fa02dfb28b6cb981c4e77daee75a67406351
@@ -708,9 +633,6 @@ vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|c9d2461aec2f9b19aa157
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e1579374f001c94588fae7835a12ffc
 vendor/lib/vendor.qti.hardware.tui_comm@1.0.so|410b1fba3ac9c33b775706bd15a1a1505fc5e3e2
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|7c38141a0fa39bd6755a247917d7d854854bf1b1
-
-# VNDK
-vendor/lib/vndk/libbinder.so|094d702305c39f3988b9f586d47d4e8b10595ceb
 
 # Widevine - from jasmine
 vendor/bin/hw/android.hardware.drm@1.1-service.widevine|320749f5ce293176b9de747d13db7f026748b955
@@ -760,6 +682,3 @@ vendor/lib/libwfdhaldsmanager.so|00a7bf5c76ef2b1ee72fcaf6d3af6d7f09f31fae
 vendor/lib/libwfdhdcpcp.so|ba051604d914847b862d78af70d02abf85d86d4b
 vendor/lib/libwfdmmservice.so|87f9c841031272e6a3713abd85326f84d2ae52e5
 vendor/lib/libwfdmodulehdcpsession.so|97ffe7c96970fc5605f4f6414fc31ab7cec78bdc
-
-# Wifi - from jasmine
-vendor/bin/cnss-daemon|01ce2fa8f4852305bea2af33f59e41e7f05f44ad
