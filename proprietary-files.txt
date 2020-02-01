@@ -516,6 +516,13 @@ vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so|fa2f426e4d46aa0e16fe39918eeff9f02a8
 vendor/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so|d793d194ae9fe0fb63db4f7390c80b1c20bdd520
 vendor/lib64/vendor.qti.imsrtpservice@1.0.so|c003cfe2417aae4165de6829e0677509d43a6506
 
+# Soter - from jason V11.0.3.0.PCHCNXM
+-app/SoterService/SoterService.apk|b158b5ed87be1c7afafd62216ed200c1ba6b2d58
+vendor/bin/hw/vendor.qti.hardware.soter@1.0-service|6dd2ec266b2597210edf80f83f81ddc9a7893bbb
+vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc|76447a61ad5529949365eeb7e8ca000e48bd28ae
+vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so|6339cd6fafe713a8ec0e86c8dae4f4b0a186d458
+vendor/lib64/vendor.qti.hardware.soter@1.0.so|3cac6f020bb43c4d411afcc0669e45d89ec80400
+
 # Time services - from jasmine V11.0.8.0.QDIMIXM
 -vendor/app/TimeService/TimeService.apk;:timeservice_app_cert-legacy-um|27f9b81621c446baa8c37581d9bfbca2fd67b496
 vendor/bin/time_daemon|d647fa02dfb28b6cb981c4e77daee75a67406351
