@@ -27,11 +27,6 @@
 #
 #
 
-on early-init
-    mkdir /firmware 0771 system system
-    mkdir /bt_firmware 0771 system system
-    mkdir /dsp 0771 media media
-
 on init
     write /dev/stune/foreground/schedtune.sched_boost_no_override 1
     write /dev/stune/top-app/schedtune.sched_boost_no_override 1
@@ -53,11 +48,9 @@ on fs
     restorecon_recursive /mnt/vendor/persist
     write /sys/kernel/boot_adsp/boot 1
 
-    chmod 0664 /sys/class/thermal/thermal_message/sconfig
-    chown system system /sys/class/thermal/thermal_message/sconfig
-
 on post-fs
     start vendor.qseecomd
+    exec - system system -- /vendor/bin/init.qti.qseecomd.sh
     write /dev/ipa 1
 
 on init
@@ -68,10 +61,7 @@ on post-fs-data
     mkdir /data/tombstones/lpass 0771 system system
     mkdir /data/tombstones/wcnss 0771 system system
     mkdir /data/tombstones/dsps 0771 system system
-#D2SP has no hbtp feature
-#    mkdir /data/vendor/hbtp 0750 system system
-#end
-    mkdir /data/vendor/tloc 0700 system drmrpc
+    mkdir /data/vendor/hbtp 0750 system system
 
 on boot
     start rmt_storage
@@ -81,22 +71,36 @@ on boot
     write /dev/cpuset/foreground/boost/cpus 0-7
     write /dev/cpuset/background/cpus 0-7
     write /dev/cpuset/system-background/cpus 0-7
-    chown system system /mnt/vendor/persist/sensors/sns.reg
-#spk pa-cal lct-20180914   
-    chmod 0664 /dev/tiload_node
+    ####Regionalization config and prop files####
+    chmod 0644 /persist/speccfg/spec
+    chmod 0644 /persist/speccfg/devicetype
+    chmod 0644 /persist/speccfg/mbnversion
+    chmod 0644 /persist/speccfg/.not_triggered
+    chmod 0644 /persist/speccfg/vendor_ro.prop
+    chmod 0644 /persist/speccfg/vendor_persist.prop
+    chmod 0644 /persist/speccfg/submask
+    chmod 0644 /persist/speccfg/partition
+    chown system system /persist/speccfg/spec
+    chown system system /persist/speccfg/devicetype
+    chown system system /persist/speccfg/mbnversion
+    chown system system /persist/speccfg/.not_triggered
+    chown system system /persist/speccfg/vendor_ro.prop
+    chown system system /persist/speccfg/vendor_persist.prop
+    chown system system /persist/speccfg/submask
+    chown system system /persist/speccfg/partition
 
 #Create folder dump yuv images while debugging
     mkdir /data/vendor/camera 0770 camera camera
 
-# DT2W
-    chown system system /proc/wake_node
-    chmod 0660 /proc/wake_node
+#Load WLAN driver
+   insmod /vendor/lib/modules/qca_cld3_wlan.ko
 
 #USB controller configuration
     setprop vendor.usb.rndis.func.name "rndis_bam"
     setprop vendor.usb.rmnet.func.name "rmnet_bam"
     setprop vendor.usb.rmnet.inst.name "rmnet"
     setprop vendor.usb.dpl.inst.name "dpl"
+    setprop vendor.usb.qdss.inst.name "qdss"
     write /sys/module/usb_f_qcrndis/parameters/rndis_dl_max_xfer_size 15916
     setprop sys.usb.configfs 1
 
@@ -151,16 +155,11 @@ on property:sys.shutdown.requested=*
 #on property:sys.boot_completed=1
 #    start qrngp
 #
-
 service vendor.qseecomd /vendor/bin/qseecomd
    class core
    user root
    group root
 
-#service mpdecision /system/vendor/bin/mpdecision --avg_comp
-#   user root
-#   disabled
-#
 #service qosmgrd /system/bin/qosmgr /system/etc/qosmgr_rules.xml
 #   user system
 #   group system
@@ -183,11 +182,6 @@ service thermal-engine /system/vendor/bin/thermal-engine
 #    class core
 #    oneshot
 #
-service time_daemon /vendor/bin/time_daemon
-   class main
-   user system
-   group system
-   capabilities SYS_TIME
 
 service adsprpcd_root /vendor/bin/adsprpcd
    class main
@@ -199,13 +193,11 @@ service adsprpcd /vendor/bin/adsprpcd audiopd
    user media
    group media
 
-#D2SP has no hbtp feature
-#service hbtp /system/vendor/bin/hbtp_daemon
-#    class main
-#    user system
-#    group system
-#    disabled
-#end
+service hbtp /system/vendor/bin/hbtp_daemon
+    class main
+    user system
+    group system
+    disabled
 
 service audiod /system/vendor/bin/audiod
    class late_start
@@ -367,14 +359,14 @@ service vendor.pd_mapper /system/vendor/bin/pd-mapper
 on property:vendor.ims.QMI_DAEMON_STATUS=1
     start vendor.imsdatadaemon
 
-#on property:vold.decrypt=trigger_restart_framework
-#   start cnss_diag
+on property:vold.decrypt=trigger_restart_framework
+   start cnss_diag
 
 service cnss_diag /system/vendor/bin/cnss_diag -q -f -t HELIUM
    class main
    user system
    group system wifi inet sdcard_rw media_rw diag
-   disabled
+   oneshot
 
 service vendor.ims_rtp_daemon /system/vendor/bin/ims_rtp_daemon
    class main
@@ -447,23 +439,9 @@ service seempd /system/bin/seempd
     group system sdcard_rw
     socket seempdw dgram 0666 system system
 
-service vendor.tlocd /vendor/bin/tloc_daemon
-    class late_start
-    user system
-    group drmrpc gps net_raw
-
 service vendor.hvdcp_opti /system/vendor/bin/hvdcp_opti
      class main
      user root
      group system wakelock
 
-service smcinvoked /system/bin/smcinvoked
-   class main
-   user system
-   group system
 
-on property:persist.sys.display_srgb=1
-    write /sys/class/graphics/fb0/msm_fb_srgb 1
-
-on property:persist.sys.display_srgb=2
-    write /sys/class/graphics/fb0/msm_fb_srgb 2
