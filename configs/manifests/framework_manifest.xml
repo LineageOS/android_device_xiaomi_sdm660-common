@@ -1,4 +1,4 @@
-<!-- Copyright (c) 2018, The Linux Foundation. All rights reserved.
+<!-- Copyright (c) 2018-2019, The Linux Foundation. All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
@@ -34,6 +34,16 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <interface>
             <name>IAtCmdFwd</name>
             <instance>AtCmdFwdService</instance>
+        </interface>
+    </hal>
+    <!--Sigma hal-->
+    <hal format="hidl">
+        <name>vendor.qti.hardware.sigma_miracast</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>Isigma_miracast</name>
+            <instance>sigmahal</instance>
         </interface>
     </hal>
 </manifest>
