@@ -46,18 +46,18 @@ product/lib64/com.qualcomm.qti.ant@1.0.so|f40868ad57012f1a512b14c889bc8380652cc5
 vendor/lib64/com.qualcomm.qti.ant@1.0.so|181a8ab9b1d40705d3151821b53732c5566a2848
 vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so|aa08f9ec51392ed841f60ad08b7f083312c8c5ee
 
-# Audio - from jasmine
-vendor/lib/libacdb-fts.so|84ae662a62af6dbecd34898a3d40a65b90b1ab51
-vendor/lib/libacdbloader.so|828e76b60eead184c5e8401c72bbe6eea753fdf6
-vendor/lib/libacdbrtac.so|a22b2e0f26a37e22a9e83ecec88764322a5f54a4
-vendor/lib/libadiertac.so|25ae1c15162116bfb482e677343c33c6009ec62c
-vendor/lib/libadm.so|8db603b99c5c5fe1d2ca4fcc6663bf3eb0ff325d
-vendor/lib/libaudcal.so|04247071e078e8e182728f72241873ef2f27dffc
-vendor/lib/libqtigef.so|adf2bfcc4892e4d09d197e6643f639a429fea882
-vendor/lib/soundfx/libasphere.so|504dd71419302f4c49de59429c79f13710b713cf
-vendor/lib/soundfx/libqcbassboost.so|1edabd3cdf2ad7ad1078e8b9c745a9897a4a3020
-vendor/lib/soundfx/libqcreverb.so|a6cd5c47e29ed21a1a5e1aef14df38737d5fb991
-vendor/lib/soundfx/libqcvirt.so|e9dcee3e95ae4c32a904eebfaa9736509b127ea6
+# Audio - from jasmine V11.0.8.0.QDIMIXM
+vendor/lib/libacdb-fts.so|7e542fe676bdeaf0347dada88683a67cb861d96d
+vendor/lib/libacdbloader.so|ce2494e403e79552793d65f344ce9f79b52ba51a
+vendor/lib/libacdbrtac.so|bacaa968f7da0ed014e6594b928823f0d08a06e6
+vendor/lib/libadiertac.so|ebdd9b6c4e64b38ef39401b1a1e03696583440dc
+vendor/lib/libadm.so|d7c7d22c4fe53312e1e49fbffd587b25fdf0ac89
+vendor/lib/libaudcal.so|f935b8c33972b8cee40f760478f1b64a54705683
+vendor/lib/libqtigef.so|e0c548247e923f1e972e7765a678566dd874afb7
+vendor/lib/soundfx/libasphere.so|b1b26f99d9fbfe75f109349de5505ca39ccd4c8c
+vendor/lib/soundfx/libqcbassboost.so|73339450a42b598a3c13e67b3d4a2266d986fea2
+vendor/lib/soundfx/libqcreverb.so|eb437cd5e264b1adb4546c6a5617c5da17be5839
+vendor/lib/soundfx/libqcvirt.so|ee9eaa81bb24ac0379e06b44ef257967a4d32614
 
 # Bluetooth (aptX) - from crosshatch-user 10 QP1A.190711.020 5800535 release-keys
 product/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
