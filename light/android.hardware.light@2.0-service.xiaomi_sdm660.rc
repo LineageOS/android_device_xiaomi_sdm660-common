@@ -9,6 +9,10 @@ on boot
     chown system system /sys/class/leds/white/ramp_step_ms
     chown system system /sys/class/leds/white/start_idx
 
+    chown system system /sys/class/leds/button-backlight/max_brightness
+    chown system system /sys/class/leds/button-backlight1/brightness
+    chown system system /sys/class/leds/button-backlight1/max_brightness
+
     chown system system /sys/class/leds/lcd-backlight/max_brightness
 
     start vendor.light-hal-2-0
