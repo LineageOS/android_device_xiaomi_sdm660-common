@@ -1,5 +1,4 @@
 persist.camera.                     u:object_r:camera_prop:s0
-persist.vendor.camera.              u:object_r:camera_prop:s0
 ro.boot.fpsensor u:object_r:hal_fingerprint_prop:s0
 sys.fp.goodix	u:object_r:hal_fingerprint_prop:s0
 sys.fp.vendor   u:object_r:hal_fingerprint_prop:s0

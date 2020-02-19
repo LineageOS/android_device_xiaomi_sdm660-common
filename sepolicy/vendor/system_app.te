@@ -1,2 +1,0 @@
-allow system_app vendor_default_prop:file { getattr open read };
-allow system_app wificond:binder call;
