@@ -2,5 +2,4 @@ type debugfs_wlan, debugfs_type, fs_type;
 type ir_dev_file, file_type;
 type proc_dt2w, fs_type, proc_type;
 type fingerprint_sysfs, fs_type, sysfs_type;
-type sysfs_light, fs_type, sysfs_type;
 type thermal_data_file, file_type, data_file_type;
