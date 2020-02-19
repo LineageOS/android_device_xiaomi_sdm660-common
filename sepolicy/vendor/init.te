@@ -1,5 +1,0 @@
-allow init hwservicemanager:binder { call transfer };
-allow init ipa_dev:chr_file open;
-allow init ion_device:chr_file ioctl;
-allow init property_socket:sock_file write;
-allow init sysfs_dm:file { open write };

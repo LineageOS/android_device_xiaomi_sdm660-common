@@ -5,7 +5,7 @@
 /sys/devices/soc/soc:fpc1020(/.*)?		u:object_r:fingerprint_sysfs:s0
 
 # For Goodix fingerprint
-/dev/goodix_fp*                                 u:object_r:fingerprint_device:s0
+/dev/goodix_fp                                  u:object_r:fingerprint_device:s0
 
 # Goodix Fingerprint data
 /data/gf_data(/.*)?                             u:object_r:fingerprintd_data_file:s0
@@ -45,9 +45,6 @@
 
 # RTC
 /sys/devices/soc/800f000.qcom,spmi/spmi-0/spmi0-00/800f000.qcom,spmi:qcom,pm660@0:qcom,pm660_rtc/rtc/rtc0(/.*)? u:object_r:sysfs_rtc:s0
-
-# Shell Script
-/(vendor|system/vendor)/bin/init\.goodix\.sh    u:object_r:init_fingerprint_exec:s0
 
 # Thermal
 /data/vendor/thermal(/.*)?                      u:object_r:thermal_data_file:s0

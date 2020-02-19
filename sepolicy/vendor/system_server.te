@@ -1,5 +1,2 @@
 allow system_server vendor_keylayout_file:dir search;
 allow system_server vendor_keylayout_file:file r_file_perms;
-allow system_server sysfs_vibrator:file rw_file_perms;
-allow system_server sysfs_rtc:file r_file_perms;
-allow system_server fpnav_hwservice:hwservice_manager { add find };
