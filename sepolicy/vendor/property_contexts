@@ -10,6 +10,8 @@ cameradaemon.SaveMemAtBoot              u:object_r:vendor_default_prop:s0
 cpp.set.clock                           u:object_r:vendor_default_prop:s0
 disable.cpp.power.collapse              u:object_r:vendor_default_prop:s0
 persist.camera.                         u:object_r:vendor_default_prop:s0
+persist.vendor.camera.                  u:object_r:camera_prop:s0
+vendor.camera.eis.gyro_name             u:object_r:camera_prop:s0
 
 # Fingerprint
 fpc_kpi                                 u:object_r:vendor_default_prop:s0
