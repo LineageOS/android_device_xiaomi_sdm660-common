@@ -441,7 +441,9 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-service
 
 # VNDK
-PRODUCT_PACKAGES += vndk_package
+PRODUCT_PACKAGES += \
+    vndk-ext \
+    vndk_package
 
 # Wifi
 PRODUCT_PACKAGES += \
