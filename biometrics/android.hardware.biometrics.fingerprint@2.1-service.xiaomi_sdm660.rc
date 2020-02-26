@@ -2,6 +2,36 @@ on init
     chown system system /dev/goodix_fp
     chmod 0644 /dev/goodix_fp
 
+    chown system system /sys/bus/platform/devices/soc:fingerprint_fpc/irq
+    chown system system /sys/bus/platform/devices/soc:fingerprint_fpc/irq_enable
+    chown system system /sys/bus/platform/devices/soc:fingerprint_fpc/wakeup_enable
+    chown system system /sys/bus/platform/devices/soc:fingerprint_fpc/hw_reset
+    chown system system /sys/bus/platform/devices/soc:fingerprint_fpc/device_prepare
+    chown system system /sys/bus/platform/devices/soc:fingerprint_fpc/fingerdown_wait
+    chown system system /sys/bus/platform/devices/soc:fingerprint_fpc/vendor
+    chown system system /sys/bus/platform/devices/soc:fingerprint_fpc/proximity_state
+    chown system system /sys/bus/platform/devices/soc:fingerprint_goodix/proximity_state
+    chmod 0700 /sys/bus/platform/devices/soc:fingerprint_fpc/irq
+    chmod 0700 /sys/bus/platform/devices/soc:fingerprint_fpc/wakeup_enable
+    chmod 0700 /sys/bus/platform/devices/soc:fingerprint_fpc/hw_reset
+    chmod 0700 /sys/bus/platform/devices/soc:fingerprint_fpc/device_prepare
+    chmod 0700 /sys/bus/platform/devices/soc:fingerprint_fpc/vendor
+
+    chown system system /sys/bus/platform/devices/soc:fpc1020/irq
+    chown system system /sys/bus/platform/devices/soc:fpc1020/irq_enable
+    chown system system /sys/bus/platform/devices/soc:fpc1020/wakeup_enable
+    chown system system /sys/bus/platform/devices/soc:fpc1020/hw_reset
+    chown system system /sys/bus/platform/devices/soc:fpc1020/device_prepare
+    chown system system /sys/bus/platform/devices/soc:fpc1020/fingerdown_wait
+    chown system system /sys/bus/platform/devices/soc:fpc1020/vendor
+    chown system system /sys/bus/platform/devices/soc:fpc1020/proximity_state
+    chown system system /sys/bus/platform/devices/soc:goodix_fp/proximity_state
+    chmod 0700 /sys/bus/platform/devices/soc:fpc1020/irq
+    chmod 0700 /sys/bus/platform/devices/soc:fpc1020/wakeup_enable
+    chmod 0700 /sys/bus/platform/devices/soc:fpc1020/hw_reset
+    chmod 0700 /sys/bus/platform/devices/soc:fpc1020/device_prepare
+    chmod 0700 /sys/bus/platform/devices/soc:fpc1020/vendor
+
 on post-fs-data
     mkdir /data/vendor/fpc 0770 system system
     mkdir /data/vendor/goodix 0770 system system

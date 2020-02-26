@@ -104,6 +104,11 @@ on boot
     write /sys/module/usb_f_qcrndis/parameters/rndis_dl_max_xfer_size 15916
     setprop sys.usb.configfs 1
 
+    # Touchpanel
+    chown system system /sys/touchpanel/capacitive_keys
+    chown system system /sys/touchpanel/double_tap
+    chown system system /sys/touchpanel/reversed_keys
+
 #Peripheral manager
 service vendor.per_mgr /system/vendor/bin/pm-service
     class core
