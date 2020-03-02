@@ -158,12 +158,6 @@ PRODUCT_PACKAGES += \
     libdng_sdk.vendor \
     vendor.qti.hardware.camera.device@1.0:64
 
-# Connectivity Engine support (CNE)
-PRODUCT_PACKAGES += \
-    cneapiclient \
-    com.quicinc.cne \
-    services-ext
-
 # Configstore
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.0-service
