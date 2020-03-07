@@ -87,14 +87,43 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.qcom.bluetooth.soc=cherokee
 
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    vendor.bluetooth.soc=cherokee
+
+# Camera
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.camera.preview.ubwc=0 \
+    vendor.video.disable.ubwc=1 \
+    vidc.enc.dcvs.extra-buff-count=2
+
+# CNE
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    persist.vendor.cne.feature=1
+
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
+    debug.sf.enable_hwc_vds=1 \
+    debug.sf.hw=1 \
+    debug.sf.latch_unsignaled=1 \
     ro.opengles.version=196610 \
-    vendor.video.disable.ubwc=1
+    ro.vendor.display.cabl=0 \
+    vendor.display.disable_skip_validate=1 \
+    vendor.display.enable_default_color_mode=1 \
+    vendor.gralloc.enable_fb_ubwc=1
 
 # FRP
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.frp.pst=/dev/block/bootdevice/by-name/frp \
+    ro.frp.pst=/dev/block/bootdevice/by-name/frp
+
+# Media
+PRODUCT_PROPERTY_OVERRIDES += \
+    media.stagefright.thumbnail.prefer_hw_codecs=true \
+    vendor.vidc.dec.enable.downscalar=1 \
+    vendor.vidc.enc.disable_bframes=1
+
+# Netflix
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.netflix.bsp_rev=Q660-13149-1
 
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -103,17 +132,35 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.multisim.config=dsds \
+    persist.vendor.data.mode=concurrent \
     persist.vendor.radio.apm_sim_not_pwdn=1 \
+    persist.vendor.radio.atfwd.start=true \
     persist.vendor.radio.custom_ecc=1 \
     persist.vendor.radio.rat_on=combine \
-    persist.vendor.radio.sib16_support=1
+    persist.vendor.radio.sib16_support=1 \
+    ro.telephony.default_network=22,22 \
+    ro.vendor.use_data_netmgrd=true
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    DEVICE_PROVISIONED=1 \
+    persist.sys.fflag.override.settings_network_and_internet_v2=true \
+    ril.subscription.types=NV,RUIM \
+    telephony.lteOnCdmaDevice=1
 
 # Sensor
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.sdk.sensors.gestures=false \
     ro.vendor.sensors.cmc=false \
-    ro.vendor.sensors.facing=false
+    ro.vendor.sensors.facing=false \
+    ro.vendor.sensors.dev_ori=true \
+    ro.vendor.sensors.pmd=true \
+    ro.vendor.sensors.sta_detect=true \
+    ro.vendor.sensors.mot_detect=true
 
 # Time
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.delta_time.enable=true
+
+# WFD
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    persist.debug.wfd.enable=1
