@@ -543,10 +543,10 @@ vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|a0d692fe10ef9dc447949
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e1579374f001c94588fae7835a12ffc
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|e47baed52f1c0637de34fa55e45a86b4b412a672
 
-# Widevine - from jasmine
-vendor/bin/hw/android.hardware.drm@1.1-service.widevine|320749f5ce293176b9de747d13db7f026748b955
-vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc|458dd241f5f8536eccb57f012b3eba0061736e8e
-vendor/lib64/libwvhidl.so|7c0a796c06a5ed705fab27f91db248fe385492bf
+# Widevine - from jasmine V11.0.8.0.QDIMIXM
+vendor/bin/hw/android.hardware.drm@1.2-service.widevine|1aed116c6cd73ee0c89a5eec050afab5c64b9f87
+vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|f206aecdd6843795f6448bb6d44d2244b3e48815
+vendor/lib64/libwvhidl.so|c5ee149419d556824295b44b9aa00d19ffae56b2
 
 # WiFi Display - from jasmine V11.0.8.0.QDIMIXM
 bin/wfdservice|d9cccfd6ca14a1d83117533296d6cac2c139c310
