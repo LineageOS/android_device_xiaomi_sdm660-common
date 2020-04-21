@@ -255,17 +255,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
            <instance>default</instance>
        </interface>
     </hal>
-    <!--UICC secure element -->
-   <hal format="hidl">
-       <name>android.hardware.secure_element</name>
-       <transport>hwbinder</transport>
-       <version>1.0</version>
-       <interface>
-           <name>ISecureElement</name>
-           <instance>SIM1</instance>
-           <instance>SIM2</instance>
-       </interface>
-    </hal>
     <!-- RIL UIM REMOTE CLIENT -->
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.uim_remote_client</name>
