@@ -26,9 +26,6 @@ COMMON_PATH := device/xiaomi/sdm660-common
 
 BOARD_VENDOR := xiaomi
 
-# Use Snapdragon LLVM, if available
-TARGET_USE_SDCLANG := true
-
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := sdm660
 TARGET_NO_BOOTLOADER := true
