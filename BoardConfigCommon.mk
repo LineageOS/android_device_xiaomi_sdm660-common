@@ -129,6 +129,12 @@ ifeq ($(HOST_OS),linux)
   endif
 endif
 
+# FM
+ifeq ($(BOARD_HAVE_QCOM_FM),true)
+AUDIO_FEATURE_ENABLED_FM_POWER_OPT := true
+BOARD_HAS_QCA_FM_SOC := cherokee
+endif
+
 # GPS
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
 LOC_HIDL_VERSION := 3.0
