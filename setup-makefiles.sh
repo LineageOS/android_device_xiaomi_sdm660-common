@@ -43,6 +43,10 @@ write_headers "jasmine_sprout jason lavender twolip wayne"
 
 write_makefiles "$MY_DIR"/proprietary-files.txt true
 
+printf "\n%s\n" "ifeq (\$(BOARD_HAVE_QCOM_FM),true)" >> "$PRODUCTMK"
+write_makefiles "$MY_DIR"/proprietary-files-fm.txt true
+echo "endif" >> "$PRODUCTMK"
+
 # Finish
 write_footers
 
