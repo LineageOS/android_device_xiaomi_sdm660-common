@@ -1,2 +1,4 @@
 get_prop({ appdomain -isolated_app }, hal_fingerprint_prop)
 get_prop({ appdomain -isolated_app }, mlipay_prop)
+
+allow { appdomain -isolated_app } adsprpcd_file:dir search;

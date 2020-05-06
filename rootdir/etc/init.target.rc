@@ -46,6 +46,7 @@ on fs
     mkdir /mnt/vendor/persist/data 0700 system system
     mkdir /mnt/vendor/persist/bms 0700 root system
     restorecon_recursive /mnt/vendor/persist
+    restorecon /vendor/dsp/cdsp/fastrpc_shell_3
     write /sys/kernel/boot_adsp/boot 1
 
 on post-fs
