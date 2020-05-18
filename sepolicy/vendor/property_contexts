@@ -37,10 +37,10 @@ persist.vendor.sys.pay.                 u:object_r:mlipay_prop:s0
 persist.vendor.sys.provision.status     u:object_r:mlipay_prop:s0
 
 # RIL
-ro.build.software.version               u:object_r:exported_radio_prop:s0
-ro.fota.oem                             u:object_r:exported_radio_prop:s0
-ro.miui.                                u:object_r:exported_radio_prop:s0
-ro.product.mod_device                   u:object_r:exported_radio_prop:s0
+ro.build.software.version               u:object_r:telephony_status_prop:s0
+ro.fota.oem                             u:object_r:telephony_status_prop:s0
+ro.miui.                                u:object_r:telephony_status_prop:s0
+ro.product.mod_device                   u:object_r:telephony_status_prop:s0
 
 # Thermal engine
 persist.sys.thermal.                    u:object_r:thermal_engine_prop:s0
