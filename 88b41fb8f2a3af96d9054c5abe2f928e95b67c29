@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b3f4c584_e9704184",
+        "filename": "rootdir/etc/init.qcom.post_boot.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 537,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2020-05-24T02:14:18Z",
+      "side": 1,
+      "message": "this is not enabled on 660 so we don\u0027t need to touch it",
+      "range": {
+        "startLine": 537,
+        "startChar": 12,
+        "endLine": 537,
+        "endChar": 26
+      },
+      "revId": "88b41fb8f2a3af96d9054c5abe2f928e95b67c29",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
