@@ -22,6 +22,30 @@
       "revId": "88b41fb8f2a3af96d9054c5abe2f928e95b67c29",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7d2191e6_0bc7f6f3",
+        "filename": "rootdir/etc/init.qcom.post_boot.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 537,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2020-05-24T14:58:59Z",
+      "side": 1,
+      "message": "It is enabled, the filter above only excludes sdm845 msm8998 and msm8996",
+      "parentUuid": "b3f4c584_e9704184",
+      "range": {
+        "startLine": 537,
+        "startChar": 12,
+        "endLine": 537,
+        "endChar": 26
+      },
+      "revId": "88b41fb8f2a3af96d9054c5abe2f928e95b67c29",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
