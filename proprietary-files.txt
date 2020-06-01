@@ -342,6 +342,7 @@ vendor/bin/msm_irqbalance|e917104fbd26c844d27ffb2b7ec4f665fdfb8b78
 vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc|cc8658db5e19f8e5e575fb986e7d38147e675f8d
 vendor/etc/perf/commonresourceconfigs.xml|1db765e3a8fb902bdb648091178a709c34f3fb16
 vendor/etc/perf/perfboostsconfig.xml|79662db6bf1ceea7a27ab2b89bb41d3e38005d90
+vendor/etc/perf/perfconfigstore.xml|760248b82c4f1ad8b0e7ed1924d2b198229e118d
 vendor/etc/perf/targetconfig.xml|376ae331df9d6c30b6208f25d04ae4ea11c0e2ea
 vendor/etc/perf/targetresourceconfigs.xml|7132f1e9ce3bb21b4854b81d6e5d24409251f177
 vendor/lib/libperfconfig.so|519fe27ba0fcc96704cd7930cae62547c60c318a
