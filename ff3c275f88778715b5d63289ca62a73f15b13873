@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "57be8c0f_149fcc58",
+        "filename": "proprietary-files-fm.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2020-06-05T19:30:07Z",
+      "side": 1,
+      "message": "Is this used? There is no rc entry for it and no script runs it",
+      "range": {
+        "startLine": 5,
+        "startChar": 11,
+        "endLine": 5,
+        "endChar": 26
+      },
+      "revId": "ff3c275f88778715b5d63289ca62a73f15b13873",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
