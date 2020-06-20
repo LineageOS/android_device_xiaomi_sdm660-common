@@ -1,4 +1,4 @@
-# jasmine package version: V11.0.10.0.QDIMIXM, unless stated otherwise
+# jasmine package version: V11.0.11.0.QDIMIXM, unless stated otherwise
 
 # ADSP - from jasmine
 vendor/bin/adsprpcd|0cdd541ee0a365c5dccd0613e495611f4d0f6607
@@ -450,10 +450,10 @@ vendor/lib64/libnlnetmgr.so|c5bbb11161b7673e02a0b2b9cec06565c8c46372
 vendor/lib64/libpdmapper.so|913532702507b64ef3384c68c958a29b89ebcef2
 vendor/lib64/libpdnotifier.so|41b80e0e26a2bdd324af8382b3384289c7b07c79
 vendor/lib64/libqcmaputils.so|eacd5bec984bae24bda1f041975357b2d72edfc2
-vendor/lib64/libqcrilFramework.so|3ea985b5e2d77aa5629429e6a535c485236e5b01
+vendor/lib64/libqcrilFramework.so|033b66e7c3351268c576b8a2e7906dd08fc70567
 vendor/lib64/libqrtr.so|9addbb504885bb2a82e0b19e38077742bc48c10f
 vendor/lib64/libqsocket.so|dd4067d7a79565f11034277d4ef46698cd17c19b
-vendor/lib64/libril-qc-hal-qmi.so|fd8722a8704bc4d0787c751db0e225398fd64516
+vendor/lib64/libril-qc-hal-qmi.so|c04e29a4eafb48b865bbfbecfb9c3bcba7fb279e
 vendor/lib64/libril-qc-ltedirectdisc.so|1bb5daeb65a48eb5dbac5db7f1fe8975fcb6be28
 vendor/lib64/libril-qc-radioconfig.so|c37def8f254404839a413918e94c4aab4d6de137
 vendor/lib64/libril-qcril-hook-oem.so|bc216efecb94b352b1d9be890bbcf5fc29e2f830
@@ -461,8 +461,8 @@ vendor/lib64/librilqmiservices.so|716b1b545d8446c6e66e03291bf42fe60683ba1a
 vendor/lib64/libsettings.so|1be7d1d33e562ff1b2db672d394100c0aa747b19
 vendor/lib64/libsystem_health_mon.so|a329ee0593f1811528a2d6fa9661160cbd1cc405
 vendor/lib64/qcrild_librilutils.so|314a90af94477d973109f0162a0a0d0d38ae1226
-vendor/lib64/qtibus.so|0d9c3b08a7350ee8db01abb625c032feaac4d2c1
-vendor/lib64/qtimutex.so|06f87b3bfd6459e72800f35dad4359e94f23edfb
+vendor/lib64/qtibus.so|458570d3a9d69e028cee3d91cabbbe916c733e13
+vendor/lib64/qtimutex.so|0cf66f773b9daa59d99a1207fc0f85aad4942535
 vendor/lib64/vendor.qti.hardware.radio.am@1.0.so|437d740fd549753fe6cc1db97e6e45b2f75d4076
 vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so|092576b954a499b590c10a4f8dcc2c281bc32798
 vendor/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so|0ed46db784c55564219ac2097753df6c5b37bd2f
@@ -559,7 +559,7 @@ vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|e47baed52f1c0637de34fa55e45a86b
 # Widevine - from jasmine
 vendor/bin/hw/android.hardware.drm@1.2-service.widevine|1aed116c6cd73ee0c89a5eec050afab5c64b9f87
 vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|f206aecdd6843795f6448bb6d44d2244b3e48815
-vendor/lib64/libwvhidl.so|c5ee149419d556824295b44b9aa00d19ffae56b2
+vendor/lib64/libwvhidl.so|ac620214d2ef4d715c373cf56618bb5e63c67b46
 
 # WiFi Display - from jasmine
 bin/wfdservice|d9cccfd6ca14a1d83117533296d6cac2c139c310
