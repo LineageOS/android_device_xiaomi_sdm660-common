@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8fb97263_c960f084",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 15
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2020-06-25T22:46:40Z",
+      "side": 1,
+      "message": "This can be removed, revision is noted at the top of the file",
+      "range": {
+        "startLine": 87,
+        "startChar": 26,
+        "endLine": 87,
+        "endChar": 51
+      },
+      "revId": "263dd77a5e8cb790cfa1a0234c2b6ec82f7d35c7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
