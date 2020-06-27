@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "532dfde8_be95295e",
+        "filename": "audio/audio_policy_configuration_a2dp_offload_disabled_qti.xml",
+        "patchSetId": 16
+      },
+      "lineNbr": 360,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2020-06-27T02:39:52Z",
+      "side": 1,
+      "message": "the only difference between 2 disabled configs is this line",
+      "range": {
+        "startLine": 360,
+        "startChar": 0,
+        "endLine": 360,
+        "endChar": 85
+      },
+      "revId": "c9e0a3890a4cc4eda1d7f2a98a37696119d1eafc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "92a7428e_b1667566",
+        "filename": "sdm660.mk",
+        "patchSetId": 16
+      },
+      "lineNbr": 124,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2020-06-27T02:39:52Z",
+      "side": 1,
+      "message": "Yes, there are 3 policy configs in total:\n\n - /vendor/etc/audio/audio_policy_configuration.xml: Default one for lineage, offloading enabled\n - /vendor/etc/audio/audio_policy_configuration_a2dp_offload_disabled.xml: Alternative one for lineage, when offloading disabled from dev settings\n - /vendor/etc/audio_policy_configuration.xml: The one and only for aosp gsi, offloading disabled\n\nFurther tweaks are necessary for newer platforms where a2dp offloading works with gsis, e.g. one enabled config and two disabled one for lineage and gsi.",
+      "range": {
+        "startLine": 122,
+        "startChar": 0,
+        "endLine": 124,
+        "endChar": 171
+      },
+      "revId": "c9e0a3890a4cc4eda1d7f2a98a37696119d1eafc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
