@@ -392,6 +392,12 @@ vendor/lib64/libqmi_csi.so|4bae09fa2ce8335528f171abed518853eb2208c4
 vendor/lib64/libqmi_encdec.so|5e536057be350651379b772aa1bba5f4735d11ee
 vendor/lib64/libqmiservices.so|0c2930a50082aa9e9d341bd4286971e9143fd358
 
+# QRTR - from jasmine
+vendor/bin/qrtr-cfg|f2433cbff23c57f531882a70e33e066f9f02d919
+vendor/bin/qrtr-lookup|54e4244db1166ee9ebc92218b3214eedaee9b42d
+vendor/bin/qrtr-ns|90a5a0c488b09fed69e4f402eb30d0c22340fcba
+vendor/lib64/libqrtr.so|9addbb504885bb2a82e0b19e38077742bc48c10f
+
 # Radio - from jasmine
 -product/app/datastatusnotification/datastatusnotification.apk:system_ext/app/datastatusnotification/datastatusnotification.apk|272156d88ac5a05f76fcea7f1a31087e1acbcd85
 -product/app/QtiTelephonyService/QtiTelephonyService.apk:system_ext/app/QtiTelephonyService/QtiTelephonyService.apk|db60b6fe27b3033f6468b3170b23af18dd0bcdaf
@@ -429,7 +435,6 @@ vendor/lib64/libpdmapper.so|913532702507b64ef3384c68c958a29b89ebcef2
 vendor/lib64/libpdnotifier.so|41b80e0e26a2bdd324af8382b3384289c7b07c79
 vendor/lib64/libqcmaputils.so|eacd5bec984bae24bda1f041975357b2d72edfc2
 vendor/lib64/libqcrilFramework.so|c38c004fb958c52f5269cc689e29d45d3283079b
-vendor/lib64/libqrtr.so|9addbb504885bb2a82e0b19e38077742bc48c10f
 vendor/lib64/libqsocket.so|dd4067d7a79565f11034277d4ef46698cd17c19b
 vendor/lib64/libril-qc-hal-qmi.so|9ae51f645cd96d3c53bea221edd4eea90a1fcdab
 vendor/lib64/libril-qc-ltedirectdisc.so|1bb5daeb65a48eb5dbac5db7f1fe8975fcb6be28
