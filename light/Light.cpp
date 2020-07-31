@@ -119,7 +119,7 @@ Light::Light() {
     } else {
         max_screen_brightness_ = kDefaultMaxScreenBrightness;
         LOG(ERROR) << "Failed to read max screen brightness, fallback to "
-                   << kDefaultMaxLedBrightness;
+                   << kDefaultMaxScreenBrightness;
     }
 
     if (ReadFileToString(WHITE_ATTR(max_brightness), &buf)) {
