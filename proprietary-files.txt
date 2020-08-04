@@ -1,4 +1,4 @@
-# jasmine package version: V11.0.11.0.QDIMIXM, unless stated otherwise
+# jasmine package version: V11.0.12.0.QDIMIXM, unless stated otherwise
 
 # ADSP - from jasmine
 vendor/bin/adsprpcd|0cdd541ee0a365c5dccd0613e495611f4d0f6607
@@ -307,7 +307,7 @@ vendor/lib/libsmwrapper.so|d28c31e4dd25de2eb7d1face701b0f6acf1b1d0e
 # Media - from jasmine
 lib/libFileMux.so|79661e6dffc90234ad446641264fd0fa1a3fe6ab
 lib/libmmosal.so|9464733295e192301b2577f52fab720e72c0d152
-lib/libmmparser_lite.so|0547850d7e5041529e17f91f4a405aa258c429d0
+lib/libmmparser_lite.so|f9d12499288c3ccd3a047d2f65439b3707267dbf
 lib/libOmxMux.so|1ad1aa835a3dfb8bfea2a29291f82a173ba6a868
 lib64/libmmosal.so|9ceff2581e86d32bc2795dffb96ebe4bdc88f2f7
 vendor/lib/libAlacSwDec.so|bca4278cb74a63772a0fc369480b5d9814063d9b
