@@ -15,14 +15,28 @@
 //
 
 cc_library_static {
-    name: "libinit_sdm660",
+    name: "libinit_sdm660_common",
     recovery_available: true,
     srcs: ["init_sdm660.cpp"],
     include_dirs: [
         "system/core/base/include",
         "system/core/init"
     ],
+    export_include_dirs: [
+        "include",
+    ],
     shared_libs: [
         "libbase",
     ]
+}
+
+cc_library_static {
+    name: "libinit_sdm660",
+    recovery_available: true,
+    srcs: [
+        "init.cpp",
+    ],
+    whole_static_libs: [
+        "libinit_sdm660_common",
+    ],
 }
