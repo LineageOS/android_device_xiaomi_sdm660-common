@@ -448,12 +448,6 @@ PRODUCT_PACKAGES += \
     libipanat \
     liboffloadhal
 
-# Thermal
-PRODUCT_PACKAGES += \
-    android.hardware.thermal@1.0-impl \
-    android.hardware.thermal@1.0-service \
-    thermal.sdm660
-
 # Trust
 PRODUCT_PACKAGES += \
     vendor.lineage.trust@1.0-service
