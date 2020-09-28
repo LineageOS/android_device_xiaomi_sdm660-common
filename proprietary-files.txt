@@ -553,7 +553,7 @@ vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so|9cf774301dfb59173cc2a6871f
 vendor/lib64/vendor.qti.hardware.soter@1.0.so|5815859dc07d3181901596d06612b379e86fe6fd
 
 # Time services - from jasmine
--vendor/app/TimeService/TimeService.apk;:timeservice_app_cert-legacy-um|27f9b81621c446baa8c37581d9bfbca2fd67b496
+-vendor/app/TimeService/TimeService.apk|27f9b81621c446baa8c37581d9bfbca2fd67b496
 vendor/bin/time_daemon|d647fa02dfb28b6cb981c4e77daee75a67406351
 vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
 vendor/lib64/libtime_genoff.so|c8e0bbc9c6b7b5beddba43bc4125a9eaeba7c79f
