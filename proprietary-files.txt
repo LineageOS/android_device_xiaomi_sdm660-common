@@ -420,7 +420,6 @@ product/etc/permissions/qcrilhook.xml|ceb890ab3c1645aa0d0044abab1ba58c4097a991
 product/etc/permissions/telephony_product_privapp-permissions-qti.xml|0536410f98ef3be8ca7630ba8e9383e41e423ceb
 product/etc/permissions/telephonyservice.xml|a39eefcaf85fb8da60044fdbbcfddd95deb031c8
 product/framework/qcrilhook.jar|4eece9eb40a8976d2fd9a6a4d5d6dfea0c7674f5
-product/framework/qti-telephony-common.jar:system_ext/framework/qti-telephony-common.jar|5b1c23ce0d42e1b666d387eedde3444dd07e61bc
 product/framework/QtiTelephonyServicelibrary.jar|ea30b05eaad3ebee157421b3f31bf8585566b4cd
 -product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|20c011ffc54539161fa7cc05c55c9c5ed3f936b4
 vendor/bin/adpl|cd2af02673c750d3cc2da4089bec751dc24f8597
@@ -480,6 +479,9 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so|e9fea0c010f809e2
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so|21773237c68924b6ee5a27c78a981b31c0405408
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so|22ab381fb2e85004d07c5a94386f29490f17a191
 vendor/radio/qcril_database/qcril.db|6d0926901523730f4f8a33518b3746ff4e601e42
+
+# Radio - from cmi RKQ1.200710.002-V12.1.2.0.RJACNXM
+system_ext/framework/qti-telephony-common.jar
 
 # Radio - from jasmine - modified
 vendor/etc/init/netmgrd.rc|213d147cfcfe175aa4cdf1a345f3b148ea72982d
