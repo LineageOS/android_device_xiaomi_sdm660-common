@@ -63,7 +63,7 @@ public class ProximitySensor implements SensorEventListener {
         boolean isNear = event.values[0] < mSensor.getMaximumRange();
         if (mSawNear && !isNear) {
             if (shouldPulse(event.timestamp)) {
-                Utils.launchDozePulse(mContext);
+                Utils.wakeOrLaunchDozePulse(mContext);
             }
         } else {
             mInPocketTime = event.timestamp;
