@@ -182,3 +182,6 @@ ro.soc.model=SDM660
 
 # Time
 persist.vendor.delta_time.enable=true
+
+# Zygote
+zygote.critical_window.minute=10
