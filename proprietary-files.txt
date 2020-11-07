@@ -480,8 +480,8 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so|21773237c68924b6
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so|22ab381fb2e85004d07c5a94386f29490f17a191
 vendor/radio/qcril_database/qcril.db|6d0926901523730f4f8a33518b3746ff4e601e42
 
-# Radio - from cmi RKQ1.200710.002-V12.1.2.0.RJACNXM
-system_ext/framework/qti-telephony-common.jar
+# Radio - from cmi RKQ1.200710.002-V12.1.2.0.RJACNXM - modified
+system_ext/framework/qti-telephony-common.jar|10309d3b13841a5ae581ee2ce92325aa8bd1f8bf
 
 # Radio - from jasmine - modified
 vendor/etc/init/netmgrd.rc|213d147cfcfe175aa4cdf1a345f3b148ea72982d
