@@ -172,9 +172,6 @@ BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 # Recovery
 BOARD_HAS_LARGE_FILESYSTEM := true
 
-# RIL
-TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
-
 # SELinux
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
