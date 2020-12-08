@@ -266,7 +266,13 @@ PRODUCT_COPY_FILES += \
 
 # Healthd
 PRODUCT_PACKAGES += \
-    android.hardware.health@2.0-service
+    android.hardware.health@2.1-impl:64 \
+    android.hardware.health@2.1-service
+
+ifneq ($(AB_OTA_UPDATER),true)
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.1-impl.recovery
+endif
 
 # HIDL
 PRODUCT_PACKAGES += \
