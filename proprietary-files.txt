@@ -407,7 +407,6 @@ product/etc/permissions/telephonyservice.xml:system_ext/etc/permissions/telephon
 product/framework/QtiTelephonyServicelibrary.jar:system_ext/framework/QtiTelephonyServicelibrary.jar|ea30b05eaad3ebee157421b3f31bf8585566b4cd
 product/framework/qcrilhook.jar:system_ext/framework/qcrilhook.jar|4eece9eb40a8976d2fd9a6a4d5d6dfea0c7674f5
 product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk:system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|20c011ffc54539161fa7cc05c55c9c5ed3f936b4
-vendor/bin/ATFWD-daemon|bc2492087298a328d76d60560b11e480a79f3ad9
 vendor/bin/adpl|cd2af02673c750d3cc2da4089bec751dc24f8597
 vendor/bin/hw/qcrild|8d4ef5aa4f730e29d58b7e34ebb99ee17887e761
 vendor/bin/netmgrd|04d48a2e2ea3538e442d700b063692a10bd7d3f6
@@ -448,7 +447,6 @@ vendor/lib64/qcrild_librilutils.so|314a90af94477d973109f0162a0a0d0d38ae1226
 vendor/lib64/qtibus.so|0d9c3b08a7350ee8db01abb625c032feaac4d2c1
 vendor/lib64/qtimutex.so|06f87b3bfd6459e72800f35dad4359e94f23edfb
 vendor/lib64/vendor.qti.hardware.radio.am@1.0.so|437d740fd549753fe6cc1db97e6e45b2f75d4076
-vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so|092576b954a499b590c10a4f8dcc2c281bc32798
 vendor/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so|0ed46db784c55564219ac2097753df6c5b37bd2f
 vendor/lib64/vendor.qti.hardware.radio.lpa@1.0.so|c79cb5039eedab26e6c2a9e398e06ad642c24abe
 vendor/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so|c85d9ea1f787d2ac47f6440a8410ceb2163ddca5
