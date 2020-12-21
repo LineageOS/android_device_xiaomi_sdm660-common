@@ -358,15 +358,6 @@ case "$target" in
         ;;
 esac
 
-baseband=`getprop ro.baseband`
-#enable atfwd daemon all targets except sda, apq, qcs
-case "$baseband" in
-    "apq" | "sda" | "qcs" )
-        setprop persist.vendor.radio.atfwd.start false;;
-    *)
-        setprop persist.vendor.radio.atfwd.start true;;
-esac
-
 #set default lcd density
 #Since lcd density has read only
 #property, it will not overwrite previous set
