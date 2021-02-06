@@ -1,4 +1,4 @@
-# jasmine package version: V11.0.17.0.QDIMIXM, unless stated otherwise
+# jasmine package version: V11.0.20.0.QDIMIXM, unless stated otherwise
 
 # ADSP - from jasmine
 vendor/bin/adsprpcd|0cdd541ee0a365c5dccd0613e495611f4d0f6607
@@ -426,10 +426,10 @@ vendor/lib64/libnlnetmgr.so|c5bbb11161b7673e02a0b2b9cec06565c8c46372
 vendor/lib64/libpdmapper.so|913532702507b64ef3384c68c958a29b89ebcef2
 vendor/lib64/libpdnotifier.so|41b80e0e26a2bdd324af8382b3384289c7b07c79
 vendor/lib64/libqcmaputils.so|eacd5bec984bae24bda1f041975357b2d72edfc2
-vendor/lib64/libqcrilFramework.so|c38c004fb958c52f5269cc689e29d45d3283079b
+vendor/lib64/libqcrilFramework.so|033b66e7c3351268c576b8a2e7906dd08fc70567
 vendor/lib64/libqrtr.so|9addbb504885bb2a82e0b19e38077742bc48c10f
 vendor/lib64/libqsocket.so|dd4067d7a79565f11034277d4ef46698cd17c19b
-vendor/lib64/libril-qc-hal-qmi.so|9ae51f645cd96d3c53bea221edd4eea90a1fcdab
+vendor/lib64/libril-qc-hal-qmi.so|63ddfbb15c4f29ef3a45a49bd6ead64b4b02c61a
 vendor/lib64/libril-qc-ltedirectdisc.so|1bb5daeb65a48eb5dbac5db7f1fe8975fcb6be28
 vendor/lib64/libril-qc-radioconfig.so|c37def8f254404839a413918e94c4aab4d6de137
 vendor/lib64/libril-qcril-hook-oem.so|bc216efecb94b352b1d9be890bbcf5fc29e2f830
@@ -437,8 +437,8 @@ vendor/lib64/librilqmiservices.so|716b1b545d8446c6e66e03291bf42fe60683ba1a
 vendor/lib64/libsettings.so|1be7d1d33e562ff1b2db672d394100c0aa747b19
 vendor/lib64/libsystem_health_mon.so|a329ee0593f1811528a2d6fa9661160cbd1cc405
 vendor/lib64/qcrild_librilutils.so|314a90af94477d973109f0162a0a0d0d38ae1226
-vendor/lib64/qtibus.so|f1140e740a5dfc865c8af859b62488bb81774c70
-vendor/lib64/qtimutex.so|763f5f40fc9190b0ae8b03bc631b07c278778edb
+vendor/lib64/qtibus.so|458570d3a9d69e028cee3d91cabbbe916c733e13
+vendor/lib64/qtimutex.so|0cf66f773b9daa59d99a1207fc0f85aad4942535
 vendor/lib64/vendor.qti.hardware.radio.am@1.0.so|437d740fd549753fe6cc1db97e6e45b2f75d4076
 vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so|092576b954a499b590c10a4f8dcc2c281bc32798
 vendor/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so|0ed46db784c55564219ac2097753df6c5b37bd2f
