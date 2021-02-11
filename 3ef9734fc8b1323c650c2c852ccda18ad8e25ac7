@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "66bc363a_8a0d2f5d",
+        "filename": "sdm660.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 335,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2021-02-11T02:39:17Z",
+      "side": 1,
+      "message": "should be vendor.qti.hardware.perf@2.0.vendor",
+      "range": {
+        "startLine": 335,
+        "startChar": 4,
+        "endLine": 335,
+        "endChar": 32
+      },
+      "revId": "3ef9734fc8b1323c650c2c852ccda18ad8e25ac7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
