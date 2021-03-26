@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "55e97376_38bb9f25",
+        "filename": "sepolicy/vendor/property_contexts",
+        "patchSetId": 4
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2021-03-26T12:18:37Z",
+      "side": 1,
+      "message": "plz remove https://github.com/LineageOS/android_device_xiaomi_jason/blob/1cfc6a82fb22b75c64f9e59deed644034d28ce49/sepolicy/vendor/property_contexts#L2 when merging. I was lazy so simply added a wildcard.",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 14,
+        "endChar": 65
+      },
+      "revId": "342b05377a3732cec3751e29e00ff0f0ed66444a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "10e63a68_8e53e84e",
+        "filename": "sepolicy/vendor/property_contexts",
+        "patchSetId": 4
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2021-03-26T12:18:37Z",
+      "side": 1,
+      "message": "I grepped vendor/xiaomi and platina is the only user, so move to device repo.",
+      "range": {
+        "startLine": 20,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 17
+      },
+      "revId": "342b05377a3732cec3751e29e00ff0f0ed66444a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4cd0cc70_bf45ca58",
+        "filename": "sepolicy/vendor/property_contexts",
+        "patchSetId": 4
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2021-03-26T12:18:37Z",
+      "side": 1,
+      "message": "don\u0027t touch them, they\u0027re produced by aosp camera hidl",
+      "range": {
+        "startLine": 21,
+        "startChar": 0,
+        "endLine": 22,
+        "endChar": 21
+      },
+      "revId": "342b05377a3732cec3751e29e00ff0f0ed66444a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
