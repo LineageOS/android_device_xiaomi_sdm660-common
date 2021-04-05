@@ -109,9 +109,7 @@ on boot
     setprop sys.usb.configfs 1
 
     # Touchpanel
-    chown system system /sys/touchpanel/capacitive_keys
     chown system system /sys/touchpanel/double_tap
-    chown system system /sys/touchpanel/reversed_keys
 
 #Peripheral manager
 service vendor.per_mgr /system/vendor/bin/pm-service
