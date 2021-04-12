@@ -22,6 +22,30 @@
       "revId": "01aaa338181a49e55305a823e7f0b04b0a634d2f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5b687524_dddeef75",
+        "filename": "sdm660.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 107,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2021-04-12T17:06:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5e2aa3a8_bf5f089c",
+      "range": {
+        "startLine": 104,
+        "startChar": 0,
+        "endLine": 107,
+        "endChar": 17
+      },
+      "revId": "01aaa338181a49e55305a823e7f0b04b0a634d2f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
