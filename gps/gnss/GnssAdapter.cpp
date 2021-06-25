@@ -72,14 +72,19 @@ GnssAdapter::GnssAdapter() :
     mLocPositionMode(),
     mGnssSvIdUsedInPosition(),
     mGnssSvIdUsedInPosAvail(false),
+    mGnssMbSvIdUsedInPosition{},
+    mGnssMbSvIdUsedInPosAvail(false),
     mControlCallbacks(),
     mAfwControlId(0),
     mNmeaMask(0),
     mGnssSvIdConfig(),
     mGnssSvTypeConfig(),
     mGnssSvTypeConfigCb(nullptr),
+    mSupportNfwControl(true),
     mNiData(),
     mAgpsManager(),
+    mNfwCb(NULL),
+    mIsE911Session(NULL),
     mOdcpiRequestCb(nullptr),
     mOdcpiRequestActive(false),
     mOdcpiTimer(this),
@@ -89,15 +94,10 @@ GnssAdapter::GnssAdapter() :
     mXtraObserver(mSystemStatus->getOsObserver(), mMsgTask),
     mLocSystemInfo{},
     mBlockCPIInfo{},
-    mNfwCb(NULL),
     mPowerOn(false),
     mAllowFlpNetworkFixes(0),
     mGnssEnergyConsumedCb(nullptr),
-    mPowerStateCb(nullptr),
-    mIsE911Session(NULL),
-    mGnssMbSvIdUsedInPosition{},
-    mGnssMbSvIdUsedInPosAvail(false),
-    mSupportNfwControl(true)
+    mPowerStateCb(nullptr)
 {
     LOC_LOGD("%s]: Constructor %p", __func__, this);
     mLocPositionMode.mode = LOC_POSITION_MODE_INVALID;

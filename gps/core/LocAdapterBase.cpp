@@ -44,10 +44,10 @@ namespace loc_core {
 LocAdapterBase::LocAdapterBase(const LOC_API_ADAPTER_EVENT_MASK_T mask,
                                ContextBase* context, bool isMaster,
                                LocAdapterProxyBase *adapterProxyBase) :
-    mIsMaster(isMaster), mEvtMask(mask), mContext(context),
-    mLocApi(context->getLocApi()), mLocAdapterProxyBase(adapterProxyBase),
-    mMsgTask(context->getMsgTask()),
-    mIsEngineCapabilitiesKnown(ContextBase::sIsEngineCapabilitiesKnown)
+    mIsMaster(isMaster),
+    mIsEngineCapabilitiesKnown(ContextBase::sIsEngineCapabilitiesKnown),
+    mEvtMask(mask), mContext(context), mLocApi(context->getLocApi()),
+    mLocAdapterProxyBase(adapterProxyBase), mMsgTask(context->getMsgTask())
 {
     mLocApi->addAdapter(this);
 }
