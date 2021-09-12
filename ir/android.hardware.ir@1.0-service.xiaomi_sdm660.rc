@@ -1,4 +1,4 @@
-service vendor.ir-hal-1-0 /vendor/bin/hw/android.hardware.ir@1.0-service
+service vendor.ir-hal-1-0 /vendor/bin/hw/android.hardware.ir@1.0-service.xiaomi_sdm660
     interface android.hardware.ir@1.0::IConsumerIr default
     class hal
     user system
