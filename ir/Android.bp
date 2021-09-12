@@ -4,28 +4,17 @@
 // SPDX-License-Identifier: Apache-2.0
 //
 
-cc_library_shared {
-    name: "android.hardware.ir@1.0-impl",
-    defaults: ["hidl_defaults"],
-    relative_install_path: "hw",
-    srcs: ["ConsumerIr.cpp"],
-    shared_libs: [
-        "libhidlbase",
-        "libhardware",
-        "libbase",
-        "libutils",
-        "android.hardware.ir@1.0",
-    ],
-    vendor: true,
-}
-
 cc_binary {
     name: "android.hardware.ir@1.0-service",
     defaults: ["hidl_defaults"],
     relative_install_path: "hw",
     init_rc: ["android.hardware.ir@1.0-service.rc"],
-    srcs: ["service.cpp"],
+    srcs: [
+        "ConsumerIr.cpp",
+        "service.cpp",
+    ],
     shared_libs: [
+        "libbase",
         "libhardware",
         "libhidlbase",
         "libutils",
