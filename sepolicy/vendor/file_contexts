@@ -21,6 +21,9 @@
 /dev/lirc0                                      u:object_r:spidev_device:s0
 /dev/spidev7.1                                  u:object_r:spidev_device:s0
 
+# IR HAL
+/(vendor|system/vendor)/bin/hw/android\.hardware\.ir@1\.0-service\.xiaomi_sdm660                        u:object_r:hal_ir_default_exec:s0
+
 # Light HAL
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.xiaomi_sdm660                     u:object_r:hal_light_default_exec:s0
 
