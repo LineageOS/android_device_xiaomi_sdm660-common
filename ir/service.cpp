@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#define LOG_TAG "android.hardware.ir@1.0-service"
+#define LOG_TAG "android.hardware.ir@1.0-service.xiaomi_sdm660"
 
 #include <android-base/logging.h>
 
