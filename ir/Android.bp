@@ -5,11 +5,11 @@
 //
 
 cc_binary {
-    name: "android.hardware.ir@1.0-service",
+    name: "android.hardware.ir@1.0-service.xiaomi_sdm660",
     defaults: ["hidl_defaults"],
     relative_install_path: "hw",
-    init_rc: ["android.hardware.ir@1.0-service.rc"],
-    vintf_fragments: ["android.hardware.ir@1.0-service.xml"],
+    init_rc: ["android.hardware.ir@1.0-service.xiaomi_sdm660.rc"],
+    vintf_fragments: ["android.hardware.ir@1.0-service.xiaomi_sdm660.xml"],
     srcs: [
         "ConsumerIr.cpp",
         "service.cpp",
