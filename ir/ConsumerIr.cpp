@@ -19,8 +19,29 @@ namespace ir {
 namespace V1_0 {
 namespace implementation {
 
-ConsumerIr::ConsumerIr(consumerir_device_t *device) {
-    mDevice = device;
+ConsumerIr::ConsumerIr() : mDevice(nullptr) {
+    const hw_module_t *hw_module = NULL;
+
+    int ret = hw_get_module(CONSUMERIR_HARDWARE_MODULE_ID, &hw_module);
+    if (ret != 0) {
+        LOG(FATAL) << "hw_get_module " CONSUMERIR_HARDWARE_MODULE_ID " failed: " << ret;
+    }
+    ret = hw_module->methods->open(hw_module, CONSUMERIR_TRANSMITTER, (hw_device_t **) &mDevice);
+    if (ret < 0) {
+        LOG(FATAL) << "Can't open consumer IR transmitter, error: " << ret;
+    }
+}
+
+ConsumerIr::~ConsumerIr() {
+    if (mDevice == nullptr)
+        return;
+
+    mDevice->common.close((hw_device_t *) mDevice);
+    mDevice = nullptr;
+}
+
+bool ConsumerIr::isOk() {
+    return mDevice != nullptr;
 }
 
 // Methods from ::android::hardware::consumerir::V1_0::IConsumerIr follow.
@@ -50,24 +71,6 @@ Return<void> ConsumerIr::getCarrierFreqs(getCarrierFreqs_cb _hidl_cb) {
     }
     _hidl_cb(true, rangeVec);
     return Void();
-}
-
-
-IConsumerIr* HIDL_FETCH_IConsumerIr(const char * /*name*/) {
-    consumerir_device_t *dev;
-    const hw_module_t *hw_module = NULL;
-
-    int ret = hw_get_module(CONSUMERIR_HARDWARE_MODULE_ID, &hw_module);
-    if (ret != 0) {
-        LOG(ERROR) << "hw_get_module " CONSUMERIR_HARDWARE_MODULE_ID " failed: " << ret;
-        return nullptr;
-    }
-    ret = hw_module->methods->open(hw_module, CONSUMERIR_TRANSMITTER, (hw_device_t **) &dev);
-    if (ret < 0) {
-        LOG(ERROR) << "Can't open consumer IR transmitter, error: " << ret;
-        return nullptr;
-    }
-    return new ConsumerIr(dev);
 }
 
 }  // namespace implementation

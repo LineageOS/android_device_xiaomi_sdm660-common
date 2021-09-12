@@ -28,15 +28,14 @@ using ::android::hardware::Void;
 using ::android::sp;
 
 struct ConsumerIr : public IConsumerIr {
-    ConsumerIr(consumerir_device_t *device);
+    ConsumerIr();
+    ~ConsumerIr();
     // Methods from ::android::hardware::ir::V1_0::IConsumerIr follow.
     Return<bool> transmit(int32_t carrierFreq, const hidl_vec<int32_t>& pattern) override;
     Return<void> getCarrierFreqs(getCarrierFreqs_cb _hidl_cb) override;
 private:
     consumerir_device_t *mDevice;
 };
-
-extern "C" IConsumerIr* HIDL_FETCH_IConsumerIr(const char* name);
 
 }  // namespace implementation
 }  // namespace V1_0
