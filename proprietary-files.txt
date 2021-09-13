@@ -1,4 +1,5 @@
 # jasmine package version: V11.0.28.0.QDIMIXM, unless stated otherwise
+# jason package version: V12.0.1.0.PCHCNXM, unless stated otherwise
 
 # ADSP - from jasmine
 vendor/bin/adsprpcd|0cdd541ee0a365c5dccd0613e495611f4d0f6607
@@ -144,6 +145,12 @@ vendor/lib64/vendor.qti.hardware.data.iwlan@1.0.so|c471659fc3fb56dcdcda183e08039
 vendor/lib64/vendor.qti.hardware.data.latency@1.0.so|ff7a319e51ddd4de14af28a84f7bca5e82547f6e
 vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so|90f1106f7462a9e01721e1159ed3301579adee07
 vendor/lib64/vendor.qti.latency@2.0.so|91a8b05b20485057ee9f42c55ce70207ef6af761
+
+# ConsumerIR (lirc) - from jason
+vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.lirc.sdm660.so|8c614f98e2a42b5ba9e148c01b3d69e7fb59ce1d
+
+# ConsumerIR (spi) - from jasmine
+vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.spi.sdm660.so|d1f275a91557dfab52e82906986c5094fe078722
 
 # DPM - from jasmine
 product/bin/dpmd:system_ext/bin/dpmd|49caa8e7d8af8055efdd7ebc0d7f7d67bc600041
