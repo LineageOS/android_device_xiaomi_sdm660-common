@@ -19,16 +19,46 @@ namespace ir {
 namespace V1_0 {
 namespace implementation {
 
-ConsumerIr::ConsumerIr() : mDevice(nullptr) {
-    const hw_module_t *hw_module = NULL;
+typedef struct ir_device {
+    const std::string name;
+    const std::string device_path;
+} ir_device_t;
 
-    int ret = hw_get_module(CONSUMERIR_HARDWARE_MODULE_ID, &hw_module);
-    if (ret != 0) {
-        LOG(FATAL) << "hw_get_module " CONSUMERIR_HARDWARE_MODULE_ID " failed: " << ret;
+const static ir_device_t devices[] = {
+    {"lirc", "/dev/lirc0"},
+    {"spi", "/dev/spidev7.1"},
+};
+
+ConsumerIr::ConsumerIr() : mDevice(nullptr) {
+    const hw_module_t *hw_module;
+    int ret;
+
+    for (auto& [name, device_path] : devices) {
+        hw_module = NULL;
+        ret = 0;
+
+        if (access(device_path.c_str(), F_OK) == -1)
+            continue;
+
+        ret = hw_get_module_by_class(CONSUMERIR_HARDWARE_MODULE_ID, name.c_str(), &hw_module);
+        if (ret != 0) {
+            LOG(ERROR) << "hw_get_module " CONSUMERIR_HARDWARE_MODULE_ID " (class "
+                       << name << ") failed: " << ret;
+            continue;
+        }
+        ret = hw_module->methods->open(hw_module, CONSUMERIR_TRANSMITTER,
+                (hw_device_t **) &mDevice);
+        if (ret < 0) {
+            LOG(ERROR) << "Can't open consumer IR transmitter (class " << name
+                       << "), error: " << ret;
+            mDevice = nullptr;
+            continue;
+        }
+        break;
     }
-    ret = hw_module->methods->open(hw_module, CONSUMERIR_TRANSMITTER, (hw_device_t **) &mDevice);
-    if (ret < 0) {
-        LOG(FATAL) << "Can't open consumer IR transmitter, error: " << ret;
+
+    if (mDevice == nullptr) {
+        LOG(FATAL) << "Could not find a working ConsumerIR HAL";
     }
 }
 
