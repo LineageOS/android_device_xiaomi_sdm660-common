@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bda8987d_20f1967e",
+        "filename": "ir/ConsumerIr.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2021-09-14T01:22:49Z",
+      "side": 1,
+      "message": "Use LOG(FATAL) instead, like this: https://github.com/LineageOS/android_hardware_lineage_livedisplay/blob/3e298771b18d6c0e28350f50c7204c3c036662b8/sdm/PictureAdjustment.cpp#L41\n\nisOk can be dropped after that.\n\nAlways avoid goto in c++",
+      "range": {
+        "startLine": 27,
+        "startChar": 0,
+        "endLine": 28,
+        "endChar": 18
+      },
+      "revId": "c35fcf4eb4d18d55f9216718ab8b8afb38b35dce",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "958d8ec0_a47e4184",
+        "filename": "ir/service.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2021-09-14T01:22:49Z",
+      "side": 1,
+      "message": "not needed I guess?",
+      "range": {
+        "startLine": 10,
+        "startChar": 0,
+        "endLine": 10,
+        "endChar": 31
+      },
+      "revId": "c35fcf4eb4d18d55f9216718ab8b8afb38b35dce",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
