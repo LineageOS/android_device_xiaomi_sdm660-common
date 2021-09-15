@@ -6,7 +6,7 @@
 
 #define LOG_TAG "ConsumerIrService"
 
-#include <log/log.h>
+#include <android-base/logging.h>
 
 #include <hardware/hardware.h>
 #include <hardware/consumerir.h>
@@ -59,12 +59,12 @@ IConsumerIr* HIDL_FETCH_IConsumerIr(const char * /*name*/) {
 
     int ret = hw_get_module(CONSUMERIR_HARDWARE_MODULE_ID, &hw_module);
     if (ret != 0) {
-        ALOGE("hw_get_module %s failed: %d", CONSUMERIR_HARDWARE_MODULE_ID, ret);
+        LOG(ERROR) << "hw_get_module " CONSUMERIR_HARDWARE_MODULE_ID " failed: " << ret;
         return nullptr;
     }
     ret = hw_module->methods->open(hw_module, CONSUMERIR_TRANSMITTER, (hw_device_t **) &dev);
     if (ret < 0) {
-        ALOGE("Can't open consumer IR transmitter, error: %d", ret);
+        LOG(ERROR) << "Can't open consumer IR transmitter, error: " << ret;
         return nullptr;
     }
     return new ConsumerIr(dev);

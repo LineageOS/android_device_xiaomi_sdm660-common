@@ -12,7 +12,7 @@ cc_library_shared {
     shared_libs: [
         "libhidlbase",
         "libhardware",
-        "liblog",
+        "libbase",
         "libutils",
         "android.hardware.ir@1.0",
     ],
@@ -26,7 +26,6 @@ cc_binary {
     init_rc: ["android.hardware.ir@1.0-service.rc"],
     srcs: ["service.cpp"],
     shared_libs: [
-        "liblog",
         "libhardware",
         "libhidlbase",
         "libutils",
