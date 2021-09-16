@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ecc8905b_36c07474",
+        "filename": "ir/service.cpp",
+        "patchSetId": 7
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2021-09-16T14:53:44Z",
+      "side": 1,
+      "message": "included by ConsumerIr.h below so not needed",
+      "range": {
+        "startLine": 11,
+        "startChar": 0,
+        "endLine": 11,
+        "endChar": 48
+      },
+      "revId": "18da6a209cca8f5fb4a797bfa2ea00d64a2dffc5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "651c50d0_23611f93",
+        "filename": "ir/service.cpp",
+        "patchSetId": 7
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2021-09-16T14:53:44Z",
+      "side": 1,
+      "message": "should return 1 as all other hals do",
+      "range": {
+        "startLine": 33,
+        "startChar": 11,
+        "endLine": 33,
+        "endChar": 12
+      },
+      "revId": "18da6a209cca8f5fb4a797bfa2ea00d64a2dffc5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
