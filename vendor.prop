@@ -150,5 +150,9 @@ ro.vendor.sensors.pmd=true
 ro.vendor.sensors.sta_detect=true
 ro.vendor.sensors.mot_detect=true
 
+# SoC
+ro.soc.manufacturer=Qualcomm
+ro.soc.model=SDM660
+
 # Time
 persist.vendor.delta_time.enable=true
