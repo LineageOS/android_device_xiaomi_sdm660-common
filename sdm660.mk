@@ -150,6 +150,11 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml
 endif
 
+# Control groups and task profiles
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/cgroups.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
+    $(LOCAL_PATH)/configs/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
+
 # Display
 PRODUCT_PACKAGES += \
     gralloc.sdm660 \
