@@ -437,7 +437,6 @@ vendor/lib64/libqmi.so|d12727e7d99cc15fa13f20453b04916fd3908e22
 # Radio - from Cat S62Pro sdm660_64-user 11 RKQ1.210406.002 1.015.00
 system_ext/app/DeviceInfo/DeviceInfo.apk|1115ff685be64dfb3f4752911f7389ac7b676724
 system_ext/app/QtiTelephonyService/QtiTelephonyService.apk|b277bd20934f3133d29dfbfb0edbcf8162b05bd5
-system_ext/app/datastatusnotification/datastatusnotification.apk|776c8fce26995076229b97a34e569b9ae4c3a757
 system_ext/app/embms/embms.apk|356341fe7d08b0bb384f0f2a65ebf5920955e96a
 system_ext/etc/permissions/embms.xml|22e7474091f9f71f02dd0cfc76cfa8848a46f079
 system_ext/etc/permissions/qcrilhook.xml|30397e293b2c40e6b7a1d11c2a615cdd05de625a
