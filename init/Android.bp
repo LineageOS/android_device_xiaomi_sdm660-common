@@ -1,5 +1,5 @@
 //
-// Copyright (C) 2019-2020 The LineageOS Project
+// Copyright (C) 2019-2020,2022 The LineageOS Project
 //
 // SPDX-License-Identifier: Apache-2.0
 //
@@ -9,7 +9,6 @@ cc_library_static {
     recovery_available: true,
     srcs: ["init_sdm660.cpp"],
     include_dirs: [
-        "system/core/base/include",
         "system/core/init"
     ],
     shared_libs: [
