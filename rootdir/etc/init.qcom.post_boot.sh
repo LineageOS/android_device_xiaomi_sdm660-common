@@ -1703,16 +1703,6 @@ case "$target" in
                     echo -n enable > $mode
                 done
 
-                # Enable timer migration to little cluster
-                echo 1 > /proc/sys/kernel/power_aware_timer_migration
-
-                case "$soc_id" in
-                        "277" | "278")
-                        # Start energy-awareness for 8976
-                        start energy-awareness
-                ;;
-                esac
-
                 #enable sched colocation and colocation inheritance
                 echo 130 > /proc/sys/kernel/sched_grp_upmigrate
                 echo 110 > /proc/sys/kernel/sched_grp_downmigrate
