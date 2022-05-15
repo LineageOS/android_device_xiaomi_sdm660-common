@@ -1,4 +1,5 @@
 # jasmine package version: V11.0.28.0.QDIMIXM, unless stated otherwise
+# Cat S62Pro package version: sdm660_64-user 11 RKQ1.210406.002 1.015.00, unless stated otherwise
 
 # ADSP - from jasmine
 vendor/bin/adsprpcd|0cdd541ee0a365c5dccd0613e495611f4d0f6607
@@ -326,24 +327,29 @@ vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so|2c05d2902c757410aec30c6a5d0bf7
 vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so|0c4bb0c8ba1cbf357bb0b5117e93db0382ffcf49
 
 # Perf - from jasmine
-vendor/bin/hw/vendor.qti.hardware.perf@2.0-service|82db9da81990fe8ab08487780a3783a1d147edfc
 vendor/bin/msm_irqbalance|e917104fbd26c844d27ffb2b7ec4f665fdfb8b78
-vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc|cc8658db5e19f8e5e575fb986e7d38147e675f8d
-vendor/etc/perf/commonresourceconfigs.xml|1db765e3a8fb902bdb648091178a709c34f3fb16
-vendor/etc/perf/perfboostsconfig.xml|79662db6bf1ceea7a27ab2b89bb41d3e38005d90
-vendor/etc/perf/perfconfigstore.xml|760248b82c4f1ad8b0e7ed1924d2b198229e118d
+
+# Perf - from S62Pro
+vendor/bin/hw/vendor.qti.hardware.perf@2.2-service|41d7fa0c5396595709476dda4c6b47480c1bd2a4
+vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc|459b4c23550a56ac545f78c6d391f3d7dd9ba45b
+vendor/etc/perf/commonresourceconfigs.xml|2f7521ad0c0b0bb472c747c0c2176b21492936ab
+vendor/etc/perf/commonsysnodesconfigs.xml|63d293adfd5aa82551aa8fc0d30b38bffdcc497e
+vendor/etc/perf/perfboostsconfig.xml|1b925efc5be95c1fbcec228a609ffa59b1f6ecc9
+vendor/etc/perf/perfconfigstore.xml|7aed790478c9796246ea7c4b3bb6f7d31172ecb3
 vendor/etc/perf/targetconfig.xml|376ae331df9d6c30b6208f25d04ae4ea11c0e2ea
-vendor/etc/perf/targetresourceconfigs.xml|7132f1e9ce3bb21b4854b81d6e5d24409251f177
-vendor/lib/libperfconfig.so|519fe27ba0fcc96704cd7930cae62547c60c318a
-vendor/lib/libperfgluelayer.so|569bc942fcd54c1a52d345178694917642707b47
-vendor/lib/libqti-perfd-client.so|8be3bcc67cdf3704cf6a328fcef7e87403747cb3
-vendor/lib/libqti-perfd.so|f09adaadc93019827274d4eb7725d09412911d82
-vendor/lib/libqti-util.so|e7882172095bb0df546d4c358744761aba932b5a
-vendor/lib64/libperfconfig.so|cfab233f6442be6d590184394aa36bf6c9802438
-vendor/lib64/libperfgluelayer.so|bfb9706a184fca4163e5a7cb5fcad11674958761
-vendor/lib64/libqti-perfd-client.so|c15dfa389d28bdc6a170734c3f8f039819f09486
-vendor/lib64/libqti-perfd.so|184e4a124ef4f509ce377ce3941353948917e605
-vendor/lib64/libqti-util.so|c78b855b3909b01071ced5fc898add769de4a5b6
+vendor/etc/perf/targetresourceconfigs.xml|50eb2e60eb50a1d27b476c7aeb98ecb612df7eee
+vendor/lib/libperfconfig.so|be55af1ed05cced9850a4107d099ae1d9fac7687
+vendor/lib/libperfgluelayer.so|8cc20a3ddf15d795ed024ac7c5c0a77888026d9f
+vendor/lib/libperfioctl.so|bc1949716d4195a4275cd352ad83aa58b5c6efcb
+vendor/lib/libqti-perfd-client.so|9a2550b2ea07e885a51c8bb8c5a5b2263d09cf64
+vendor/lib/libqti-perfd.so|f1a7cc3f4ec81b4cf183b35f0619937c658ca002
+vendor/lib/libqti-util.so|6217ae5fa31a8c8043edb53d3ced6d87b468adde
+vendor/lib64/libperfconfig.so|d33f5d3489633ffdb3ae6bc08f471923070cc9f8
+vendor/lib64/libperfgluelayer.so|5061d28b38d425a44c563bbe2f5d9ed8a2618e99
+vendor/lib64/libperfioctl.so|498c3bea17bfa6f98fb6ba4c279bb151a139415d
+vendor/lib64/libqti-perfd-client.so|1263f0467dcd90ed91500eacdb6af94c9e3d0e40
+vendor/lib64/libqti-perfd.so|92b9a36fcff5cc6db8e8171d3770a887c72c29d3
+vendor/lib64/libqti-util.so|6c1f2bdc6e663a913c3090cf9880101a61c5cad5
 
 # Peripheral manager - from jasmine
 vendor/bin/pm-proxy|bc4e972e3fe595b973197efe5114da8ff4339a59
