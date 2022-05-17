@@ -26,6 +26,16 @@ OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 -->
 <manifest version="1.0" type="framework">
+    <!--Diag hal-->
+    <hal format="hidl">
+        <name>vendor.qti.diaghal</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>Idiag</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <!--Sigma hal-->
     <hal format="hidl">
         <name>vendor.qti.hardware.sigma_miracast</name>
