@@ -244,13 +244,10 @@ PRODUCT_COPY_FILES += \
 # Init
 PRODUCT_PACKAGES += \
     init.class_main.sh \
-    init.msm.usb.configfs.rc \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
     init.qcom.rc \
     init.qcom.sh \
-    init.qcom.usb.rc \
-    init.qcom.usb.sh \
     init.recovery.qcom.rc \
     init.target.rc \
     ueventd.qcom.rc
@@ -368,6 +365,22 @@ PRODUCT_PACKAGES += \
 # Trust
 PRODUCT_PACKAGES += \
     vendor.lineage.trust@1.0-service
+
+# USB
+ifeq ($(TARGET_KERNEL_VERSION),4.19)
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.2-service-qti \
+    init.qcom.usb.rc \
+    init.qcom.usb.sh \
+
+PRODUCT_SOONG_NAMESPACES += \
+    vendor/qcom/opensource/usb/etc
+else
+PRODUCT_PACKAGES += \
+    init.msm.usb.configfs.rc \
+    init.qcom.usb.old.rc \
+    init.qcom.usb.old.sh
+endif
 
 # Vibrator
 PRODUCT_PACKAGES += \
