@@ -16,6 +16,24 @@
       "message": "I would prefer to move them to hardware/qcom-caf/sdm660-4.19 or something, hold",
       "revId": "ae1b636dbbae71a3aebdb4f6653f88f6e67a84ce",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bb5020c3_85d393eb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25485
+      },
+      "writtenOn": "2022-05-30T10:31:37Z",
+      "side": 1,
+      "message": "only media hal needed, for display its working with TARGET_KERNEL_VERSION \u003d\u003e https://review.lineageos.org/q/topic:sdm660-4.19-hal\n\nand audio is fine.",
+      "parentUuid": "c526a7e0_507eb287",
+      "revId": "ae1b636dbbae71a3aebdb4f6653f88f6e67a84ce",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
