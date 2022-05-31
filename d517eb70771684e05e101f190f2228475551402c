@@ -16,6 +16,24 @@
       "message": "We don\u0027t need it",
       "revId": "d517eb70771684e05e101f190f2228475551402c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d871f841_32513930",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25485
+      },
+      "writtenOn": "2022-05-31T08:41:00Z",
+      "side": 1,
+      "message": "Right!",
+      "parentUuid": "7852c4ef_b560ad4b",
+      "revId": "d517eb70771684e05e101f190f2228475551402c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
