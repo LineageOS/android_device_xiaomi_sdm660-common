@@ -16,6 +16,24 @@
       "message": "Why?",
       "revId": "f5b09eb58ca07d64c13d923b24e1d729e9204074",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1402e322_48f64d4b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25485
+      },
+      "writtenOn": "2022-05-31T08:40:28Z",
+      "side": 1,
+      "message": "This will be drop too, its not working because of kernel",
+      "parentUuid": "1dee5d07_a5aee3f6",
+      "revId": "f5b09eb58ca07d64c13d923b24e1d729e9204074",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
