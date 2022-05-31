@@ -34,6 +34,24 @@
       "parentUuid": "1dee5d07_a5aee3f6",
       "revId": "f5b09eb58ca07d64c13d923b24e1d729e9204074",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "df767766_06b0606f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-05-31T12:51:53Z",
+      "side": 1,
+      "message": "Strange that QDCM doesn\u0027t work, it doesn\u0027t rely on any additional kernel commit",
+      "parentUuid": "1402e322_48f64d4b",
+      "revId": "f5b09eb58ca07d64c13d923b24e1d729e9204074",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
