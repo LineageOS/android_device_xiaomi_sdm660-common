@@ -70,6 +70,24 @@
       "parentUuid": "df767766_06b0606f",
       "revId": "f5b09eb58ca07d64c13d923b24e1d729e9204074",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c3cab679_a734aaf0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25485
+      },
+      "writtenOn": "2022-05-31T18:36:17Z",
+      "side": 1,
+      "message": "look at this chain https://review.lineageos.org/c/LineageOS/android_kernel_xiaomi_sdm660/+/274097/3\ni guess something missed here",
+      "parentUuid": "0c5acf53_3614d4db",
+      "revId": "f5b09eb58ca07d64c13d923b24e1d729e9204074",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
