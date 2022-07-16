@@ -1,0 +1,1 @@
+allow init same_process_hal_file:file execute;
