@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b665fe24_5f245dd9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18106
+      },
+      "writtenOn": "2022-08-22T11:15:29Z",
+      "side": 1,
+      "message": "Needs to be decommonized, twolip can\u0027t use this since it has Micro USB and needs to use the 1.0 basic service",
+      "revId": "80d6b1adfef0f430bca4b0419dd026348d12d6cb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
