@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "12c1e2a8_b6cea3ad",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25485
+      },
+      "writtenOn": "2022-08-23T09:04:50Z",
+      "side": 1,
+      "message": "should be squash here\nhttps://review.lineageos.org/c/LineageOS/android_device_xiaomi_sdm660-common/+/331937",
+      "revId": "db8db6cbcb39057f724260e700d055f847ebd638",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
