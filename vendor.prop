@@ -186,5 +186,10 @@ ro.soc.model=SDM660
 # Time
 persist.vendor.delta_time.enable=true
 
+# USB
+vendor.usb.rmnet.func.name=rmnet_bam
+vendor.usb.rmnet.inst.name=rmnet
+vendor.usb.rndis.func.name=rndis_bam
+
 # Zygote
 zygote.critical_window.minute=10
