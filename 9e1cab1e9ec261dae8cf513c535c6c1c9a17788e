@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0596d8a3_cec05c4c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-09-09T20:05:18Z",
+      "side": 1,
+      "message": "This disables A2DP offload, we want to keep ro.bluetooth.a2dp_offload.supported\u003dtrue set to true",
+      "revId": "9e1cab1e9ec261dae8cf513c535c6c1c9a17788e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
