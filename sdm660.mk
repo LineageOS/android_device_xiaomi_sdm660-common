@@ -238,12 +238,14 @@ PRODUCT_PACKAGES += \
 # Init
 PRODUCT_PACKAGES += \
     init.class_main.sh \
-    init.fingerprint.rc \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
+    init.qcom.sh
+
+PRODUCT_PACKAGES += \
+    init.fingerprint.rc \
     init.qcom.power.rc \
     init.qcom.rc \
-    init.qcom.sh \
     init.recovery.qcom.rc \
     init.target.rc \
     ueventd.qcom.rc
