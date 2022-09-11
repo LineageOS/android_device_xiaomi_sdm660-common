@@ -1,4 +1,5 @@
 # jasmine package version: V11.0.28.0.QDIMIXM, unless stated otherwise
+# S62Pro: Cat S62Pro sdm660_64-user 11 RKQ1.210406.002 1.015.00
 
 # ADSP - from jasmine
 vendor/bin/adsprpcd|0cdd541ee0a365c5dccd0613e495611f4d0f6607
@@ -85,7 +86,7 @@ product/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 # Charger - from jasmine
 vendor/bin/hvdcp_opti|120837d6d44abfd86515731dd26183be9cdd5596
 
-# CNE - from Cat S62Pro sdm660_64-user 11 RKQ1.210406.002 1.015.00
+# CNE - from S62Pro
 system_ext/framework/com.quicinc.cne.api-V1.0-java.jar|31ba1bfae2830f87e77844cfb96913271dac0925
 system_ext/framework/com.quicinc.cne.api-V1.1-java.jar|e71f1a060bc65eb373beb6d33158c0e2b37e2a70
 system_ext/framework/com.quicinc.cne.constants-V1.0-java.jar|e0e0bb8ed025b0682483c395de6ec42b5b3c0058
@@ -172,7 +173,7 @@ vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so|851db5940d5e9e4330e16221be114ae
 vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so|000e0d2ac4450c0ad8baca06985bc9065e119f1e
 vendor/lib64/vendor.qti.latency@2.0.so|60ab3143325e855f8c72e3f603c28efe2e7227b9
 
-# DPM - from Cat S62Pro sdm660_64-user 11 RKQ1.210406.002 1.015.00
+# DPM - from S62Pro
 framework/tcmclient.jar|cdd1ea7143a5a7acc3909b5cfa706650179647c7
 system_ext/bin/dpmd|4662a11c5331919cc08d541a298444ffce18cc1b
 system_ext/etc/init/dpmd.rc|738b638ff04cda368e22c03e16baf90ba157a6fc
@@ -194,7 +195,7 @@ vendor/etc/init/dpmQmiMgr.rc|1538743661a5c48c15cd105beaad20f72953885a
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|d9f1aa7f93b928f42499d613d20ccbc60f279097
 vendor/lib64/libdpmqmihal.so|41eb89e66ba065c43a5eb79cd3c72cef0ee167aa
 
-# DRM - from Cat S62Pro sdm660_64-user 11 RKQ1.210406.002 1.015.00
+# DRM - from S62Pro
 vendor/bin/qseecomd|97eeb3f297d16e0364e73f8e78ccb7a07e70f093
 vendor/lib/libQSEEComAPI.so|14d85d1661f11fed27a99f618370de21abfbf1b9
 vendor/lib/libsdedrm.so|752fa74723368e6bde29cbf004fe31d6f33ceb97
@@ -239,7 +240,7 @@ vendor/lib64/vendor.qti.gnss@2.1.so|a395bb7d4df874c0e0efadf8ef51d3510afedad3
 vendor/lib64/vendor.qti.gnss@3.0-service.so|947bfafbf110d70656f434ab5845b6691b6b61c1
 vendor/lib64/vendor.qti.gnss@3.0.so|ff1733d10abd97fa4381c798ae74b4cc5dac39e8
 
-# Graphics - from Cat S62Pro sdm660_64-user 11 RKQ1.210406.002 1.015.00
+# Graphics - from S62Pro
 vendor/lib/egl/eglSubDriverAndroid.so|28b215e408ee67c14ef9e9aaf5e4e4ed0a1ac7ff
 vendor/lib/egl/libEGL_adreno.so|5611a6caa50562757d812553642a0a45fcc12668
 vendor/lib/egl/libGLESv1_CM_adreno.so|446279f43811de885507bdd3d6491da8f0cfd26d
@@ -275,11 +276,11 @@ vendor/lib64/libgsl.so|b9b842c7585cbbf094cc131a85fc5fd0c11bb3e7
 vendor/lib64/libllvm-glnext.so|993192308ee2b90607dbd9541ede2c93e66a0ecb
 vendor/lib64/libllvm-qcom.so|e773582b89436b4b2fd7e63983a5b7ca24748cfa
 
-# Graphics (HDR) - from Cat S62Pro sdm660_64-user 11 RKQ1.210406.002 1.015.00
+# Graphics (HDR) - from S62Pro
 vendor/lib/libhdr_tm.so|a2292af314f9fa86b9ec2bb11ad72bf85e959842
 vendor/lib64/libhdr_tm.so|a1b9bbad12217e6b79951774801aa54be6460fd6
 
-# Graphics (SDM) - from Cat S62Pro sdm660_64-user 11 RKQ1.210406.002 1.015.00
+# Graphics (SDM) - from S62Pro
 vendor/lib/libqseed3.so|1a67e4c3e7d904dc3d3af35c0f516fe13ed88bcb
 vendor/lib/libsdm-color.so|43bfdb63147740a728e704b35c659301bca7ede2
 vendor/lib/libsdm-diag.so|a2b532158e12562e1fb74695bf829de1b94c2cde
@@ -293,7 +294,7 @@ vendor/lib64/libsdm-disp-vndapis.so|80170ba42ef766a8217500e49c4943be91cf0749
 vendor/lib64/libsdmextension.so|2d7469450bfaadb304a8080e384f72601442d078
 vendor/lib64/libtinyxml2_1.so|ff32deb110acb02cb5def5f3404f9064c1276483
 
-# Graphics (Vulkan) - from Cat S62Pro sdm660_64-user 11 RKQ1.210406.002 1.015.00
+# Graphics (Vulkan) - from S62Pro
 vendor/lib/hw/vulkan.adreno.so|139868cf11006199fffc109b7a207e4e7f4cbd18
 vendor/lib64/hw/vulkan.adreno.so|9215100009b574f71dc75272f22a499302ea121d
 
@@ -355,7 +356,7 @@ vendor/bin/pm-proxy|bc4e972e3fe595b973197efe5114da8ff4339a59
 vendor/bin/pm-service|b0f77edfe04a3cc6284738196c0044e676d5eeb3
 vendor/lib64/libperipheral_client.so|a0dd574c8af3135adae10ef49065fa765906db7a
 
-# Postprocessing - from Cat S62Pro sdm660_64-user 11 RKQ1.210406.002 1.015.00
+# Postprocessing - from S62Pro
 vendor/bin/hw/vendor.display.color@1.0-service|a1640ca55a67e701003fa1f6f92bd127f180d2b2
 vendor/bin/mm-pp-dpps|a265b90d727a3a8716796bbfc632e0307172b3dc
 vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
@@ -365,7 +366,7 @@ vendor/lib64/vendor.display.color@1.1.so|3cf0d256372bd418462326e6067b4e121322619
 vendor/lib64/vendor.display.color@1.2.so|8184e5d3e404864b1a1518b4d4e2012a5839660b
 vendor/lib64/vendor.display.postproc@1.0.so|86ef4e868f7abb95d555a4d086a8c4193920803f
 
-# QMI - from Cat S62Pro sdm660_64-user 11 RKQ1.210406.002 1.015.00
+# QMI - from S62Pro
 system_ext/etc/permissions/qti_libpermissions.xml|593bcb72cce68ceb0a70f50bcae7d460114e7c62
 system_ext/etc/permissions/qti_permissions.xml|e6ff4572352b1a4f91b6b9d7cbb1cad9924410a0
 vendor/bin/irsc_util|121deb2d6fd21b122c6a8ca8b30ef167f6b90f61
@@ -405,7 +406,7 @@ vendor/lib64/libqmi_legacy.so|f324c6701ecf78ff50975c0bc7f99aea09cb3539
 vendor/lib64/libqmiservices.so|52770edf3e35f5376f3d0a131636f3213c9e59fa
 vendor/lib64/libqmi.so|d12727e7d99cc15fa13f20453b04916fd3908e22
 
-# Radio - from Cat S62Pro sdm660_64-user 11 RKQ1.210406.002 1.015.00
+# Radio - from S62Pro
 system_ext/app/DeviceInfo/DeviceInfo.apk|1115ff685be64dfb3f4752911f7389ac7b676724
 system_ext/app/QtiTelephonyService/QtiTelephonyService.apk|b277bd20934f3133d29dfbfb0edbcf8162b05bd5
 system_ext/app/embms/embms.apk|356341fe7d08b0bb384f0f2a65ebf5920955e96a
@@ -497,7 +498,7 @@ vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql|fcb2cba3bfd71
 vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql|0fdf4b6ccb48906b37885e060429f79c9fd6bdbf
 vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql|9a76d5747da2876b87b214579c9d74ae92d218d7
 
-# Radio - IMS - from Cat S62Pro sdm660_64-user 11 RKQ1.210406.002 1.015.00
+# Radio - IMS - from S62Pro
 system_ext/app/imssettings/imssettings.apk|ab19f8b6b35e30d1b9310db51224a7c07ae5143e
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml|bd9fc166b542b4e730f194ebc996957770d9d497
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml|b40fc74f7d5e58b4e918f952b89a79cf2a5c4088
