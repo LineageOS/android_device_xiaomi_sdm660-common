@@ -1,3 +1,9 @@
+#
+# Copyright (C) 2022 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
 on init
     chown system system /dev/goodix_fp
     chmod 0644 /dev/goodix_fp
@@ -35,12 +41,3 @@ on init
 on post-fs-data
     mkdir /data/vendor/fpc 0770 system system
     mkdir /data/vendor/goodix 0770 system system
-
-service vendor.fps_hal /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sdm660
-    # "class hal" causes a race condition on some devices due to files created
-    # in /data. As a workaround, postpone startup until later in boot once
-    # /data is mounted.
-    class late_start
-    user system
-    group system input uhid
-    writepid /dev/cpuset/system-background/tasks
