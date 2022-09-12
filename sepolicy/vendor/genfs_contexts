@@ -6,6 +6,8 @@ genfscon sysfs /devices/soc/ca0c000.qcom,cci/ca0c000.qcom,cci:qcom,camera@3/vide
 genfscon sysfs /camera_sensorid/sensorid                        u:object_r:sysfs_graphics:s0
 
 # Fingerprint
+genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc        u:object_r:sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:fpc1020                u:object_r:sysfs_fingerprint:s0
 genfscon sysfs /devices/soc/soc:fingerprint_fpc                 u:object_r:sysfs_fingerprint:s0
 genfscon sysfs /devices/soc/soc:fpc1020                         u:object_r:sysfs_fingerprint:s0
 
