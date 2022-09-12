@@ -17,10 +17,30 @@ genfscon sysfs /devices/soc/soc:fpc1020/irq                     u:object_r:sysfs
 genfscon sysfs /devices/soc/soc:fpc1020/irq_enable              u:object_r:sysfs_fingerprint:s0
 genfscon sysfs /devices/soc/soc:fpc1020/wakeup_enable           u:object_r:sysfs_fingerprint:s0
 
+# Graphics
+genfscon sysfs /devices/virtual/graphics/fb0/idle_state         u:object_r:sysfs_graphics:s0
+
 # LED
 genfscon sysfs /devices/soc/800f000.qcom,spmi/spmi-0/spmi0-03/800f000.qcom,spmi:qcom,pm660l@3:qcom,leds@d000/leds/button-backlight      u:object_r:sysfs_graphics:s0
 genfscon sysfs /devices/soc/800f000.qcom,spmi/spmi-0/spmi0-03/800f000.qcom,spmi:qcom,pm660l@3:qcom,leds@d000/leds/button-backlight1     u:object_r:sysfs_graphics:s0
 genfscon sysfs /devices/soc/800f000.qcom,spmi/spmi-0/spmi0-03/800f000.qcom,spmi:qcom,pm660l@3:qcom,leds@d000/leds/white                 u:object_r:sysfs_graphics:s0
 
+# Power
+genfscon debugfs /sched_features                                u:object_r:debugfs_sched_features:s0
+genfscon proc /sys/kernel/sched_boost                           u:object_r:proc_sysctl_schedboost:s0
+genfscon sysfs /power/rpmh_stats/master_stats                   u:object_r:sysfs_rpm:s0
+genfscon sysfs /power/system_sleep/stats                        u:object_r:sysfs_system_sleep_stats:s0
+
+# Subsystem
+genfscon sysfs /devices/platform/soc/soc:qcom,cpubw             u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,gpubw             u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,l3-cpu0           u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,l3-cpu4           u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,llccbw            u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,mincpubw          u:object_r:sysfs_msm_subsys:s0
+
 # Touchpanel
 genfscon sysfs /touchpanel                                      u:object_r:sysfs_touchpanel:s0
+
+# Wi-Fi
+genfscon debugfs /wlan0                                         u:object_r:debugfs_wlan:s0
