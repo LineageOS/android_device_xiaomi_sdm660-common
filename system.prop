@@ -1,6 +1,3 @@
-# Bluetooth
-vendor.bluetooth.soc=cherokee
-
 # CNE
 persist.vendor.cne.feature=1
 
