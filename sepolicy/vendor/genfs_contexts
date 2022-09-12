@@ -6,21 +6,16 @@ genfscon sysfs /devices/soc/ca0c000.qcom,cci/ca0c000.qcom,cci:qcom,camera@3/vide
 genfscon sysfs /camera_sensorid/sensorid                        u:object_r:sysfs_graphics:s0
 
 # Fingerprint
-genfscon sysfs /devices/soc/soc:fingerprint_fpc/device_prepare  u:object_r:sysfs_fingerprint:s0
-genfscon sysfs /devices/soc/soc:fingerprint_fpc/fingerdown_wait u:object_r:sysfs_fingerprint:s0
-genfscon sysfs /devices/soc/soc:fingerprint_fpc/irq             u:object_r:sysfs_fingerprint:s0
-genfscon sysfs /devices/soc/soc:fingerprint_fpc/irq_enable      u:object_r:sysfs_fingerprint:s0
-genfscon sysfs /devices/soc/soc:fingerprint_fpc/wakeup_enable   u:object_r:sysfs_fingerprint:s0
-genfscon sysfs /devices/soc/soc:fpc1020/device_prepare          u:object_r:sysfs_fingerprint:s0
-genfscon sysfs /devices/soc/soc:fpc1020/fingerdown_wait         u:object_r:sysfs_fingerprint:s0
-genfscon sysfs /devices/soc/soc:fpc1020/irq                     u:object_r:sysfs_fingerprint:s0
-genfscon sysfs /devices/soc/soc:fpc1020/irq_enable              u:object_r:sysfs_fingerprint:s0
-genfscon sysfs /devices/soc/soc:fpc1020/wakeup_enable           u:object_r:sysfs_fingerprint:s0
+genfscon sysfs /devices/soc/soc:fingerprint_fpc                 u:object_r:sysfs_fingerprint:s0
+genfscon sysfs /devices/soc/soc:fpc1020                         u:object_r:sysfs_fingerprint:s0
 
 # LED
 genfscon sysfs /devices/soc/800f000.qcom,spmi/spmi-0/spmi0-03/800f000.qcom,spmi:qcom,pm660l@3:qcom,leds@d000/leds/button-backlight      u:object_r:sysfs_graphics:s0
 genfscon sysfs /devices/soc/800f000.qcom,spmi/spmi-0/spmi0-03/800f000.qcom,spmi:qcom,pm660l@3:qcom,leds@d000/leds/button-backlight1     u:object_r:sysfs_graphics:s0
 genfscon sysfs /devices/soc/800f000.qcom,spmi/spmi-0/spmi0-03/800f000.qcom,spmi:qcom,pm660l@3:qcom,leds@d000/leds/white                 u:object_r:sysfs_graphics:s0
+
+/devices/platform/soc/soc:fpc1020/irq
+
 
 # Power
 genfscon debugfs /sched_features                                u:object_r:debugfs_sched_features:s0
