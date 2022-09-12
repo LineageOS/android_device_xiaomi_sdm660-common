@@ -50,7 +50,8 @@ PRODUCT_COPY_FILES += \
 
 # ANT+
 PRODUCT_PACKAGES += \
-    AntHalService
+    AntHalService \
+    com.dsi.ant@1.0.vendor
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -68,6 +69,7 @@ PRODUCT_PACKAGES += \
     audio.usb.default
 
 PRODUCT_PACKAGES += \
+    liba2dpoffload \
     libaudio-resampler \
     libhdmiedid \
     libhfp \
@@ -96,7 +98,8 @@ PRODUCT_COPY_FILES += \
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0.vendor \
-    vendor.qti.hardware.btconfigstore@1.0.vendor
+    vendor.qti.hardware.btconfigstore@1.0.vendor \
+    vendor.qti.hardware.btconfigstore@2.0.vendor
 
 # Camera
 PRODUCT_PACKAGES += \

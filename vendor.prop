@@ -80,7 +80,15 @@ ro.config.vc_call_vol_steps=7
 vendor.audio.adm.buffering.ms=6
 
 # Bluetooth
-vendor.qcom.bluetooth.soc=cherokee
+persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
+persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxhd-aac
+persist.vendor.bt.aac_frm_ctl.enabled=true
+persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxhd-aac-ldac
+persist.vendor.qcom.bluetooth.enable.splita2dp=true
+persist.vendor.qcom.bluetooth.scram.enabled=false
+persist.vendor.qcom.bluetooth.soc=cherokee
+ro.bluetooth.a2dp_offload.supported=true
+ro.vendor.bluetooth.wipower=false
 
 # Camera
 persist.vendor.camera.preview.ubwc=0
