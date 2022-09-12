@@ -31,7 +31,6 @@ audio.sys.offload.pstimeout.secs=3
 persist.vendor.audio.hifi.int_codec=true
 ro.af.client_heap_size_kbyte=7168
 vendor.audio.volume.headset.gain.depcal=true
-persist.vendor.bt.aac_frm_ctl.enabled=true
 vendor.audio.spkr_prot.tx.sampling_rate=48000
 
 vendor.audio.feature.afe_proxy.enable=true
@@ -81,6 +80,13 @@ ro.config.vc_call_vol_steps=7
 vendor.audio.adm.buffering.ms=6
 
 # Bluetooth
+persist.vendor.bt.aac_frm_ctl.enabled=true
+persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aac-aptx-aptxhd-ldac
+persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true
+persist.vendor.qcom.bluetooth.enable.splita2dp=true
+persist.vendor.qcom.bluetooth.scram.enabled=false
+persist.vendor.qcom.bluetooth.soc=cherokee
+ro.bluetooth.a2dp_offload.supported=true
 vendor.qcom.bluetooth.soc=cherokee
 
 # Camera
