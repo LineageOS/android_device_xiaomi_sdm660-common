@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f9304566_84a39d49",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 6
+      },
+      "lineNbr": 219,
+      "author": {
+        "id": 25485
+      },
+      "writtenOn": "2022-12-08T20:02:38Z",
+      "side": 1,
+      "message": "move this to proprietary-files-fm.txt",
+      "revId": "86ba53c0cb581969959bb091451f6423d3c24afe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
