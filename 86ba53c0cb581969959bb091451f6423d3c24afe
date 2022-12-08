@@ -16,6 +16,24 @@
       "message": "move this to proprietary-files-fm.txt",
       "revId": "86ba53c0cb581969959bb091451f6423d3c24afe",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "846313ca_98d0d65c",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 6
+      },
+      "lineNbr": 219,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-12-08T21:55:36Z",
+      "side": 1,
+      "message": "No, it\u0027s a dependency of Bluetooth HAL, we must include it for all devices",
+      "parentUuid": "f9304566_84a39d49",
+      "revId": "86ba53c0cb581969959bb091451f6423d3c24afe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
