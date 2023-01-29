@@ -157,9 +157,7 @@ PRODUCT_PACKAGES += \
     libgralloc.qti \
     libqdMetaData \
     libqdMetaData.system \
-    libqdMetaData.vendor \
     libtinyxml \
-    libtinyxml.vendor \
     vendor.display.config@2.0 \
     vendor.qti.hardware.display.mapper@1.1.vendor \
     vendor.qti.hardware.display.mapper@2.0.vendor
@@ -361,7 +359,6 @@ PRODUCT_COPY_FILES += \
 # QMI
 PRODUCT_PACKAGES += \
     libjson \
-    libjson.vendor \
     libqti_vndfwk_detect \
     libqti_vndfwk_detect.vendor \
     libvndfwk_detect_jni.qti \
