@@ -1,32 +1,31 @@
 # jasmine package version: V11.0.28.0.QDIMIXM, unless stated otherwise
 # Cat S62Pro package version: sdm660_64-user 11 RKQ1.210406.002 1.015.00, unless stated otherwise
 
-# ADSP - from jasmine
-vendor/bin/adsprpcd|0cdd541ee0a365c5dccd0613e495611f4d0f6607
-vendor/bin/cdsprpcd|c9fc5873c205e1ebb844d18bc10f89dd428a01ee
-vendor/lib/libadsp_default_listener.so|85bdbaf59256e3a01e3d1bf1f5ac753eea4f935b
-vendor/lib/libadsp_hvx_callback_skel.so|17e18628d5f06f5ad46b9577baac0d3571b42be1
-vendor/lib/libadsp_hvx_stub.so|d3f2bfdf3f6bd4911e5015a022a098582addcf6f
-vendor/lib/libadsprpc.so|35bf7c53dc7149b39126638c5c1bac3b08e262be
-vendor/lib/libcdsp_default_listener.so|6347d41d3c3704a04ae0f8e816f071057c483163
-vendor/lib/libcdsprpc.so|2774f0faf3728faf425fdeb81b9820a3c231a5ba
-vendor/lib/libfastcvadsp_stub.so|43740cca4f7549c86e4b2ab1daf4d703d9a9b258
-vendor/lib/libfastcvopt.so|77789b2b6e978bcc2ee7e848d6163fc31d6b5393
-vendor/lib/libmdsprpc.so|caae31754dee7a45267ae3912685773046ab6b47
-vendor/lib/libsdsprpc.so|b78c12ebe73d344af786dd39f1313ec88668aacc
-vendor/lib/libsysmon_cdsp_skel.so|0da55092206d94a43a82d5a416969cbfd208acf2
-vendor/lib64/libadsp_default_listener.so|abace257c0ae59ddc693f1e42d16670312673873
-vendor/lib64/libadsprpc.so|02d0684cba8bd52d2a291f85afae9ce343c94bd4
-vendor/lib64/libcdsp_default_listener.so|ebde03266606d634172d41bbc97ba9ebc5606423
-vendor/lib64/libcdsprpc.so|6636d9b8e1c3b80bae94cf1728c5168ef77cca5f
-vendor/lib64/libfastcvadsp_stub.so|ef3fd1a7d1217ad9bfff9cff0aa52db36eb73143
-vendor/lib64/libfastcvopt.so|9f95397d7e1b171f9b00323ed7acc17341200e01
-vendor/lib64/libmdsprpc.so|7aca0cc4524687c48df9e2247a6c59d0be9581bc
-vendor/lib64/libsdsprpc.so|9c3ac49b1a3c7d383c64f7fb554b1c00e2963527
-vendor/lib64/libsysmon_cdsp_skel.so|a76815923b46dbc41ba1a6b0f4942b8da8e52ce0
+# ADSP - from S62Pro
+vendor/bin/adsprpcd|5e246a6f5d2dca27e29b233a17e4673532191b95
+vendor/bin/cdsprpcd|ea126ed2f1b11622547239f331b8013320c59ad2
+vendor/lib/libadsp_default_listener.so|c822c536d9776ca2d60bf5a158531544f20c4829
+vendor/lib/libadsp_hvx_callback_skel.so|349803cd69d676e386b2a923c128c49aeefdeb4a
+vendor/lib/libadsp_hvx_stub.so|59e9f81b8d3a41a69badf201acee57615f822013
+vendor/lib/libadsprpc.so|3da7471cbfb2f26bb997d21098282697ee1965e4
+vendor/lib/libcdsp_default_listener.so|1c24530e998d6ea908b86afd20470e7e3d0a48c0
+vendor/lib/libcdsprpc.so|4ef30602663e13d44e1c7dd09db927fa4e6947ae
+vendor/lib/libfastcvadsp_stub.so|6e9d2b6e08188daba1d2f96ab708146391594280
+vendor/lib/libfastcvopt.so|4f4a2297c4071c3b22b967000ecc1f4ea1b9d203
+vendor/lib/libmdsprpc.so|50380552c78713d9678978b6654c20401b5040f6
+vendor/lib/libsdsprpc.so|dcff191dcb9af4cc6f9a54c4eca6664bf6f965a4
+vendor/lib/libsysmon_cdsp_skel.so|8a23e64a696517679e7c336fc31f3b912f4ca32a
+vendor/lib64/libadsp_default_listener.so|41f91a64209c0431d87cee08999c5cfdc5dedb38
+vendor/lib64/libadsprpc.so|14348488a9d8a30f6787d5b11bf4d4857d23e58e
+vendor/lib64/libcdsp_default_listener.so|96d722b324c4d1a554d0f018d8cbbb8c4e4519b8
+vendor/lib64/libcdsprpc.so|891066a404b155c545ff7f4bf23cb7e042f29f28
+vendor/lib64/libfastcvadsp_stub.so|3de1763ac58a705dfba9b517169ee2683699eb7c
+vendor/lib64/libfastcvopt.so|7d117c620711872774e3d822b4816c516982c25f
+vendor/lib64/libmdsprpc.so|d0252bb9747bb90cbb7e8788a9906ecbed44cb60
+vendor/lib64/libsdsprpc.so|58ee0bd2d4b5c40afeb7d654dd020f09676fe9d9
+vendor/lib64/libsysmon_cdsp_skel.so|6b07100c3294c76402e2d064d463629c9468d6a9
 
-# ADSP modules - from jasmine
-vendor/lib/rfsa/adsp/dirac_resource.dar|7728d5b2ee2927a01df5bd6d7edae3736186c844
+# ADSP modules - from S62Pro
 vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so|f4d8675a46c5e52add8f8e90e35b29cd33ac582b
 vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_800h_skel.so|c240d45c3a5fc37b964c4adab06f4cb0bfda62f5
 vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so|b9f68e320d24e9c51871a2056e1f47239bd1cb40
@@ -34,13 +33,12 @@ vendor/lib/rfsa/adsp/libadsp_fd_skel.so|677d2932dac248049f031fc5893163e22b49439a
 vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so|26fb64a92d48e801a31a867976d325efa366a255
 vendor/lib/rfsa/adsp/libadsp_hvx_skel.so|05776246445316aea822eaa9cb6ae7a47b23c9aa
 vendor/lib/rfsa/adsp/libapps_mem_heap.so|fd362c6b0e30f62cc3fc4566855f46706d2c3c50
-vendor/lib/rfsa/adsp/libdirac-capiv2.so|e56031dfaee094d5267e3cc16625cfceaa07cc27
 vendor/lib/rfsa/adsp/libdspCV_skel.so|a788855fe98d5f6ea73d2693c983efb29165eae1
 vendor/lib/rfsa/adsp/libfastcvadsp.so|603711dc1af1f1952d8978a5b494b1541b24c54c
-vendor/lib/rfsa/adsp/libfastcvadsp_skel.so|a06a3f52e89d219d2da0c7205e714cd7429b267c
-vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so|99752b14bc669589f598b2c555af96834147e41e
+vendor/lib/rfsa/adsp/libfastcvadsp_skel.so|57eff075eaf7a9fb9260f6cf5b918b2e7495fc6f
 vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so|d2174a2a4a680e93ee4262b5e6d99fd3c398620c
-vendor/lib/rfsa/adsp/libscveT2T_skel.so|487f830aca26c85ef79c8b599b2f03668ab732b5
+vendor/lib/rfsa/adsp/libscveT2T_skel.so|e8083e551a17e880acb9d72ceb725b762cadf0d2
+vendor/lib/rfsa/adsp/libvpp_svc_skel.so|2da97f61c1d14f1f9a38aecd8ab89a1f6fa8d991
 
 # Alarm - from jasmine
 product/app/PowerOffAlarm/PowerOffAlarm.apk|46387fe02067df3c4c09ec49fff7737473ea1145
