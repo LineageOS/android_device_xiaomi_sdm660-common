@@ -15,6 +15,7 @@ allow hal_power_default debugfs_wlan:file r_file_perms;
 
 # To do powerhint on nodes defined in powerhint.json
 allow hal_power_default sysfs_devfreq:dir search;
+allow hal_power_default sysfs_devfreq:lnk_file read;
 allow hal_power_default sysfs_devfreq:file rw_file_perms;
 allow hal_power_default sysfs_kgsl:lnk_file read;
 allow hal_power_default sysfs_kgsl:file rw_file_perms;
