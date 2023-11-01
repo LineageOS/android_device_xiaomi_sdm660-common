@@ -322,7 +322,7 @@ vendor/bin/msm_irqbalance|e917104fbd26c844d27ffb2b7ec4f665fdfb8b78
 
 # Peripheral manager - from jasmine
 vendor/bin/pm-proxy|bc4e972e3fe595b973197efe5114da8ff4339a59
-vendor/bin/pm-service|b0f77edfe04a3cc6284738196c0044e676d5eeb3
+vendor/bin/pm-service|b0f77edfe04a3cc6284738196c0044e676d5eeb3|ea63802cf0483ee4ed2a6611ba7f1d0f36970c06
 vendor/lib64/libperipheral_client.so|a0dd574c8af3135adae10ef49065fa765906db7a
 
 # Postprocessing - from S62Pro

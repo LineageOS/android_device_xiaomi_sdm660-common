@@ -67,6 +67,9 @@ function blob_fixup() {
         vendor/bin/mlipayd@1.1)
            "${PATCHELF}" --remove-needed vendor.xiaomi.hardware.mtdservice@1.0.so "${2}"
             ;;
+        vendor/bin/pm-service)
+            grep -q libutils-v33.so "${2}" || "${PATCHELF}" --add-needed "libutils-v33.so" "${2}"
+            ;;
         vendor/lib64/libmlipay.so | vendor/lib64/libmlipay@1.1.so)
             "${PATCHELF}" --remove-needed vendor.xiaomi.hardware.mtdservice@1.0.so "${2}"
             sed -i "s|/system/etc/firmware|/vendor/firmware\x0\x0\x0\x0|g" "${2}"
