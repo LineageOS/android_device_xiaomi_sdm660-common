@@ -188,6 +188,7 @@ ro.soc.model=SDM660
 persist.vendor.delta_time.enable=true
 
 # USB
+vendor.usb.device=a800000.ssusb
 vendor.usb.rmnet.func.name=rmnet_bam
 vendor.usb.rmnet.inst.name=rmnet
 vendor.usb.rndis.func.name=rndis_bam
