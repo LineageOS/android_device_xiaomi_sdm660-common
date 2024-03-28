@@ -207,10 +207,10 @@ vendor/lib64/vendor.qti.gnss@3.0.so|ff1733d10abd97fa4381c798ae74b4cc5dac39e8
 
 # Graphics - from S62Pro
 vendor/lib/egl/eglSubDriverAndroid.so|28b215e408ee67c14ef9e9aaf5e4e4ed0a1ac7ff
-vendor/lib/egl/libEGL_adreno.so|5611a6caa50562757d812553642a0a45fcc12668
+vendor/lib/egl/libEGL_adreno.so;SYMLINK=vendor/lib/libEGL_adreno.so|5611a6caa50562757d812553642a0a45fcc12668
 vendor/lib/egl/libGLESv1_CM_adreno.so|446279f43811de885507bdd3d6491da8f0cfd26d
-vendor/lib/egl/libGLESv2_adreno.so|9f62562aa9d2bd1f3cd2f6c12376c42e2591d805
-vendor/lib/egl/libq3dtools_adreno.so|49c03ff3c14e17af525c66f5cf017504e689f54e
+vendor/lib/egl/libGLESv2_adreno.so;SYMLINK=vendor/lib/libGLESv2_adreno.so|9f62562aa9d2bd1f3cd2f6c12376c42e2591d805
+vendor/lib/egl/libq3dtools_adreno.so;SYMLINK=vendor/lib/libq3dtools_adreno.so|49c03ff3c14e17af525c66f5cf017504e689f54e
 vendor/lib/egl/libq3dtools_esx.so|f11effc559d8e377009501cbf6b7043f3cd34a10
 vendor/lib/libC2D2.so|7ffbb30a7b99d532eaf20b4a117fd908f1acdc01
 vendor/lib/libCB.so|233dd32c4e3004324901c0c12fd9b688b4a4f1d2
@@ -224,10 +224,10 @@ vendor/lib/libllvm-glnext.so|8599f54f3ba72210dbb0ff1d8b0a34f5420d78ca
 vendor/lib/libllvm-qcom.so|349f9f97f6f1856884b0773ea5dbb67c4eb168bf
 vendor/lib/librs_adreno.so|f21ef747165dea556d9213d024dc0dd003021fff
 vendor/lib64/egl/eglSubDriverAndroid.so|ed050550deedeead9491574a6665f30f6ec4785b
-vendor/lib64/egl/libEGL_adreno.so|d602670a45e49916be5e0c2c60a8f0fe3f526791
+vendor/lib64/egl/libEGL_adreno.so;SYMLINK=vendor/lib64/libEGL_adreno.so|d602670a45e49916be5e0c2c60a8f0fe3f526791
 vendor/lib64/egl/libGLESv1_CM_adreno.so|b45486353fceb47ec419ef580fdf6d2305a842ff
-vendor/lib64/egl/libGLESv2_adreno.so|17caf92e1492db6c0aa743cf07b28bfaed7524c6
-vendor/lib64/egl/libq3dtools_adreno.so|189b9c3d400c6a98c87582b8df0910530cba6d44
+vendor/lib64/egl/libGLESv2_adreno.so;SYMLINK=vendor/lib64/libGLESv2_adreno.so|17caf92e1492db6c0aa743cf07b28bfaed7524c6
+vendor/lib64/egl/libq3dtools_adreno.so;SYMLINK=vendor/lib64/libq3dtools_adreno.so|189b9c3d400c6a98c87582b8df0910530cba6d44
 vendor/lib64/egl/libq3dtools_esx.so|1305e1b5da72686813a8c11e78fc7b8332362ccf
 vendor/lib64/libC2D2.so|175115cc36fd471f9eb83af76be21b5f602b9460
 vendor/lib64/libCB.so|acc32f1bc487abeb3d934a790dcf50724c592f88

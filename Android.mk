@@ -46,12 +46,5 @@ $(DSP_MOUNT_POINT):
 
 ALL_DEFAULT_INSTALLED_MODULES += $(FIRMWARE_MOUNT_POINT) $(BT_FIRMWARE_MOUNT_POINT) $(DSP_MOUNT_POINT)
 
-EGL_SYMLINK := $(TARGET_OUT_VENDOR)/lib/libGLESv2_adreno.so
-$(EGL_SYMLINK): $(LOCAL_INSTALLED_MODULE)
-	@mkdir -p $(dir $@)
-	$(hide) ln -sf egl/$(notdir $@) $@
-
-ALL_DEFAULT_INSTALLED_MODULES += $(EGL_SYMLINK)
-
 include $(call all-makefiles-under,$(LOCAL_PATH))
 endif
